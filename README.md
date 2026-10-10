@@ -4,6 +4,8 @@ A memory-driven mystery set in a small Vietnamese neighborhood shop. Serve custo
 
 [Play in your browser](https://dont-forget-me-iota.vercel.app/)
 
+[Watch the gameplay demo on YouTube](https://youtu.be/vVY7D2egUNE)
+
 The story spans six days with two possible endings. The shop is also the place where you investigate: a purchase, a receipt, or an offhand remark can matter later. NPC conversations use an LLM and the memories available to that character in your current case.
 
 ## Playing
