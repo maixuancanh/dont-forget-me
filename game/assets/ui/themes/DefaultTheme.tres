@@ -1,0 +1,83 @@
+[gd_resource type="Theme" format=3 uid="uid://ml6wo1toxn2m"]
+
+[ext_resource type="FontFile" uid="uid://cvnixdi7irewv" path="res://assets/ui/fonts/Charcoal-Regular.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://bxjc0v722idug" path="res://assets/art/environment/calculator buttons/button_small.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ciyx6o3fk4jwu" path="res://assets/art/environment/calculator buttons/button_blankL.png" id="3"]
+[ext_resource type="FontFile" uid="uid://cojw2bfel5ovy" path="res://assets/ui/fonts/CharcoalBold-Regular.ttf" id="4"]
+[ext_resource type="Texture2D" uid="uid://dpg01sbf0h3ym" path="res://assets/art/environment/chat_bubble9slice.png" id="5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srahk"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.74978, 0.74978, 0.74977994, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f2t1u"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x4pdy"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.6131885, 0.5582878, 0.4611196, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvasc"]
+texture = ExtResource("3")
+texture_margin_top = 17.524693
+texture_margin_right = 16.5688
+texture_margin_bottom = 18.480583
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(14, 0, 72, 72)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ixfpo"]
+texture = ExtResource("5")
+texture_margin_left = 95.0
+texture_margin_top = 44.0
+texture_margin_right = 38.0
+texture_margin_bottom = 70.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 1, 210, 193)
+
+[resource]
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1")
+Button/styles/hover = SubResource("StyleBoxTexture_srahk")
+Button/styles/normal = SubResource("StyleBoxTexture_f2t1u")
+Button/styles/pressed = SubResource("StyleBoxTexture_x4pdy")
+Label/font_sizes/font_size = 64
+Label/fonts/font = ExtResource("1")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_uvasc")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/bold_font_size = 48
+RichTextLabel/font_sizes/bold_italics_font_size = 48
+RichTextLabel/font_sizes/italics_font_size = 48
+RichTextLabel/font_sizes/mono_font_size = 48
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("4")
+RichTextLabel/fonts/bold_italics_font = ExtResource("4")
+RichTextLabel/fonts/italics_font = ExtResource("1")
+RichTextLabel/fonts/mono_font = ExtResource("1")
+RichTextLabel/fonts/normal_font = ExtResource("1")
+SpeechBubbleContainer/base_type = &"PanelContainer"
+SpeechBubbleContainer/styles/panel = SubResource("StyleBoxTexture_ixfpo")
+SpeechBubbleLabel/base_type = &"Label"
+SpeechBubbleLabel/colors/font_color = Color(1, 1, 1, 1)
+SpeechBubbleRTL/base_type = &"RichTextLabel"
+SpeechBubbleRTL/colors/default_color = Color(1, 1, 1, 1)
+VBoxContainer/constants/separation = 4

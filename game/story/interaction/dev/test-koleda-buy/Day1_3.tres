@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://cukess6jwv303"]
+
+[ext_resource type="PackedScene" uid="uid://cpxugieu53pt7" path="res://scenes/prefabs/NPCs/character_lucia.tscn" id="1"]
+[ext_resource type="Script" uid="uid://nm3a4wlg01do" path="res://scripts/NPCs/Interactions/Models/InteractionSay.gd" id="2"]
+[ext_resource type="Script" uid="uid://bev6061fh60mv" path="res://scripts/NPCs/Interactions/Models/InteractionWait.gd" id="3"]
+[ext_resource type="Script" uid="uid://c1qyc2872reru" path="res://scripts/NPCs/Interactions/Models/InteractionChoice.gd" id="4"]
+[ext_resource type="PackedScene" uid="uid://d1niiqgyjew16" path="res://scenes/prefabs/Items/Cashier/Dropped/Bente_Dropped.tscn" id="5"]
+[ext_resource type="Script" uid="uid://dgkwfwtkf3guo" path="res://scripts/NPCs/Interactions/Models/InteractionPlaceItems.gd" id="6"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="7"]
+[ext_resource type="Script" uid="uid://bvuurjibruqfq" path="res://scripts/NPCs/Interactions/Models/InteractionRequireItems.gd" id="8"]
+[ext_resource type="Script" uid="uid://b3lhyrtwitj7o" path="res://scripts/NPCs/Interactions/Models/DialogueSequence.gd" id="9"]
+
+[sub_resource type="Resource" id="Resource_klbpy"]
+script = ExtResource("2")
+sentence = "Tao po… Tita! Pabili, Candy po!"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_yprrj"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_c68m6"]
+script = ExtResource("4")
+response_choices = ["How many, Axel?", "I’m not a mind reader, Axel…"]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[sub_resource type="Resource" id="Resource_wtq3y"]
+script = ExtResource("3")
+waitMs = 500
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_dtp8c"]
+script = ExtResource("2")
+sentence = "Just use up this po."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_r1o4v"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_0lggd"]
+script = ExtResource("6")
+items_to_place = [ExtResource("5")]
+metadata/_custom_type_script = "uid://dgkwfwtkf3guo"
+
+[sub_resource type="Resource" id="Resource_vdni6"]
+script = ExtResource("8")
+required_items = {
+ExtResource("7"): 10
+}
+metadata/_custom_type_script = "uid://bvuurjibruqfq"
+
+[sub_resource type="Resource" id="Resource_yb67n"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_j5dip"]
+script = ExtResource("2")
+sentence = "Salamat po!"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[resource]
+script = ExtResource("9")
+character_name = "Axel"
+character_template = ExtResource("1")
+interactions = [SubResource("Resource_klbpy"), SubResource("Resource_yprrj"), SubResource("Resource_c68m6"), SubResource("Resource_wtq3y"), SubResource("Resource_dtp8c"), SubResource("Resource_r1o4v"), SubResource("Resource_0lggd"), SubResource("Resource_vdni6"), SubResource("Resource_yb67n"), SubResource("Resource_j5dip")]
+metadata/_custom_type_script = "uid://b3lhyrtwitj7o"

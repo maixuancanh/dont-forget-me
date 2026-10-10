@@ -1,0 +1,86 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]Three soup noodle packets[/b]. I need something quick."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Officer Phuc was here about the body.",
+        "The police still need to identify him."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] The man by the drain? He was carrying a coffee sachet. It could have been anyone."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Who told you about the coffee?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I heard it from someone. People are talking everywhere."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You should ask Sau's son. Duy was out there after dark. I saw him."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "noodles_soup": 3
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. Do not repeat every rumor you hear."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

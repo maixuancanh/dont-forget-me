@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "Day1_1_Junjun:0",
+    "sceneId": "Day1_1_Junjun",
+    "stepIndex": 0,
+    "day": 1,
+    "speaker": "binh",
+    "quote": "Binh: One coffee sachet, please. The red strip above you. Another early shift.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_1_Junjun:4",
+    "sceneId": "Day1_1_Junjun",
+    "stepIndex": 4,
+    "day": 1,
+    "speaker": "binh",
+    "quote": "Binh: Hanh says I still owe a million. I paid her last Friday. She kept the receipt to update her book.",
+    "category": "claim",
+    "clueTags": [
+      "debt_paid"
+    ]
+  },
+  {
+    "id": "Day1_1_Junjun:8",
+    "sceneId": "Day1_1_Junjun",
+    "stepIndex": 8,
+    "day": 1,
+    "speaker": "binh",
+    "quote": "Binh: Just charge me for the coffee today. I am going back for that receipt.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_1_Junjun:14",
+    "sceneId": "Day1_1_Junjun",
+    "stepIndex": 14,
+    "day": 1,
+    "speaker": "binh",
+    "quote": "Binh: You see everyone who comes through this alley. If she asks, remember I was here.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_2_Lucia:0",
+    "sceneId": "Day1_2_Lucia",
+    "stepIndex": 0,
+    "day": 1,
+    "speaker": "hanh",
+    "quote": "Hanh: Two soup noodle packets and one tin of canned meat, please.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_2_Lucia:4",
+    "sceneId": "Day1_2_Lucia",
+    "stepIndex": 4,
+    "day": 1,
+    "speaker": "hanh",
+    "quote": "Hanh: Binh was here, was he? He gets confused about money. Always has.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_2_Lucia:6",
+    "sceneId": "Day1_2_Lucia",
+    "stepIndex": 6,
+    "day": 1,
+    "speaker": "hanh",
+    "quote": "Hanh: I keep the neighborhood debt book. Without it, people would forget what they owe.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_2_Lucia:10",
+    "sceneId": "Day1_2_Lucia",
+    "stepIndex": 10,
+    "day": 1,
+    "speaker": "hanh",
+    "quote": "Hanh: Of course. I only want the figures to be right. It is a lot of responsibility.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_2_Lucia:16",
+    "sceneId": "Day1_2_Lucia",
+    "stepIndex": 16,
+    "day": 1,
+    "speaker": "hanh",
+    "quote": "Hanh: Thank you. If Binh leaves any paper with you, send him to me.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_3_Axel:0",
+    "sceneId": "Day1_3_Axel",
+    "stepIndex": 0,
+    "day": 1,
+    "speaker": "bao",
+    "quote": "Bao: Can I have ten mint candies? From the blue jar!",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_3_Axel:4",
+    "sceneId": "Day1_3_Axel",
+    "stepIndex": 4,
+    "day": 1,
+    "speaker": "bao",
+    "quote": "Bao: Five for me. Five for Binh. He fixed the wheel on my bicycle.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_3_Axel:6",
+    "sceneId": "Day1_3_Axel",
+    "stepIndex": 6,
+    "day": 1,
+    "speaker": "bao",
+    "quote": "Bao: He said to count them twice. Ten, not nine. He always notices.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_3_Axel:12",
+    "sceneId": "Day1_3_Axel",
+    "stepIndex": 12,
+    "day": 1,
+    "speaker": "bao",
+    "quote": "Bao: Thanks! I will leave his five by his door if he is still out.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_4_Layla:0",
+    "sceneId": "Day1_4_Layla",
+    "stepIndex": 0,
+    "day": 1,
+    "speaker": "lan",
+    "quote": "Lan: One bottle of beer, please. I have just finished closing the sewing shop.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day1_4_Layla:4",
+    "sceneId": "Day1_4_Layla",
+    "stepIndex": 4,
+    "day": 1,
+    "speaker": "lan",
+    "quote": "Lan: Binh was outside Hanh's gate earlier. He had a little folded slip in his hand.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "earlier_dispute"
+    ]
+  },
+  {
+    "id": "Day1_4_Layla:8",
+    "sceneId": "Day1_4_Layla",
+    "stepIndex": 8,
+    "day": 1,
+    "speaker": "lan",
+    "quote": "Lan: He kept saying the same thing: \"Read the date.\" She would not let him finish.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "earlier_dispute"
+    ]
+  },
+  {
+    "id": "Day1_4_Layla:16",
+    "sceneId": "Day1_4_Layla",
+    "stepIndex": 16,
+    "day": 1,
+    "speaker": "lan",
+    "quote": "Lan: I should go. You can hear every word through those metal gates.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_1_Junjun:0",
+    "sceneId": "Day2_1_Junjun",
+    "stepIndex": 0,
+    "day": 2,
+    "speaker": "binh",
+    "quote": "Binh: One coffee sachet. Same as yesterday.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_1_Junjun:4",
+    "sceneId": "Day2_1_Junjun",
+    "stepIndex": 4,
+    "day": 2,
+    "speaker": "binh",
+    "quote": "Binh: I found my copy. Friday, one million, paid in full. Her signature is still there.",
+    "category": "claim",
+    "clueTags": [
+      "debt_paid"
+    ]
+  },
+  {
+    "id": "Day2_1_Junjun:12",
+    "sceneId": "Day2_1_Junjun",
+    "stepIndex": 12,
+    "day": 2,
+    "speaker": "binh",
+    "quote": "Binh: I will show it to her tonight. Keep yesterday in your head, all right? People change their stories.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_2_Malu:0",
+    "sceneId": "Day2_2_Malu",
+    "stepIndex": 0,
+    "day": 2,
+    "speaker": "thu",
+    "quote": "Thu: Three bags of ice, please. My drinks are warm already.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_2_Malu:4",
+    "sceneId": "Day2_2_Malu",
+    "stepIndex": 4,
+    "day": 2,
+    "speaker": "thu",
+    "quote": "Thu: Good morning for sales. Bad morning for gossip. Hanh told everyone Binh had not paid her.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_2_Malu:8",
+    "sceneId": "Day2_2_Malu",
+    "stepIndex": 8,
+    "day": 2,
+    "speaker": "thu",
+    "quote": "Thu: I paid her too. Now I am wondering whether I should ask to see my line in that book.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_2_Malu:14",
+    "sceneId": "Day2_2_Malu",
+    "stepIndex": 14,
+    "day": 2,
+    "speaker": "thu",
+    "quote": "Thu: Thanks. Three bags should get me through the afternoon.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_3_Axel:0",
+    "sceneId": "Day2_3_Axel",
+    "stepIndex": 0,
+    "day": 2,
+    "speaker": "bao",
+    "quote": "Bao: Two stir-fry noodle packets, please. Mum is working late.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_3_Axel:8",
+    "sceneId": "Day2_3_Axel",
+    "stepIndex": 8,
+    "day": 2,
+    "speaker": "bao",
+    "quote": "Bao: Binh did not take the candies. They are still by his door. Maybe he forgot.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_4_Mario:0",
+    "sceneId": "Day2_4_Mario",
+    "stepIndex": 0,
+    "day": 2,
+    "speaker": "sau",
+    "quote": "Sau: One cola and one tin of fish, please. My son Duy is helping me at the workshop.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day2_4_Mario:8",
+    "sceneId": "Day2_4_Mario",
+    "stepIndex": 8,
+    "day": 2,
+    "speaker": "sau",
+    "quote": "Sau: If Duy seems quiet, give him time. He listens longer than most people.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_1_Junjun:0",
+    "sceneId": "Day3_1_Junjun",
+    "stepIndex": 0,
+    "day": 3,
+    "speaker": "binh",
+    "quote": "Binh: Just one coffee sachet. I have not slept.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_1_Junjun:4",
+    "sceneId": "Day3_1_Junjun",
+    "stepIndex": 4,
+    "day": 3,
+    "speaker": "binh",
+    "quote": "Binh: She changed the date in her book. My receipt says Friday. Her page says I borrowed it again on Saturday.",
+    "category": "claim",
+    "clueTags": [
+      "duplicate_debt"
+    ]
+  },
+  {
+    "id": "Day3_1_Junjun:10",
+    "sceneId": "Day3_1_Junjun",
+    "stepIndex": 10,
+    "day": 3,
+    "speaker": "binh",
+    "quote": "Binh: I am taking the receipt to her now. If I do not come back, do not let her say I left owing money.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_2_Layla:0",
+    "sceneId": "Day3_2_Layla",
+    "stepIndex": 0,
+    "day": 3,
+    "speaker": "lan",
+    "quote": "Lan: One sanitary pad, please. From the purple An Tam pack.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_2_Layla:8",
+    "sceneId": "Day3_2_Layla",
+    "stepIndex": 8,
+    "day": 3,
+    "speaker": "lan",
+    "quote": "Lan: I heard Hanh lift her gate last night during their earlier dispute. Then a man said, \"You cannot cross me out.\" I thought it was Binh. I saw him walking past my shop alive this morning.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "earlier_dispute",
+      "alive_day3"
+    ]
+  },
+  {
+    "id": "Day3_3_Lucia:0",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 0,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: Has Binh been in? He looked exhausted when I saw him.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_3_Lucia:4",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 4,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: He has been worrying over a bit of paper. He ought to get some rest.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_3_Lucia:6",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 6,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: I asked him to come over. We will sort out the book this evening.",
+    "category": "claim",
+    "clueTags": [
+      "meeting_claim"
+    ]
+  },
+  {
+    "id": "Day3_3_Lucia:8",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 8,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: I need two beers, three orange sodas and two tins of canned meat.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_3_Lucia:12",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 12,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: Just neighbors coming round. It is easier to settle these things over a meal.",
+    "category": "claim",
+    "clueTags": [
+      "meeting_claim"
+    ]
+  },
+  {
+    "id": "Day3_3_Lucia:18",
+    "sceneId": "Day3_3_Lucia",
+    "stepIndex": 18,
+    "day": 3,
+    "speaker": "hanh",
+    "quote": "Hanh: Thank you. No need to mention our conversation to anyone.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_4_Axel:0",
+    "sceneId": "Day3_4_Axel",
+    "stepIndex": 0,
+    "day": 3,
+    "speaker": "bao",
+    "quote": "Bao: Ten mint candies, please. Like last time.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_4_Axel:4",
+    "sceneId": "Day3_4_Axel",
+    "stepIndex": 4,
+    "day": 3,
+    "speaker": "bao",
+    "quote": "Bao: Binh was sitting by the drain this morning, before he went to Hanh. He waved and told me he was waiting to speak to her.",
+    "category": "claim",
+    "clueTags": [
+      "alive_day3"
+    ]
+  },
+  {
+    "id": "Day3_4_Axel:6",
+    "sceneId": "Day3_4_Axel",
+    "stepIndex": 6,
+    "day": 3,
+    "speaker": "bao",
+    "quote": "Bao: I will get him ten this time. Maybe he did not like sharing.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day3_4_Axel:12",
+    "sceneId": "Day3_4_Axel",
+    "stepIndex": 12,
+    "day": 3,
+    "speaker": "bao",
+    "quote": "Bao: If he comes here, tell him I remembered his five from yesterday.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_1_Layla:0",
+    "sceneId": "Day4_1_Layla",
+    "stepIndex": 0,
+    "day": 4,
+    "speaker": "lan",
+    "quote": "Lan: Two tins of canned meat, please. I do not want to go out again tonight.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_1_Layla:8",
+    "sceneId": "Day4_1_Layla",
+    "stepIndex": 8,
+    "day": 4,
+    "speaker": "lan",
+    "quote": "Lan: Hanh was washing the tiles outside her gate before sunrise. She stopped when she saw me.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "gate_cleaning"
+    ]
+  },
+  {
+    "id": "Day4_2_Rayder:0",
+    "sceneId": "Day4_2_Rayder",
+    "stepIndex": 0,
+    "day": 4,
+    "speaker": "tuan",
+    "quote": "Tuan: Two bottles of water, please. I have been delivering parcels since dawn.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_2_Rayder:4",
+    "sceneId": "Day4_2_Rayder",
+    "stepIndex": 4,
+    "day": 4,
+    "speaker": "tuan",
+    "quote": "Tuan: The woman behind the green gate sent me away. Hanh, I think. Said she had never ordered anything.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_2_Rayder:6",
+    "sceneId": "Day4_2_Rayder",
+    "stepIndex": 6,
+    "day": 4,
+    "speaker": "tuan",
+    "quote": "Tuan: The parcel had Binh's name on it. He used her address for deliveries.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_2_Rayder:10",
+    "sceneId": "Day4_2_Rayder",
+    "stepIndex": 10,
+    "day": 4,
+    "speaker": "tuan",
+    "quote": "Tuan: Right. I will keep it at the depot until someone can collect it.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_2_Rayder:16",
+    "sceneId": "Day4_2_Rayder",
+    "stepIndex": 16,
+    "day": 4,
+    "speaker": "tuan",
+    "quote": "Tuan: Thanks. I hope he turns up. It is only a box of work gloves.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_3_Malu:0",
+    "sceneId": "Day4_3_Malu",
+    "stepIndex": 0,
+    "day": 4,
+    "speaker": "thu",
+    "quote": "Thu: One beer, please. I closed the stall early.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_3_Malu:4",
+    "sceneId": "Day4_3_Malu",
+    "stepIndex": 4,
+    "day": 4,
+    "speaker": "thu",
+    "quote": "Thu: Nobody wanted a drink once the police arrived.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_3_Malu:6",
+    "sceneId": "Day4_3_Malu",
+    "stepIndex": 6,
+    "day": 4,
+    "speaker": "thu",
+    "quote": "Thu: They found someone in the drainage channel beyond the alley. They put up a sheet before I could see.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_3_Malu:12",
+    "sceneId": "Day4_3_Malu",
+    "stepIndex": 12,
+    "day": 4,
+    "speaker": "thu",
+    "quote": "Thu: I keep thinking about Binh asking for his receipt. I wish I had listened.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_4_Mario:0",
+    "sceneId": "Day4_4_Mario",
+    "stepIndex": 0,
+    "day": 4,
+    "speaker": "sau",
+    "quote": "Sau: Two beers, please. One for me, one for my brother.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day4_4_Mario:4",
+    "sceneId": "Day4_4_Mario",
+    "stepIndex": 4,
+    "day": 4,
+    "speaker": "sau",
+    "quote": "Sau: Duy was helping me unload after dark. He heard a heavy scrape by Hanh's gate. Now he will not talk about it.",
+    "category": "claim",
+    "clueTags": [
+      "corroboration",
+      "unloading"
+    ]
+  },
+  {
+    "id": "Day4_4_Mario:10",
+    "sceneId": "Day4_4_Mario",
+    "stepIndex": 10,
+    "day": 4,
+    "speaker": "sau",
+    "quote": "Sau: If he comes in, let him speak when he is ready. Do not push him.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_1_Rayder:0",
+    "sceneId": "Day5_1_Rayder",
+    "stepIndex": 0,
+    "day": 5,
+    "speaker": "tuan",
+    "quote": "Tuan: One lemon soda, please. The green bottle.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_1_Rayder:4",
+    "sceneId": "Day5_1_Rayder",
+    "stepIndex": 4,
+    "day": 5,
+    "speaker": "tuan",
+    "quote": "Tuan: I took the parcel back. Hanh came to the depot asking for it before we opened.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_1_Rayder:6",
+    "sceneId": "Day5_1_Rayder",
+    "stepIndex": 6,
+    "day": 5,
+    "speaker": "tuan",
+    "quote": "Tuan: Then an officer asked whether anyone had tried to collect Binh's things.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_1_Rayder:10",
+    "sceneId": "Day5_1_Rayder",
+    "stepIndex": 10,
+    "day": 5,
+    "speaker": "tuan",
+    "quote": "Tuan: Officer Phuc. I gave him the delivery times. Those are written down, at least.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_1_Rayder:16",
+    "sceneId": "Day5_1_Rayder",
+    "stepIndex": 16,
+    "day": 5,
+    "speaker": "tuan",
+    "quote": "Tuan: Keep your records. That was what he told me.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_2_Jomar:0",
+    "sceneId": "Day5_2_Jomar",
+    "stepIndex": 0,
+    "day": 5,
+    "speaker": "phuc",
+    "quote": "Phuc: I am Officer Phuc. I am asking about the man found beyond this alley.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_2_Jomar:5",
+    "sceneId": "Day5_2_Jomar",
+    "stepIndex": 5,
+    "day": 5,
+    "speaker": "phuc",
+    "quote": "Phuc: We have not confirmed his identity. I need times, names, things you actually saw.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_2_Jomar:9",
+    "sceneId": "Day5_2_Jomar",
+    "stepIndex": 9,
+    "day": 5,
+    "speaker": "phuc",
+    "quote": "Phuc: Thank you. May I buy one bottle of water while I am here?",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_2_Jomar:16",
+    "sceneId": "Day5_2_Jomar",
+    "stepIndex": 16,
+    "day": 5,
+    "speaker": "phuc",
+    "quote": "Phuc: I will come back tomorrow. If someone asks you to destroy a receipt or change a date, keep it.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_3_Lucia:0",
+    "sceneId": "Day5_3_Lucia",
+    "stepIndex": 0,
+    "day": 5,
+    "speaker": "hanh",
+    "quote": "Hanh: Three soup noodle packets. I need something quick.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_3_Lucia:4",
+    "sceneId": "Day5_3_Lucia",
+    "stepIndex": 4,
+    "day": 5,
+    "speaker": "hanh",
+    "quote": "Hanh: The man by the drain? He was carrying a coffee sachet. It could have been anyone.",
+    "category": "claim",
+    "clueTags": [
+      "unreleased_detail"
+    ]
+  },
+  {
+    "id": "Day5_3_Lucia:8",
+    "sceneId": "Day5_3_Lucia",
+    "stepIndex": 8,
+    "day": 5,
+    "speaker": "hanh",
+    "quote": "Hanh: I heard it from someone. People are talking everywhere.",
+    "category": "claim",
+    "clueTags": [
+      "hearsay_explanation"
+    ]
+  },
+  {
+    "id": "Day5_3_Lucia:10",
+    "sceneId": "Day5_3_Lucia",
+    "stepIndex": 10,
+    "day": 5,
+    "speaker": "hanh",
+    "quote": "Hanh: You should ask Sau's son. Duy was out there after dark. I saw him.",
+    "category": "claim",
+    "clueTags": [
+      "accusation_duy"
+    ]
+  },
+  {
+    "id": "Day5_3_Lucia:16",
+    "sceneId": "Day5_3_Lucia",
+    "stepIndex": 16,
+    "day": 5,
+    "speaker": "hanh",
+    "quote": "Hanh: Thank you. Do not repeat every rumor you hear.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_4_Carlo:3",
+    "sceneId": "Day5_4_Carlo",
+    "stepIndex": 3,
+    "day": 5,
+    "speaker": "duy",
+    "quote": "Duy: Is Hanh still here?",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_4_Carlo:5",
+    "sceneId": "Day5_4_Carlo",
+    "stepIndex": 5,
+    "day": 5,
+    "speaker": "duy",
+    "quote": "Duy: One bag of corn snacks, please. I just need a minute.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day5_4_Carlo:13",
+    "sceneId": "Day5_4_Carlo",
+    "stepIndex": 13,
+    "day": 5,
+    "speaker": "duy",
+    "quote": "Duy: I heard Binh at her gate. Please do not tell her I said that.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "private_witness"
+    ]
+  },
+  {
+    "id": "Day6_1_Carlo:3",
+    "sceneId": "Day6_1_Carlo",
+    "stepIndex": 3,
+    "day": 6,
+    "speaker": "duy",
+    "quote": "Duy: I could not sleep. I keep hearing it.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_1_Carlo:6",
+    "sceneId": "Day6_1_Carlo",
+    "stepIndex": 6,
+    "day": 6,
+    "speaker": "duy",
+    "quote": "Duy: One bag of corn snacks. The same one.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_1_Carlo:11",
+    "sceneId": "Day6_1_Carlo",
+    "stepIndex": 11,
+    "day": 6,
+    "speaker": "duy",
+    "quote": "Duy: I DID NOT TOUCH HIM! I only heard the scrape. Then she told me to go home.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "gate_scrape"
+    ]
+  },
+  {
+    "id": "Day6_1_Carlo:17",
+    "sceneId": "Day6_1_Carlo",
+    "stepIndex": 17,
+    "day": 6,
+    "speaker": "duy",
+    "quote": "Duy: I will tell Officer Phuc. I just needed to say it to someone first.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_2_Mario:0",
+    "sceneId": "Day6_2_Mario",
+    "stepIndex": 0,
+    "day": 6,
+    "speaker": "sau",
+    "quote": "Sau: Duy is my son. He was unloading with me that night. He could not have hurt Binh.",
+    "category": "claim",
+    "clueTags": [
+      "corroboration",
+      "unloading"
+    ]
+  },
+  {
+    "id": "Day6_2_Mario:4",
+    "sceneId": "Day6_2_Mario",
+    "stepIndex": 4,
+    "day": 6,
+    "speaker": "sau",
+    "quote": "Sau: He heard an argument, then something being dragged. He has been afraid Hanh would come for him too.",
+    "category": "claim",
+    "clueTags": [
+      "corroboration"
+    ]
+  },
+  {
+    "id": "Day6_2_Mario:6",
+    "sceneId": "Day6_2_Mario",
+    "stepIndex": 6,
+    "day": 6,
+    "speaker": "sau",
+    "quote": "Sau: I am taking him to Phuc now. Thank you for letting him finish.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_3_Jomar:0",
+    "sceneId": "Day6_3_Jomar",
+    "stepIndex": 0,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: I have news about Binh. May I step out of the rain for a moment?",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_3_Jomar:6",
+    "sceneId": "Day6_3_Jomar",
+    "stepIndex": 6,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: Thank you for the coffee. We have identified the man in the drainage channel.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_3_Jomar:10",
+    "sceneId": "Day6_3_Jomar",
+    "stepIndex": 10,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: Binh. His family confirmed it this afternoon.",
+    "category": "claim",
+    "clueTags": [
+      "identity"
+    ]
+  },
+  {
+    "id": "Day6_3_Jomar:12",
+    "sceneId": "Day6_3_Jomar",
+    "stepIndex": 12,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: We found a wet payment slip in his pocket. The date is readable. The signature is not.",
+    "category": "claim",
+    "clueTags": [
+      "payment_slip"
+    ]
+  },
+  {
+    "id": "Day6_3_Jomar:14",
+    "sceneId": "Day6_3_Jomar",
+    "stepIndex": 14,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: I will be at the end of the alley. Keep anything that could tell us who he went to see.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_4_Lucia:0",
+    "sceneId": "Day6_4_Lucia",
+    "stepIndex": 0,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: I need you to hold something for me. Just until morning.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_4_Lucia:4",
+    "sceneId": "Day6_4_Lucia",
+    "stepIndex": 4,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: This slip goes with my debt book. I will leave the book here too. Keep them behind the counter.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_4_Lucia:9",
+    "sceneId": "Day6_4_Lucia",
+    "stepIndex": 9,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: The police are searching houses. Loose pages get lost when strangers handle them.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_4_Lucia:11",
+    "sceneId": "Day6_4_Lucia",
+    "stepIndex": 11,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: Everything I have collected is in that book. People trust you. It will be safe here.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Day6_4_Lucia:15",
+    "sceneId": "Day6_4_Lucia",
+    "stepIndex": 15,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: Do not open it. If anyone asks, you never saw me tonight.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:3",
+    "sceneId": "Ending",
+    "stepIndex": 3,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: You opened it.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:5",
+    "sceneId": "Ending",
+    "stepIndex": 5,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: That line is private. Close the book.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:8",
+    "sceneId": "Ending",
+    "stepIndex": 8,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: Binh paid on Friday. I know what the receipt says.",
+    "category": "claim",
+    "clueTags": [
+      "confession"
+    ]
+  },
+  {
+    "id": "Ending:10",
+    "sceneId": "Ending",
+    "stepIndex": 10,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: I entered the loan again. I needed the money. He came back and would not leave without the book.",
+    "category": "claim",
+    "clueTags": [
+      "confession"
+    ]
+  },
+  {
+    "id": "Ending:12",
+    "sceneId": "Ending",
+    "stepIndex": 12,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: I pushed him. He hit the step. He was still breathing when I shut the gate.",
+    "category": "claim",
+    "clueTags": [
+      "confession"
+    ]
+  },
+  {
+    "id": "Ending:14",
+    "sceneId": "Ending",
+    "stepIndex": 14,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: Open up. We can fix the figures together.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:17",
+    "sceneId": "Ending",
+    "stepIndex": 17,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: GIVE ME THE BOOK.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:19",
+    "sceneId": "Ending",
+    "stepIndex": 19,
+    "day": 6,
+    "speaker": "hanh",
+    "quote": "Hanh: You sell a little on credit every day. You know how easy it is to change one line.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ending:23",
+    "sceneId": "Ending",
+    "stepIndex": 23,
+    "day": 6,
+    "speaker": "phuc",
+    "quote": "Phuc: Step away from the gate, Hanh. Keep the book where I can see it.",
+    "category": "claim",
+    "clueTags": []
+  },
+  {
+    "id": "Ledger:0",
+    "sceneId": "Ledger",
+    "stepIndex": 0,
+    "day": 6,
+    "speaker": "shopkeeper",
+    "quote": "The ledger shows Binh's one-million-VND payment on Friday, signed by Hanh. The same loan was entered again on Saturday without any new cash being paid out. Binh's account is crossed out.",
+    "category": "observation",
+    "clueTags": [
+      "debt_paid",
+      "duplicate_debt"
+    ]
+  }
+]

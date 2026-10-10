@@ -1,0 +1,41 @@
+{
+  "character_name": "Sau",
+  "character_template": "res://scenes/prefabs/NPCs/character_mario.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] Duy is my son. He was unloading with me that night. He could not have hurt Binh."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Hanh tried to blame him.",
+        "He told me what he heard."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] He heard an argument, then something being dragged. He has been afraid Hanh would come for him too."
+    },
+    {
+      "type": "wait",
+      "waitMs": 500
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] I am taking him to Phuc now. Thank you for letting him finish."
+    },
+    {
+      "type": "wait",
+      "waitMs": 1000
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "sceneResource": "res://scenes/levels/Main.tscn",
+  "storyScenes": [
+    "Day1_1_Junjun",
+    "Day1_2_Lucia",
+    "Day1_3_Axel",
+    "Day1_4_Layla",
+    "Day2_1_Junjun",
+    "Day2_2_Malu",
+    "Day2_3_Axel",
+    "Day2_4_Mario",
+    "Day3_1_Junjun",
+    "Day3_2_Layla",
+    "Day3_3_Lucia",
+    "Day3_4_Axel",
+    "Day4_1_Layla",
+    "Day4_2_Rayder",
+    "Day4_3_Malu",
+    "Day4_4_Mario",
+    "Day5_1_Rayder",
+    "Day5_2_Jomar",
+    "Day5_3_Lucia",
+    "Day5_4_Carlo",
+    "Day6_1_Carlo",
+    "Day6_2_Mario",
+    "Day6_3_Jomar",
+    "Day6_4_Lucia"
+  ],
+  "slots": [
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/ForwardFacingArea/Napkin_Dispenser",
+      "nodePath": "Areas/ForwardFacingArea/Napkin_Dispenser",
+      "itemId": "single_napkin",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Front/Napkin_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/ForwardFacingArea/Mentos_Dispenser",
+      "nodePath": "Areas/ForwardFacingArea/Mentos_Dispenser",
+      "itemId": "candy_mentos",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Front/Mentos_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/ForwardFacingArea/Cigratte_Dispenser",
+      "nodePath": "Areas/ForwardFacingArea/Cigratte_Dispenser",
+      "itemId": "single_cigarette",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Front/SingleCigarette_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/OverheadArea/CoffeeStrip_Dispenser2",
+      "nodePath": "Areas/OverheadArea/CoffeeStrip_Dispenser2",
+      "itemId": "coffee_strip",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ovh/CoffeeStrip_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/OverheadArea/Shampoo_Dispenser3",
+      "nodePath": "Areas/OverheadArea/Shampoo_Dispenser3",
+      "itemId": "shampoo_sachet",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ovh/Shampoo_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/OverheadArea/MiloSachet_Dispenser3",
+      "nodePath": "Areas/OverheadArea/MiloSachet_Dispenser3",
+      "itemId": "milo_sachet",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ovh/MiloSachet_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/OverheadArea/IcedTeaSachet_Dispenser4",
+      "nodePath": "Areas/OverheadArea/IcedTeaSachet_Dispenser4",
+      "itemId": "iced_tea_sachet",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ovh/IcedTea_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/OverheadArea/ZonroxSachet_Dispenser4",
+      "nodePath": "Areas/OverheadArea/ZonroxSachet_Dispenser4",
+      "itemId": "bleach_sachet",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ovh/BleachSachet_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser",
+      "itemId": "beer",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/Beer_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser",
+      "itemId": "glass_coke",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/GlassCoke_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser",
+      "itemId": "ice",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/IcePack_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser",
+      "itemId": "glass_sprite",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/GlassSprite_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser",
+      "itemId": "glass_royal",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/GlassRoyal_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser",
+      "itemId": "bottled_water",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/BottledWater_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser",
+      "nodePath": "Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser",
+      "itemId": "egg",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Ref/Egg_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/Noodles_Soup_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/Noodles_Soup_Dispenser",
+      "itemId": "noodles_soup",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/Noodles_Soup_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser",
+      "itemId": "noodles_pancit_canton",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/Noodles_PancitCanton_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/ChipsNova_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/ChipsNova_Dispenser",
+      "itemId": "chips_nova",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/ChipsNova_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/CanCornBeef_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/CanCornBeef_Dispenser",
+      "itemId": "canned_cornedbeef",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/CanCornbeef_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/CanSardines_Dispenser2",
+      "nodePath": "Areas/LeftArea/Shelf/CanSardines_Dispenser2",
+      "itemId": "canned_sardines_1",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/CanSardines1_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/CanSardines_Dispenser3",
+      "nodePath": "Areas/LeftArea/Shelf/CanSardines_Dispenser3",
+      "itemId": "canned_sardines_2",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/CanSardines2_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2",
+      "nodePath": "Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2",
+      "itemId": "chips_piattos",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/ChipsPiattos_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3",
+      "nodePath": "Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3",
+      "itemId": "chips_piattos_2",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/ChipsPiattos2_dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/Rebisco1_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/Rebisco1_Dispenser",
+      "itemId": "biscuit_rebisco_brown",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/RebiscoBrown_Dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/Rebisco_Dispenser",
+      "nodePath": "Areas/LeftArea/Shelf/Rebisco_Dispenser",
+      "itemId": "biscuit_rebisco_cream",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/RebiscoCream_Dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#Areas/LeftArea/Shelf/Rebisco_Dispenser2",
+      "nodePath": "Areas/LeftArea/Shelf/Rebisco_Dispenser2",
+      "itemId": "biscuit_rebisco_strawberry",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Products/Dropped/Left/RebiscoStrawberry_Dropped.tscn",
+      "origin": "scene_dispenser"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryLedger",
+      "nodePath": "DroppedItemHolder/MemoryLedger",
+      "itemId": "ledger",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Misc/ledger_dropped.tscn",
+      "origin": "static_scene_object"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryReceipt",
+      "nodePath": "DroppedItemHolder/MemoryReceipt",
+      "itemId": "debt_receipt",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Misc/debt_receipt_dropped.tscn",
+      "origin": "static_scene_object"
+    },
+    {
+      "slotId": "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryCash100",
+      "nodePath": "DroppedItemHolder/MemoryCash100",
+      "itemId": "bill_100",
+      "quantity": 1,
+      "template": "res://scenes/prefabs/Items/Cashier/Dropped/P100_Dropped.tscn",
+      "origin": "static_scene_object"
+    }
+  ],
+  "allocationPolicy": "One canonical template unit per scene stock slot for object interactions; client clones cannot create more authorized stock."
+}

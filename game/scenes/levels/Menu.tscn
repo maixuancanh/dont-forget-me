@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://djh5f48hcvkct"]
+
+[ext_resource type="Theme" uid="uid://ml6wo1toxn2m" path="res://assets/ui/themes/DefaultTheme.tres" id="1"]
+[ext_resource type="Script" uid="uid://btq3clwn3phfr" path="res://scripts/UI/MainMenu.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dusqk0uyxnvdk" path="res://assets/art/environment/main_bg-day.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c3y1lrnhm6r7f" path="res://assets/art/environment/title ui/start.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://duyiw4wffd0jx" path="res://assets/art/environment/title ui/start_pressed.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://di7tkahfojg06" path="res://assets/art/environment/title ui/exit.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dujvu8fq7q3he" path="res://assets/art/environment/title ui/exit_pressed.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c5amomd8ebaeo" path="res://assets/art/environment/title ui/game_title-v3.png" id="8"]
+
+[node name="Menu" type="Node2D" unique_id=760867167]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1158830869]
+
+[node name="MainMenu" type="Panel" parent="CanvasLayer" unique_id=1318548444 node_paths=PackedStringArray("fade_rect")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+fade_rect = NodePath("../Fade")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/MainMenu" unique_id=721063208]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -8.0
+offset_right = 1182.0
+offset_bottom = 106.0
+color = Color(0.7647059, 0.9254902, 0.9372549, 1)
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/MainMenu" unique_id=223321649]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(69.76, 162.115)
+offset_transform_scale = Vector2(0.7, 0.7)
+texture = ExtResource("3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MainMenu" unique_id=118265542]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = -34.0
+offset_right = 252.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.65, 0.65)
+
+[node name="PlayButton" type="TextureButton" parent="CanvasLayer/MainMenu/VBoxContainer" unique_id=1658626343]
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+
+[node name="ExitButton" type="TextureButton" parent="CanvasLayer/MainMenu/VBoxContainer" unique_id=1718867717]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("6")
+texture_pressed = ExtResource("7")
+
+[node name="Logo" type="TextureRect" parent="CanvasLayer/MainMenu" unique_id=731927609]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -300.0
+offset_right = 336.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.615, 0.615)
+texture = ExtResource("8")
+
+[node name="Fade" type="ColorRect" parent="CanvasLayer" unique_id=736088838]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="CanvasLayer/MainMenu/VBoxContainer/PlayButton" to="CanvasLayer/MainMenu" method="_on_play_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/MainMenu/VBoxContainer/ExitButton" to="CanvasLayer/MainMenu" method="_on_exit_button_pressed"]

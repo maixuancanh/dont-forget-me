@@ -1,0 +1,60 @@
+{
+  "character_name": "Binh",
+  "character_template": "res://scenes/prefabs/NPCs/character_junjun_tired.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] Just [b]one coffee sachet[/b]. I have not slept."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "What happened to your receipt?",
+        "You do not look well, Binh."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] She changed the date in her book. My receipt says Friday. Her page says I borrowed it again on Saturday."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] I am taking the receipt to her now. If I do not come back, do not let her say I left owing money."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

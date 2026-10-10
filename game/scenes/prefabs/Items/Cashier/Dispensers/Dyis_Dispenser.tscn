@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bq1fq7gprk0ld"]
+
+[ext_resource type="PackedScene" uid="uid://blwj0xjvmjt1u" path="res://scenes/prefabs/Items/Cashier/Dispensers/Singko_Dispenser.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://b6annmuxjkd71" path="res://scenes/prefabs/Items/Cashier/Dropped/Dyis_Dropped.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://brjsu3b5jx6y" path="res://story/itemdata/Cashier/P10_ItemData.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://8cxf4mvbh2np" path="res://assets/art/environment/peso_10.png" id="4"]
+
+[node name="Dyis_Dispenser" unique_id=1065646624 instance=ExtResource("1")]
+item_prefab = ExtResource("2")
+item_data = ExtResource("3")
+
+[node name="Bill3" parent="." index="1" unique_id=2105307759]
+texture = ExtResource("4")
+
+[node name="Bill5" parent="." index="2" unique_id=825885747]
+texture = ExtResource("4")
+
+[node name="Bill2" parent="." index="3" unique_id=1358837402]
+texture = ExtResource("4")
+
+[node name="Bill4" parent="." index="4" unique_id=849981645]
+texture = ExtResource("4")
+
+[node name="Sprite2D" parent="." index="5" unique_id=1830372164]
+texture = ExtResource("4")

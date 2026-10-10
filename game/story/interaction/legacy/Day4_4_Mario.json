@@ -1,0 +1,59 @@
+{
+  "character_name": "Sau",
+  "character_template": "res://scenes/prefabs/NPCs/character_mario.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] [b]Two beers[/b], please. One for me, one for my brother."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Is Duy all right?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] Duy was helping me unload after dark. He heard a heavy scrape by Hanh's gate. Now he will not talk about it."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "beer": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] If he comes in, let him speak when he is ready. Do not push him."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://cl6bkpx3rvou8"]
+
+[ext_resource type="PackedScene" uid="uid://cpxugieu53pt7" path="res://scenes/prefabs/NPCs/character_lucia.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="2"]
+[ext_resource type="Script" uid="uid://bvuurjibruqfq" path="res://scripts/NPCs/Interactions/Models/InteractionRequireItems.gd" id="3"]
+[ext_resource type="Script" uid="uid://l0gu2pt7yty4" path="res://scripts/NPCs/Interactions/Models/InteractionPay.gd" id="4"]
+[ext_resource type="Script" uid="uid://nm3a4wlg01do" path="res://scripts/NPCs/Interactions/Models/InteractionSay.gd" id="5"]
+[ext_resource type="Script" uid="uid://bev6061fh60mv" path="res://scripts/NPCs/Interactions/Models/InteractionWait.gd" id="6"]
+[ext_resource type="Script" uid="uid://c1qyc2872reru" path="res://scripts/NPCs/Interactions/Models/InteractionChoice.gd" id="7"]
+[ext_resource type="Script" uid="uid://b3lhyrtwitj7o" path="res://scripts/NPCs/Interactions/Models/DialogueSequence.gd" id="8"]
+
+[sub_resource type="Resource" id="Resource_2t7b8"]
+script = ExtResource("3")
+required_items = {
+ExtResource("2"): 1
+}
+metadata/_custom_type_script = "uid://bvuurjibruqfq"
+
+[sub_resource type="Resource" id="Resource_rrbmm"]
+script = ExtResource("4")
+purchase_to_pay = SubResource("Resource_2t7b8")
+metadata/_custom_type_script = "uid://l0gu2pt7yty4"
+
+[sub_resource type="Resource" id="Resource_ee1ol"]
+script = ExtResource("5")
+sentence = "Hi, ate… a bottle of beer po."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_o116v"]
+script = ExtResource("6")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_4kfv2"]
+script = ExtResource("7")
+response_choices = ["Aren’t you too young to be drinking?", "Who’s drinking?"]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[sub_resource type="Resource" id="Resource_hkbnd"]
+script = ExtResource("6")
+waitMs = 500
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_kgyjj"]
+script = ExtResource("5")
+sentence = "It’s my father’s po… He just told me to buy it."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_jcg5q"]
+script = ExtResource("6")
+waitMs = 500
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_q82gt"]
+script = ExtResource("7")
+response_choices = ["If he wants to buy it next time, tell him he has to buy it himself. Okay?"]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[sub_resource type="Resource" id="Resource_jqra3"]
+script = ExtResource("6")
+waitMs = 500
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_emiuo"]
+script = ExtResource("5")
+sentence = "Okay po… sorry…"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_hhdy4"]
+script = ExtResource("6")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_4nptr"]
+script = ExtResource("7")
+response_choices = ["Okay lang… just let him know, okay? Tell him it’s from Tita."]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[resource]
+script = ExtResource("8")
+character_name = "Layla"
+character_template = ExtResource("1")
+interactions = [SubResource("Resource_rrbmm"), SubResource("Resource_ee1ol"), SubResource("Resource_o116v"), SubResource("Resource_4kfv2"), SubResource("Resource_hkbnd"), SubResource("Resource_kgyjj"), SubResource("Resource_2t7b8"), SubResource("Resource_jcg5q"), SubResource("Resource_q82gt"), SubResource("Resource_jqra3"), SubResource("Resource_emiuo"), SubResource("Resource_hhdy4"), SubResource("Resource_4nptr")]
+metadata/_custom_type_script = "uid://b3lhyrtwitj7o"

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bb0ulcly0pj"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://bpua3275de2e6" path="res://story/itemdata/Products/Ovh/MiloSachet_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://cmun0oronb6m6" path="res://assets/art/products/hanging_milo_single.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wboo"]
+size = Vector2(229, 276)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8hrr"]
+size = Vector2(276, 318)
+
+[node name="MiloSachet_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(3.5, 0)
+shape = SubResource("RectangleShape2D_6wboo")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+shape = SubResource("RectangleShape2D_q8hrr")

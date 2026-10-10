@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://o154k3te7uyp"]
+
+[ext_resource type="Texture2D" uid="uid://c2y6f35xm8jvp" path="res://assets/art/products/biscuit_rebisco_strawberry.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://7p8adwwcq4c1" path="res://assets/audio/gameplay/interaction/ui_sfx/plastic_bg.mp3" id="2"]
+[ext_resource type="Script" uid="uid://byyl23x4b78s2" path="res://scripts/Items/ItemData.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+item_id = "biscuit_rebisco_strawberry"
+item_name = "Strawberry Biscuits"
+item_cost = 12000
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"

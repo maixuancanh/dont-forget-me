@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bquv6gcaqxu6e"]
+
+[ext_resource type="PackedScene" uid="uid://3ig67wvsfx7o" path="res://scenes/prefabs/Items/Cashier/Dispensers/P50_Dispenser.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://b1gvpuucolmj7" path="res://scenes/prefabs/Items/Cashier/Dropped/P500_Dropped.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://ybibqnmqpwct" path="res://story/itemdata/Cashier/P500_ItemData.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://b3f8thgwep47d" path="res://assets/art/environment/peso_500.png" id="4"]
+
+[node name="P500_Dispenser" unique_id=1065646624 instance=ExtResource("1")]
+item_prefab = ExtResource("2")
+item_data = ExtResource("3")
+
+[node name="Bill3" parent="." index="1" unique_id=2105307759]
+texture = ExtResource("4")
+
+[node name="Bill2" parent="." index="2" unique_id=1358837402]
+texture = ExtResource("4")
+
+[node name="Sprite2D" parent="." index="3" unique_id=1830372164]
+texture = ExtResource("4")

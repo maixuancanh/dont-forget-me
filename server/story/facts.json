@@ -1,0 +1,1673 @@
+{
+  "schemaVersion": 2,
+  "storyVersion": "full-memory-v2",
+  "currency": "VND",
+  "propositions": [
+    {
+      "id": "p.Day1_1_Junjun.0",
+      "meaning": "Binh starts an early repair shift; requests the usual coffee sachet.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_1_Junjun.4",
+      "meaning": "Binh claims repayment of the 1000000 VND loan on the previous Friday; Hanh retains the receipt while still demanding payment.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 1,
+      "clueTags": [
+        "debt_paid"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_1_Junjun.8",
+      "meaning": "Binh intends to recover his receipt; the current shop purchase is coffee only.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_1_Junjun.14",
+      "meaning": "Binh asks the shopkeeper to remember his presence if Hanh inquires.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_2_Lucia.0",
+      "meaning": "Hanh orders soup noodles and canned meat according to the transaction contract.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_2_Lucia.4",
+      "meaning": "Hanh portrays Binh as unreliable about money; this is a defensive characterization, not an established fact.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_2_Lucia.6",
+      "meaning": "Hanh manages the neighborhood debt ledger and claims it prevents forgotten debts.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_2_Lucia.10",
+      "meaning": "Hanh presents bookkeeping as a responsibility and asserts concern for accurate figures.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_2_Lucia.16",
+      "meaning": "Hanh asks that any paper Binh leaves be redirected through him to her.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_3_Axel.0",
+      "meaning": "Bao requests mint candies from the blue jar, using the exact order quantity.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_3_Axel.4",
+      "meaning": "Bao allocates five candies for himself and five for Binh in gratitude for a bicycle repair.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_3_Axel.6",
+      "meaning": "Bao recalls Binh teaching him to count the ten candies accurately.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_3_Axel.12",
+      "meaning": "Bao plans to leave Binh's five candies by his door if he remains out.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_4_Layla.0",
+      "meaning": "Lan requests beer after closing her sewing shop.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_4_Layla.4",
+      "meaning": "Lan personally saw Binh holding a folded slip outside Hanh's gate during an earlier dispute. Describe only this observation without inferring other events.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 1,
+      "clueTags": [
+        "incident_witness",
+        "earlier_dispute"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_4_Layla.8",
+      "meaning": "Lan heard Binh insist on checking the date while Hanh interrupted during the earlier dispute.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 1,
+      "clueTags": [
+        "incident_witness",
+        "earlier_dispute"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day1_4_Layla.16",
+      "meaning": "Lan notes sound travels through metal gates and leaves for home.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 1,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 1
+      }
+    },
+    {
+      "id": "p.Day2_1_Junjun.0",
+      "meaning": "Binh repeats his usual coffee order.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_1_Junjun.4",
+      "meaning": "Binh recovered his payment copy: previous Friday, 1000000 VND, paid in full, with Hanh's signature.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 2,
+      "clueTags": [
+        "debt_paid"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_1_Junjun.12",
+      "meaning": "Binh plans to show the receipt that evening and asks the shopkeeper to retain the previous day's account.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_2_Malu.0",
+      "meaning": "Thu orders ice for warm drinks at her stall.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_2_Malu.4",
+      "meaning": "Thu reports Hanh spreading a nonpayment allegation about Binh; Thu did not witness the alleged unpaid debt.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_2_Malu.8",
+      "meaning": "Thu has paid Hanh herself and intends to check her own ledger entry.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_2_Malu.14",
+      "meaning": "Thu expects the ordered three ice bags to last through the afternoon.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_3_Axel.0",
+      "meaning": "Bao orders stir-fry noodles because his mother is working late.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_3_Axel.8",
+      "meaning": "Bao observed the candies remaining outside Binh's door; he speculates they may have been forgotten.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_4_Mario.0",
+      "meaning": "Sau orders cola and canned fish; his son Duy helps in his workshop.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day2_4_Mario.8",
+      "meaning": "Sau asks the shopkeeper to allow his quiet son time to speak.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 2,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 2
+      }
+    },
+    {
+      "id": "p.Day3_1_Junjun.0",
+      "meaning": "Binh is alive during this morning visit and tired from lack of sleep; he orders coffee.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_1_Junjun.4",
+      "meaning": "Binh reports a mismatch: his copy records Friday repayment while Hanh's ledger claims a new Saturday loan.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 3,
+      "clueTags": [
+        "duplicate_debt"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_1_Junjun.10",
+      "meaning": "Binh plans another receipt discussion with Hanh; he asks that his nonpayment allegation be challenged if he fails to return.",
+      "epistemicStatus": "said",
+      "owner": "binh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_2_Layla.0",
+      "meaning": "Lan requests one An Tam sanitary pad from its purple pack.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_2_Layla.8",
+      "meaning": "Lan heard a raised gate and a male objection to an account being crossed out during the Day2 evening dispute; she tentatively identifies the voice as Binh and personally saw him alive on Day3 morning.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 3,
+      "clueTags": [
+        "incident_witness",
+        "earlier_dispute",
+        "alive_day3"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.0",
+      "meaning": "Hanh asks whether Binh has visited and describes his exhaustion.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.4",
+      "meaning": "Hanh minimizes the significance of the receipt and attributes Binh's distress to tiredness.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.6",
+      "meaning": "Hanh says she invited Binh to discuss the ledger on Day3 evening. This is her stated invitation, not confirmation of subsequent events.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [
+        "meeting_claim"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.8",
+      "meaning": "Hanh requests beer, orange soda and canned meat using exact transaction quantities.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.12",
+      "meaning": "Hanh presents the planned gathering as a friendly neighborhood meal to settle accounts; this is her cover story.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [
+        "meeting_claim"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_3_Lucia.18",
+      "meaning": "Hanh asks for discretion about the conversation.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_4_Axel.0",
+      "meaning": "Bao repeats his ten-candy order.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_4_Axel.4",
+      "meaning": "Bao saw Binh alive by the drain on Day3 morning; Binh waved and intended to speak to Hanh.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 3,
+      "clueTags": [
+        "alive_day3"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_4_Axel.6",
+      "meaning": "Bao considers giving Binh ten candies rather than splitting them; his explanation is speculation.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day3_4_Axel.12",
+      "meaning": "Bao asks the shopkeeper to pass on that he remembered Binh's earlier five candies.",
+      "epistemicStatus": "said",
+      "owner": "bao",
+      "minimumDay": 3,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 3
+      }
+    },
+    {
+      "id": "p.Day4_1_Layla.0",
+      "meaning": "Lan orders canned meat and wishes to remain home that evening.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_1_Layla.8",
+      "meaning": "Lan personally saw Hanh wash tiles outside her gate before Day4 sunrise and stop on noticing Lan. She did not see what happened inside the gate.",
+      "epistemicStatus": "said",
+      "owner": "lan",
+      "minimumDay": 4,
+      "clueTags": [
+        "incident_witness",
+        "gate_cleaning"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_2_Rayder.0",
+      "meaning": "Tuan orders water after deliveries since dawn.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_2_Rayder.4",
+      "meaning": "Tuan reports a woman he believes is Hanh rejecting a delivery at the green gate and denying ordering it.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_2_Rayder.6",
+      "meaning": "The rejected parcel bears Binh's name and the green-gate delivery address.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_2_Rayder.10",
+      "meaning": "Tuan plans to retain the rejected parcel at the depot for collection.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_2_Rayder.16",
+      "meaning": "The parcel contains work gloves; Tuan hopes Binh returns.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_3_Malu.0",
+      "meaning": "Thu orders beer after closing her stall early.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_3_Malu.4",
+      "meaning": "Thu observed business stop when police arrived.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_3_Malu.6",
+      "meaning": "Thu saw police screen a body in the drainage channel beyond the alley; she could not identify it.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_3_Malu.12",
+      "meaning": "Thu regrets not attending more closely to Binh's earlier receipt dispute.",
+      "epistemicStatus": "said",
+      "owner": "thu",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_4_Mario.0",
+      "meaning": "Sau requests beer for himself and his brother.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_4_Mario.4",
+      "meaning": "Sau personally locates Duy beside him unloading after dark on Day3; a heavy scrape came from Hanh's gate and Duy became reluctant to discuss it.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 4,
+      "clueTags": [
+        "corroboration",
+        "unloading"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day4_4_Mario.10",
+      "meaning": "Sau asks that Duy be allowed to speak voluntarily without pressure.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 4,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 4
+      }
+    },
+    {
+      "id": "p.Day5_1_Rayder.0",
+      "meaning": "Tuan requests lemon soda in the green bottle.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_1_Rayder.4",
+      "meaning": "Tuan returned the parcel to the depot; Hanh tried to collect it before the depot opened.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_1_Rayder.6",
+      "meaning": "An officer asked Tuan about attempts to collect Binh's belongings.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_1_Rayder.10",
+      "meaning": "Tuan gave Officer Phuc written delivery times.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_1_Rayder.16",
+      "meaning": "Tuan passes on Phuc's request to preserve records.",
+      "epistemicStatus": "said",
+      "owner": "tuan",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_2_Jomar.0",
+      "meaning": "Phuc introduces himself as the investigating officer for the man found beyond the alley.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_2_Jomar.5",
+      "meaning": "Police have not yet confirmed identity on Day5; Phuc requests witnessed names, times and observations rather than guesses.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_2_Jomar.9",
+      "meaning": "Phuc requests bottled water after asking questions.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_2_Jomar.16",
+      "meaning": "Phuc plans a Day6 return and asks that receipts and dates be preserved if someone demands alteration or destruction.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_3_Lucia.0",
+      "meaning": "Hanh requests soup noodles for a quick meal.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_3_Lucia.4",
+      "meaning": "Hanh volunteers an unreleased coffee-sachet detail about the unidentified man by the drain while minimizing identification; her access to this detail is suspicious, not proof of guilt.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 5,
+      "clueTags": [
+        "unreleased_detail"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_3_Lucia.8",
+      "meaning": "Hanh attributes the coffee detail to an unspecified rumor source; this is an unverified explanation.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 5,
+      "clueTags": [
+        "hearsay_explanation"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_3_Lucia.10",
+      "meaning": "Hanh directs suspicion toward Duy and claims she saw him outside after dark; it must remain an accusation, not fact of guilt.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 5,
+      "clueTags": [
+        "accusation_duy"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_3_Lucia.16",
+      "meaning": "Hanh discourages spreading rumors.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_4_Carlo.3",
+      "meaning": "Duy checks whether Hanh is still present before speaking.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_4_Carlo.5",
+      "meaning": "Duy requests corn snacks and time to collect himself.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 5,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day5_4_Carlo.13",
+      "meaning": "Duy identifies Binh's voice at Hanh's gate on Day3 evening and requests nondisclosure to Hanh; this is private witness testimony.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 5,
+      "clueTags": [
+        "incident_witness",
+        "private_witness"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 5
+      }
+    },
+    {
+      "id": "p.Day6_1_Carlo.3",
+      "meaning": "Duy reports sleepless distress over the remembered sound.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_1_Carlo.6",
+      "meaning": "Duy repeats his corn-snack order.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_1_Carlo.11",
+      "meaning": "Duy denies touching Binh; he reports hearing scraping and Hanh directing him home, without claiming visual knowledge of the injury.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 6,
+      "clueTags": [
+        "incident_witness",
+        "gate_scrape"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_1_Carlo.17",
+      "meaning": "Duy intends to tell Phuc after first speaking with the shopkeeper.",
+      "epistemicStatus": "said",
+      "owner": "duy",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_2_Mario.0",
+      "meaning": "Sau personally corroborates Duy being beside him unloading on Day3 evening; he believes his son could not have attacked Binh.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 6,
+      "clueTags": [
+        "corroboration",
+        "unloading"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_2_Mario.4",
+      "meaning": "Sau heard an argument followed by dragging sounds; Duy fears Hanh. This is an auditory account of location and sounds, not a visual account of what happened.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 6,
+      "clueTags": [
+        "corroboration"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_2_Mario.6",
+      "meaning": "Sau plans to accompany Duy to Phuc and thanks the shopkeeper for listening.",
+      "epistemicStatus": "said",
+      "owner": "sau",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_3_Jomar.0",
+      "meaning": "Phuc requests temporary shelter from rain while bringing news about Binh.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_3_Jomar.6",
+      "meaning": "Phuc acknowledges coffee and reports police identification of the drainage-channel victim.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_3_Jomar.10",
+      "meaning": "Binh's family confirmed the victim's identity during Day6 afternoon.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [
+        "identity"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_3_Jomar.12",
+      "meaning": "Police recovered a wet payment slip with a readable date and unreadable signature; this alone does not authenticate the signature.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [
+        "payment_slip"
+      ],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_3_Jomar.14",
+      "meaning": "Phuc remains at the alley end and asks that material tracing Binh's visit be preserved.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_4_Lucia.0",
+      "meaning": "Hanh asks the shopkeeper to keep an unspecified object until morning.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_4_Lucia.4",
+      "meaning": "Hanh offers a slip and debt ledger for storage behind the counter; the physical deposit remains the place-items choreography.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_4_Lucia.9",
+      "meaning": "Hanh claims police house searches risk losing loose pages; this is her justification for removing the book.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_4_Lucia.11",
+      "meaning": "Hanh appeals to neighborhood trust to justify depositing her collection records.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Day6_4_Lucia.15",
+      "meaning": "Hanh demands the book remain closed and her late visit be concealed; the player is not automatically committed.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.3",
+      "meaning": "Hanh challenges the inspection of her ledger without learning undisclosed player notes.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.5",
+      "meaning": "Hanh invokes ledger privacy and asks that it be closed.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.8",
+      "meaning": "Respond to the presented payment evidence while preserving Hanh's defensive stance; acknowledgment requires source presentation and does not establish a confession.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6,
+        "presentedEvidence": true
+      }
+    },
+    {
+      "id": "p.Ending.10",
+      "meaning": "Respond to the duplicate-entry comparison; do not admit falsification unconditionally.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6,
+        "presentedEvidence": true
+      }
+    },
+    {
+      "id": "p.Ending.12",
+      "meaning": "Respond to the incident question using only already disclosed testimony; deny, clarify or refuse without automatically admitting violence.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6,
+        "presentedEvidence": true
+      }
+    },
+    {
+      "id": "p.Ending.14",
+      "meaning": "Hanh proposes changing ledger figures as pressure on the shopkeeper; no actual ledger mutation is authorized.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.17",
+      "meaning": "Hanh demands return of the book; physical custody is decided by validated player action.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.19",
+      "meaning": "Hanh tries to normalize credit-entry changes without turning an allegation into verified truth.",
+      "epistemicStatus": "said",
+      "owner": "hanh",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.Ending.23",
+      "meaning": "Phuc requests separation from the gate and preservation of the ledger; investigative intervention requires a resolved case, otherwise preserve and seek missing independent support.",
+      "epistemicStatus": "said",
+      "owner": "phuc",
+      "minimumDay": 6,
+      "clueTags": [],
+      "worldTruth": false,
+      "disclosure": "beat_only",
+      "revealConditions": {
+        "minimumDay": 6
+      }
+    },
+    {
+      "id": "p.ledger",
+      "meaning": "The ledger records Friday repayment of 1000000 VND signed by Hanh, repeats the loan on Saturday without a new cash disbursement, and crosses out Binh's account.",
+      "minimumDay": 6,
+      "owner": "player",
+      "worldTruth": true,
+      "epistemicStatus": "observed",
+      "clueTags": [
+        "debt_paid",
+        "duplicate_debt"
+      ],
+      "disclosure": "object_examined",
+      "revealConditions": {
+        "minimumDay": 6,
+        "objectExamined": "ledger"
+      }
+    },
+    {
+      "id": "p.duy.trusted",
+      "meaning": "Duy personally remained unloading beside Sau, heard scraping at Hanh's gate and her instruction to go home, and did not enter; he permits reporting to Phuc while protecting his identity from Hanh.",
+      "minimumDay": 6,
+      "owner": "duy",
+      "worldTruth": false,
+      "epistemicStatus": "said",
+      "clueTags": [
+        "incident_witness",
+        "trusted_reveal",
+        "gate_scrape"
+      ],
+      "disclosure": "trusted_witness",
+      "revealConditions": {
+        "minimumDay": 6,
+        "minimumTrust": 2,
+        "promiseId": "protect_duy_from_hanh",
+        "promiseUnbroken": true,
+        "witnessedEventIds": [
+          "Day5_4_Carlo:13"
+        ]
+      }
+    },
+    {
+      "id": "truth.binh_alive_day3_morning",
+      "meaning": "Binh survives every Day3 morning shop visit.",
+      "minimumDay": 3,
+      "owner": "server",
+      "worldTruth": true,
+      "epistemicStatus": "corroborated",
+      "clueTags": [],
+      "disclosure": "never_prompt",
+      "revealConditions": {
+        "serverPrivate": true
+      }
+    },
+    {
+      "id": "truth.incident_day3_evening",
+      "meaning": "After Day3 shop visits Hanh pushes Binh at her gate; he strikes the step and is still breathing when she closes the gate.",
+      "minimumDay": 3,
+      "owner": "server",
+      "worldTruth": true,
+      "epistemicStatus": "corroborated",
+      "clueTags": [],
+      "disclosure": "never_prompt",
+      "revealConditions": {
+        "serverPrivate": true
+      }
+    },
+    {
+      "id": "truth.loan_falsification",
+      "meaning": "Hanh knowingly reenters Binh's paid loan without advancing new cash.",
+      "minimumDay": 1,
+      "owner": "server",
+      "worldTruth": true,
+      "epistemicStatus": "corroborated",
+      "clueTags": [],
+      "disclosure": "never_prompt",
+      "revealConditions": {
+        "serverPrivate": true
+      }
+    },
+    {
+      "id": "truth.identity_day6",
+      "meaning": "The victim is Binh; family identification is confirmed on Day6 afternoon.",
+      "minimumDay": 6,
+      "owner": "server",
+      "worldTruth": true,
+      "epistemicStatus": "corroborated",
+      "clueTags": [],
+      "disclosure": "never_prompt",
+      "revealConditions": {
+        "serverPrivate": true
+      }
+    }
+  ],
+  "priceTable": {
+    "version": "vn-assets-v1",
+    "currency": "VND",
+    "items": [
+      {
+        "itemId": "bill_1000",
+        "displayName": "P1000 Bill",
+        "unitPriceVnd": 1000000,
+        "assetPath": "res://story/itemdata/Cashier/P1000_ItemData.tres"
+      },
+      {
+        "itemId": "bill_100",
+        "displayName": "P100 Bill",
+        "unitPriceVnd": 100000,
+        "assetPath": "res://story/itemdata/Cashier/P100_ItemData.tres"
+      },
+      {
+        "itemId": "coin_10",
+        "displayName": "P10 Coin",
+        "unitPriceVnd": 10000,
+        "assetPath": "res://story/itemdata/Cashier/P10_ItemData.tres"
+      },
+      {
+        "itemId": "coin_1",
+        "displayName": "P1 Coin",
+        "unitPriceVnd": 1000,
+        "assetPath": "res://story/itemdata/Cashier/P1_ItemData.tres"
+      },
+      {
+        "itemId": "bill_500",
+        "displayName": "P500 Bill",
+        "unitPriceVnd": 500000,
+        "assetPath": "res://story/itemdata/Cashier/P500_ItemData.tres"
+      },
+      {
+        "itemId": "bill_50",
+        "displayName": "P50 Bill",
+        "unitPriceVnd": 50000,
+        "assetPath": "res://story/itemdata/Cashier/P50_ItemData.tres"
+      },
+      {
+        "itemId": "coin_5",
+        "displayName": "P5 Coin",
+        "unitPriceVnd": 5000,
+        "assetPath": "res://story/itemdata/Cashier/P5_ItemData.tres"
+      },
+      {
+        "itemId": "candy_mentos",
+        "displayName": "Mint Candy",
+        "unitPriceVnd": 1000,
+        "assetPath": "res://story/itemdata/Products/Front/Mentos_itemdata.tres"
+      },
+      {
+        "itemId": "single_napkin",
+        "displayName": "An Tam Sanitary Pad",
+        "unitPriceVnd": 7000,
+        "assetPath": "res://story/itemdata/Products/Front/Napkin_itemdata.tres"
+      },
+      {
+        "itemId": "single_cigarette",
+        "displayName": "Single Cigarette",
+        "unitPriceVnd": 8000,
+        "assetPath": "res://story/itemdata/Products/Front/SoloCigarette_itemdata.tres"
+      },
+      {
+        "itemId": "canned_cornedbeef",
+        "displayName": "Canned Meat",
+        "unitPriceVnd": 40000,
+        "assetPath": "res://story/itemdata/Products/Left/CanCornedBeef_itemdata.tres"
+      },
+      {
+        "itemId": "canned_sardines_1",
+        "displayName": "Tinned Fish",
+        "unitPriceVnd": 35000,
+        "assetPath": "res://story/itemdata/Products/Left/CanSardines1_itemdata.tres"
+      },
+      {
+        "itemId": "canned_sardines_2",
+        "displayName": "Fish in Tomato Sauce",
+        "unitPriceVnd": 35000,
+        "assetPath": "res://story/itemdata/Products/Left/CanSardines2_itemdata.tres"
+      },
+      {
+        "itemId": "chips_nova",
+        "displayName": "Corn Snacks",
+        "unitPriceVnd": 35000,
+        "assetPath": "res://story/itemdata/Products/Left/ChipsNova_itemdata.tres"
+      },
+      {
+        "itemId": "chips_piattos_2",
+        "displayName": "Seaweed Snacks",
+        "unitPriceVnd": 30000,
+        "assetPath": "res://story/itemdata/Products/Left/ChipsPiattos2_itemdata.tres"
+      },
+      {
+        "itemId": "chips_piattos",
+        "displayName": "Shrimp Snacks",
+        "unitPriceVnd": 30000,
+        "assetPath": "res://story/itemdata/Products/Left/ChipsPiattos_itemdata.tres"
+      },
+      {
+        "itemId": "noodles_pancit_canton",
+        "displayName": "Stir-fry Noodles",
+        "unitPriceVnd": 12000,
+        "assetPath": "res://story/itemdata/Products/Left/Noodles_PancitCanton_itemdata.tres"
+      },
+      {
+        "itemId": "noodles_soup",
+        "displayName": "Soup Noodles",
+        "unitPriceVnd": 9000,
+        "assetPath": "res://story/itemdata/Products/Left/Noodles_Soup_itemdata.tres"
+      },
+      {
+        "itemId": "biscuit_rebisco_brown",
+        "displayName": "Salted Crackers",
+        "unitPriceVnd": 12000,
+        "assetPath": "res://story/itemdata/Products/Left/RebiscoBrown_itemdata.tres"
+      },
+      {
+        "itemId": "biscuit_rebisco_cream",
+        "displayName": "Cream Biscuits",
+        "unitPriceVnd": 12000,
+        "assetPath": "res://story/itemdata/Products/Left/RebiscoCream_itemdata.tres"
+      },
+      {
+        "itemId": "biscuit_rebisco_strawberry",
+        "displayName": "Strawberry Biscuits",
+        "unitPriceVnd": 12000,
+        "assetPath": "res://story/itemdata/Products/Left/RebiscoStrawberry_itemdata.tres"
+      },
+      {
+        "itemId": "bleach_sachet",
+        "displayName": "Laundry Detergent Sachet",
+        "unitPriceVnd": 24000,
+        "assetPath": "res://story/itemdata/Products/Ovh/BleachSachet_itemdata.tres"
+      },
+      {
+        "itemId": "coffee_strip",
+        "displayName": "Coffee Sachet",
+        "unitPriceVnd": 10000,
+        "assetPath": "res://story/itemdata/Products/Ovh/CoffeeStrip_itemdata.tres"
+      },
+      {
+        "itemId": "iced_tea_sachet",
+        "displayName": "Lemon Tea Sachet",
+        "unitPriceVnd": 23000,
+        "assetPath": "res://story/itemdata/Products/Ovh/IcedTea_itemdata.tres"
+      },
+      {
+        "itemId": "milo_sachet",
+        "displayName": "Cocoa Sachet",
+        "unitPriceVnd": 15000,
+        "assetPath": "res://story/itemdata/Products/Ovh/MiloSachet_itemdata.tres"
+      },
+      {
+        "itemId": "shampoo_sachet",
+        "displayName": "Shampoo Sachet",
+        "unitPriceVnd": 25000,
+        "assetPath": "res://story/itemdata/Products/Ovh/Shampoo_itemdata.tres"
+      },
+      {
+        "itemId": "beer",
+        "displayName": "Beer",
+        "unitPriceVnd": 130000,
+        "assetPath": "res://story/itemdata/Products/Ref/Beer_itemdata.tres"
+      },
+      {
+        "itemId": "egg",
+        "displayName": "Egg",
+        "unitPriceVnd": 10000,
+        "assetPath": "res://story/itemdata/Products/Ref/Egg_itemdata.tres"
+      },
+      {
+        "itemId": "glass_coke",
+        "displayName": "Cola",
+        "unitPriceVnd": 18000,
+        "assetPath": "res://story/itemdata/Products/Ref/GlassCoke_itemdata.tres"
+      },
+      {
+        "itemId": "glass_royal",
+        "displayName": "Orange Soda",
+        "unitPriceVnd": 18000,
+        "assetPath": "res://story/itemdata/Products/Ref/GlassRoyal_itemdata.tres"
+      },
+      {
+        "itemId": "glass_sprite",
+        "displayName": "Lemon Soda",
+        "unitPriceVnd": 18000,
+        "assetPath": "res://story/itemdata/Products/Ref/GlassSprite_itemdata.tres"
+      },
+      {
+        "itemId": "ice",
+        "displayName": "Bag of Ice",
+        "unitPriceVnd": 5000,
+        "assetPath": "res://story/itemdata/Products/Ref/Ice_itemdata.tres"
+      },
+      {
+        "itemId": "test_beer",
+        "displayName": "Test Beer",
+        "unitPriceVnd": 10000,
+        "assetPath": "res://story/itemdata/TestBeer_itemdata.tres"
+      },
+      {
+        "itemId": "bottled_water",
+        "displayName": "Bottled Water",
+        "unitPriceVnd": 20000,
+        "assetPath": "res://story/itemdata/Products/Ref/BottledWater_itemdata.tres",
+        "priceSource": "Inherited ItemData.gd item_cost default (20000); asset has no override."
+      }
+    ],
+    "denominationsVnd": [
+      1000,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      500000,
+      1000000
+    ],
+    "authority": "P16 must validate orders and payments server-side; never infer an actual tender from wealth_factor."
+  }
+}

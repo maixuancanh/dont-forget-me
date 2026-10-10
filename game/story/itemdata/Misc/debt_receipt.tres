@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://scripts/Items/ItemData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = "debt_receipt"
+item_name = "Debt receipt paper"
+item_cost = 0
+item_stackable = false

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ceka3gco0oriu"]
+
+[ext_resource type="Texture2D" uid="uid://bcgbp60d45jpf" path="res://assets/art/products/hanging_head_shoulders_single.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://8pbggj6g46wl" path="res://assets/audio/gameplay/interaction/ui_sfx/sachet_bg.wav" id="2"]
+[ext_resource type="Script" uid="uid://byyl23x4b78s2" path="res://scripts/Items/ItemData.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+item_id = "shampoo_sachet"
+item_name = "Shampoo Sachet"
+item_cost = 25000
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"

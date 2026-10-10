@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ubteukinrjfb"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://bk2ngnwlmtrbr" path="res://assets/art/3rd-party/Beers/Red Ale.png" id="3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_il4jt"]
+radius = 72.06247
+
+[node name="TestBeer_Dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+shape = SubResource("CircleShape2D_il4jt")

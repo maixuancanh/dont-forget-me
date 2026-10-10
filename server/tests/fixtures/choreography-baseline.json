@@ -1,0 +1,2165 @@
+{
+  "schemaVersion": 2,
+  "scenes": {
+    "Day1_1_Junjun": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] One [b]coffee sachet[/b], please. The red strip above you. Another early shift."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Still working on the house repairs?",
+          "You look tired, Binh."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] Hanh says I still owe a million. I paid her last Friday. She kept the receipt to update her book."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "choice",
+        "response_choices": [
+          "Ask her to write you another receipt."
+        ]
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] Just charge me for the coffee today. I am going back for that receipt."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 11,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "coffee_strip": 1
+        }
+      },
+      {
+        "stepIndex": 12,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 14,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] You see everyone who comes through this alley. If she asks, remember I was here."
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day1_2_Lucia": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]Two soup noodle packets[/b] and [b]one tin of canned meat[/b], please."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "He bought his coffee.",
+          "He mentioned a receipt."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Binh was here, was he? He gets confused about money. Always has."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I keep the neighborhood debt book. Without it, people would forget what they owe."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "choice",
+        "response_choices": [
+          "Then you can check it together.",
+          "A receipt should settle it."
+        ]
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Of course. I only want the figures to be right. It is a lot of responsibility."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. If Binh leaves any paper with you, send him to me."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day1_3_Axel": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] Can I have [b]ten mint candies[/b]? From the blue jar!"
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Ten is a lot, Bao.",
+          "Are you sharing them?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] Five for me. Five for Binh. He fixed the wheel on my bicycle."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] He said to count them twice. [b]Ten[/b], not nine. He always notices."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 9,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "candy_mentos": 10
+        }
+      },
+      {
+        "stepIndex": 10,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] Thanks! I will leave his five by his door if he is still out."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day1_4_Layla": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] [b]One bottle of beer[/b], please. I have just finished closing the sewing shop."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Did you see Binh on your way?",
+          "Was someone arguing outside?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] Binh was outside Hanh's gate earlier. He had a little folded slip in his hand."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "choice",
+        "response_choices": [
+          "A receipt?"
+        ]
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] He kept saying the same thing: \"Read the date.\" She would not let him finish."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "choice",
+        "response_choices": [
+          "Keep your door locked tonight, Lan."
+        ]
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "beer": 1
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] I should go. You can hear every word through those metal gates."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day2_1_Junjun": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] One [b]coffee sachet[/b]. Same as yesterday."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Did Hanh find your payment?",
+          "Did you get the receipt?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] I found my copy. Friday, one million, paid in full. Her signature is still there."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "choice",
+        "response_choices": [
+          "Keep your copy somewhere safe."
+        ]
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 9,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "coffee_strip": 1
+        }
+      },
+      {
+        "stepIndex": 10,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] I will show it to her tonight. Keep yesterday in your head, all right? People change their stories."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day2_2_Malu": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] [b]Three bags of ice[/b], please. My drinks are warm already."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Busy at the drinks stall, Thu?",
+          "How is business today?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] Good morning for sales. Bad morning for gossip. Hanh told everyone Binh had not paid her."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "choice",
+        "response_choices": [
+          "Keep your receipts, Thu."
+        ]
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] I paid her too. Now I am wondering whether I should ask to see my line in that book."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 11,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "ice": 3
+        }
+      },
+      {
+        "stepIndex": 12,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 14,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] Thanks. Three bags should get me through the afternoon."
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day2_3_Axel": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] [b]Two stir-fry noodle packets[/b], please. Mum is working late."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Two packets. Give me a moment.",
+          "The stir-fry ones, coming up."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 5,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "noodles_pancit_canton": 2
+        }
+      },
+      {
+        "stepIndex": 6,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] Binh did not take the candies. They are still by his door. Maybe he forgot."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day2_4_Mario": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] [b]One cola[/b] and [b]one tin of fish[/b], please. My son Duy is helping me at the workshop."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "How is Duy settling in?",
+          "Working together again, Sau?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 5,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "glass_coke": 1,
+          "canned_sardines_1": 1
+        }
+      },
+      {
+        "stepIndex": 6,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] If Duy seems quiet, give him time. He listens longer than most people."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day3_1_Junjun": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] Just [b]one coffee sachet[/b]. I have not slept."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "What happened to your receipt?",
+          "You do not look well, Binh."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] She changed the date in her book. My receipt says Friday. Her page says I borrowed it again on Saturday."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 7,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "coffee_strip": 1
+        }
+      },
+      {
+        "stepIndex": 8,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Binh:[/b][/color] I am taking the receipt to her now. If I do not come back, do not let her say I left owing money."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day3_2_Layla": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] [b]One sanitary pad[/b], please. From the purple An Tam pack."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "One pad. Is something wrong, Lan?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 5,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "single_napkin": 1
+        }
+      },
+      {
+        "stepIndex": 6,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] I heard Hanh lift her gate last night during their earlier dispute. Then a man said, \"You cannot cross me out.\" I thought it was Binh. I saw him walking past my shop alive this morning."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day3_3_Lucia": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Has Binh been in? He looked exhausted when I saw him."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "He said your dates did not match.",
+          "He was looking for you."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] He has been worrying over a bit of paper. He ought to get some rest."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I asked him to come over. We will sort out the book this evening."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I need [b]two beers[/b], [b]three orange sodas[/b] and [b]two tins of canned meat[/b]."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "choice",
+        "response_choices": [
+          "Is Binh coming to dinner?",
+          "Are these for the meeting?"
+        ]
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Just neighbors coming round. It is easier to settle these things over a meal."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 14,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 15,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        }
+      },
+      {
+        "stepIndex": 16,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 18,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. No need to mention our conversation to anyone."
+      },
+      {
+        "stepIndex": 19,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day3_4_Axel": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] [b]Ten mint candies[/b], please. Like last time."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Did you see Binh today?",
+          "Has Binh come home?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] Binh was sitting by the drain this morning, before he went to Hanh. He waved and told me he was waiting to speak to her."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] I will get him [b]ten[/b] this time. Maybe he did not like sharing."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "pay",
+        "wealth_factor": 0,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 9,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "candy_mentos": 10
+        }
+      },
+      {
+        "stepIndex": 10,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Bao:[/b][/color] If he comes here, tell him I remembered his five from yesterday."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day4_1_Layla": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] [b]Two tins of canned meat[/b], please. I do not want to go out again tonight."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Did something happen outside?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 5,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "canned_cornedbeef": 2
+        }
+      },
+      {
+        "stepIndex": 6,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Lan:[/b][/color] Hanh was washing the tiles outside her gate before sunrise. She stopped when she saw me."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day4_2_Rayder": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] [b]Two bottles of water[/b], please. I have been delivering parcels since dawn."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Two bottles. Long morning?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] The woman behind the green gate sent me away. Hanh, I think. Said she had never ordered anything."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] The parcel had Binh's name on it. He used her address for deliveries."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "choice",
+        "response_choices": [
+          "Do not leave his parcel with someone else."
+        ]
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Right. I will keep it at the depot until someone can collect it."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "bottled_water": 2
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Thanks. I hope he turns up. It is only a box of work gloves."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day4_3_Malu": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] [b]One beer[/b], please. I closed the stall early."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Why did you close early, Thu?",
+          "Was the street blocked?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] Nobody wanted a drink once the police arrived."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] They found someone in the drainage channel beyond the alley. They put up a sheet before I could see."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 9,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "beer": 1
+        }
+      },
+      {
+        "stepIndex": 10,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Thu:[/b][/color] I keep thinking about Binh asking for his receipt. I wish I had listened."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day4_4_Mario": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] [b]Two beers[/b], please. One for me, one for my brother."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Is Duy all right?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] Duy was helping me unload after dark. He heard a heavy scrape by Hanh's gate. Now he will not talk about it."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 7,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "beer": 2
+        }
+      },
+      {
+        "stepIndex": 8,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] If he comes in, let him speak when he is ready. Do not push him."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day5_1_Rayder": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] [b]One lemon soda[/b], please. The green bottle."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Did anyone collect the gloves?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] I took the parcel back. Hanh came to the depot asking for it before we opened."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Then an officer asked whether anyone had tried to collect Binh's things."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "choice",
+        "response_choices": [
+          "Which officer?",
+          "Did you tell him about Hanh?"
+        ]
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Officer Phuc. I gave him the delivery times. Those are written down, at least."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "glass_sprite": 1
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Keep your records. That was what he told me."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day5_2_Jomar": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I am Officer Phuc. I am asking about the man found beyond this alley."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Binh came here for coffee three mornings running.",
+          "Binh said his receipt and Hanh's book did not match."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "control_bgm",
+        "action": "suppress_ambient"
+      },
+      {
+        "stepIndex": 5,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] We have not confirmed his identity. I need times, names, things you actually saw."
+      },
+      {
+        "stepIndex": 6,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 7,
+        "type": "choice",
+        "response_choices": [
+          "Please check on Binh.",
+          "His neighbors have not seen him since."
+        ]
+      },
+      {
+        "stepIndex": 8,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 9,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Thank you. May I buy [b]one bottle of water[/b] while I am here?"
+      },
+      {
+        "stepIndex": 10,
+        "type": "control_bgm",
+        "action": "unsuppress_ambient"
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "bottled_water": 1
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I will come back tomorrow. If someone asks you to destroy a receipt or change a date, keep it."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day5_3_Lucia": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]Three soup noodle packets[/b]. I need something quick."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Officer Phuc was here about the body.",
+          "The police still need to identify him."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] The man by the drain? He was carrying a coffee sachet. It could have been anyone."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "choice",
+        "response_choices": [
+          "Who told you about the coffee?"
+        ]
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I heard it from someone. People are talking everywhere."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You should ask Sau's son. Duy was out there after dark. I saw him."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 13,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "noodles_soup": 3
+        }
+      },
+      {
+        "stepIndex": 14,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 16,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. Do not repeat every rumor you hear."
+      },
+      {
+        "stepIndex": 17,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day5_4_Carlo": [
+      {
+        "stepIndex": 0,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+        "volume_db": -5
+      },
+      {
+        "stepIndex": 1,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/heartbeat.mp3",
+        "loop": true,
+        "volume_db": -0.25
+      },
+      {
+        "stepIndex": 2,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+        "volume_db": 1
+      },
+      {
+        "stepIndex": 3,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] Is Hanh still here?"
+      },
+      {
+        "stepIndex": 4,
+        "type": "wait",
+        "waitMs": 3500
+      },
+      {
+        "stepIndex": 5,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] [b]One bag of corn snacks[/b], please. I just need a minute."
+      },
+      {
+        "stepIndex": 6,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 7,
+        "type": "choice",
+        "response_choices": [
+          "She has gone. You can wait here."
+        ]
+      },
+      {
+        "stepIndex": 8,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 9,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 10,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "chips_nova": 1
+        }
+      },
+      {
+        "stepIndex": 11,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 12,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 13,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] I heard Binh at her gate. Please do not tell her I said that."
+      },
+      {
+        "stepIndex": 14,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day6_1_Carlo": [
+      {
+        "stepIndex": 0,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/bgmusic.mp3",
+        "volume": 5
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "control_bgm",
+        "action": "pause"
+      },
+      {
+        "stepIndex": 3,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] I could not sleep. I keep hearing it."
+      },
+      {
+        "stepIndex": 4,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 5,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+        "volume_db": -4
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] [b]One bag of corn snacks[/b]. The same one."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "choice",
+        "response_choices": [
+          "You are safe at the counter, Duy."
+        ]
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+        "volume_db": -5
+      },
+      {
+        "stepIndex": 11,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] [b]I DID NOT TOUCH HIM![/b] I only heard the scrape. Then she told me to go home."
+      },
+      {
+        "stepIndex": 12,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 13,
+        "type": "pay",
+        "wealth_factor": 0.5,
+        "purchase": 0
+      },
+      {
+        "stepIndex": 14,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "chips_nova": 1
+        }
+      },
+      {
+        "stepIndex": 15,
+        "type": "require_change"
+      },
+      {
+        "stepIndex": 16,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 17,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Duy:[/b][/color] I will tell Officer Phuc. I just needed to say it to someone first."
+      },
+      {
+        "stepIndex": 18,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 19,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/bgmusic.mp3",
+        "volume": 5
+      }
+    ],
+    "Day6_2_Mario": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] Duy is my son. He was unloading with me that night. He could not have hurt Binh."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Hanh tried to blame him.",
+          "He told me what he heard."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] He heard an argument, then something being dragged. He has been afraid Hanh would come for him too."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 500
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Sau:[/b][/color] I am taking him to Phuc now. Thank you for letting him finish."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 1000
+      }
+    ],
+    "Day6_3_Jomar": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I have news about Binh. May I step out of the rain for a moment?"
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "Come under the roof. Take a coffee sachet.",
+          "I will get you a coffee sachet."
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "id": 0,
+        "type": "require_items",
+        "required_items": {
+          "coffee_strip": 1
+        }
+      },
+      {
+        "stepIndex": 4,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 5,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+        "volume_db": -10
+      },
+      {
+        "stepIndex": 6,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Thank you for the coffee. We have identified the man in the drainage channel."
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 8,
+        "type": "choice",
+        "response_choices": [
+          "Was it him?"
+        ]
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Binh. His family confirmed it this afternoon."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] We found a wet payment slip in his pocket. The date is readable. The signature is not."
+      },
+      {
+        "stepIndex": 13,
+        "type": "wait",
+        "waitMs": 4000
+      },
+      {
+        "stepIndex": 14,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I will be at the end of the alley. Keep anything that could tell us who he went to see."
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 2000
+      }
+    ],
+    "Day6_4_Lucia": [
+      {
+        "stepIndex": 0,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I need you to hold something for me. Just until morning."
+      },
+      {
+        "stepIndex": 1,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 2,
+        "type": "choice",
+        "response_choices": [
+          "What are you carrying, Hanh?",
+          "Why come after closing?"
+        ]
+      },
+      {
+        "stepIndex": 3,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 4,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] This slip goes with my debt book. I will leave the book here too. Keep them behind the counter."
+      },
+      {
+        "stepIndex": 5,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 6,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 7,
+        "type": "choice",
+        "response_choices": [
+          "Why not give it to Officer Phuc?"
+        ]
+      },
+      {
+        "stepIndex": 8,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 9,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] The police are searching houses. Loose pages get lost when strangers handle them."
+      },
+      {
+        "stepIndex": 10,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 11,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Everything I have collected is in that book. People trust you. It will be safe here."
+      },
+      {
+        "stepIndex": 12,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 13,
+        "type": "choice",
+        "response_choices": [
+          "Leave it on the counter."
+        ]
+      },
+      {
+        "stepIndex": 14,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 15,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Do not open it. If anyone asks, you never saw me tonight."
+      },
+      {
+        "stepIndex": 16,
+        "type": "wait",
+        "waitMs": 2000
+      },
+      {
+        "stepIndex": 17,
+        "type": "place_items",
+        "items_to_place": [
+          "res://scenes/prefabs/Items/Misc/Paluwagan_dropped.tscn"
+        ]
+      }
+    ],
+    "Ending": [
+      {
+        "stepIndex": 0,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+        "volume_db": -5
+      },
+      {
+        "stepIndex": 1,
+        "type": "control_bgm",
+        "action": "play",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/scary_violins.ogg",
+        "volume_db": 5
+      },
+      {
+        "stepIndex": 2,
+        "type": "wait",
+        "waitMs": 3500
+      },
+      {
+        "stepIndex": 3,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You opened it."
+      },
+      {
+        "stepIndex": 4,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 5,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] That line is private. Close the book."
+      },
+      {
+        "stepIndex": 6,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/heartbeat.mp3",
+        "loop": true,
+        "volume_db": -0.25,
+        "id": "heartbeat"
+      },
+      {
+        "stepIndex": 7,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 8,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Binh paid on Friday. I know what the receipt says."
+      },
+      {
+        "stepIndex": 9,
+        "type": "wait",
+        "waitMs": 4000
+      },
+      {
+        "stepIndex": 10,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I entered the loan again. I needed the money. He came back and would not leave without the book."
+      },
+      {
+        "stepIndex": 11,
+        "type": "wait",
+        "waitMs": 4000
+      },
+      {
+        "stepIndex": 12,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I pushed him. He hit the step. He was still breathing when I shut the gate."
+      },
+      {
+        "stepIndex": 13,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+        "volume_db": -4
+      },
+      {
+        "stepIndex": 14,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Open up. We can fix the figures together."
+      },
+      {
+        "stepIndex": 15,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 16,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+        "volume_db": -4
+      },
+      {
+        "stepIndex": 17,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]GIVE ME THE BOOK.[/b]"
+      },
+      {
+        "stepIndex": 18,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 19,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You sell a little on credit every day. You know how easy it is to change one line."
+      },
+      {
+        "stepIndex": 20,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 21,
+        "type": "play_sfx",
+        "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+        "volume_db": -4
+      },
+      {
+        "stepIndex": 22,
+        "type": "wait",
+        "waitMs": 3000
+      },
+      {
+        "stepIndex": 23,
+        "type": "say",
+        "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Step away from the gate, Hanh. Keep the book where I can see it."
+      },
+      {
+        "stepIndex": 24,
+        "type": "wait",
+        "waitMs": 5000
+      },
+      {
+        "stepIndex": 25,
+        "type": "choice",
+        "response_choices": [
+          "Officer, take the book. Binh paid.",
+          "His name stays in the book. Take it as evidence."
+        ]
+      }
+    ]
+  }
+}

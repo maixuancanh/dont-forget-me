@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cplmdhewmrtma"]
+
+[ext_resource type="PackedScene" uid="uid://brlxb4vnlyikf" path="res://scenes/prefabs/NPCs/character_template.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://c5jvgdbh8f8sf" path="res://assets/art/characters/axel.png" id="2"]
+
+[node name="CharacterTemplate" unique_id=2097212404 instance=ExtResource("1")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=52607391]
+position = Vector2(0, -357)
+texture = ExtResource("2")

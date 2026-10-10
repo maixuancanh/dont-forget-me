@@ -1,0 +1,97 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Has Binh been in? He looked exhausted when I saw him."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "He said your dates did not match.",
+        "He was looking for you."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] He has been worrying over a bit of paper. He ought to get some rest."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I asked him to come over. We will sort out the book this evening."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I need [b]two beers[/b], [b]three orange sodas[/b] and [b]two tins of canned meat[/b]."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Is Binh coming to dinner?",
+        "Are these for the meeting?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Just neighbors coming round. It is easier to settle these things over a meal."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "beer": 2,
+        "glass_royal": 3,
+        "canned_cornedbeef": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. No need to mention our conversation to anyone."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

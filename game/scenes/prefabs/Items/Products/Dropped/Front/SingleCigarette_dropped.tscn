@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d062kt8dqb3qq"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://b45p5vhby600s" path="res://story/itemdata/Products/Front/SoloCigarette_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://chsp2bd7a2rey" path="res://assets/art/products/cigarette.png" id="3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q8hrr"]
+radius = 9.027298
+height = 180.03606
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8hrr"]
+size = Vector2(68, 242)
+
+[node name="SingleCigarette_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(4, 0)
+rotation = -0.031875163
+shape = SubResource("CapsuleShape2D_q8hrr")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+shape = SubResource("RectangleShape2D_q8hrr")

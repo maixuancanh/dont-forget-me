@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "minimumDay": 6,
+  "resolved": {
+    "id": "resolved",
+    "requiredTags": [
+      "debt_paid",
+      "duplicate_debt",
+      "incident_witness",
+      "corroboration",
+      "identity"
+    ],
+    "minimumIndependentSpeakers": 3,
+    "requireSharedWith": "phuc",
+    "excludeTags": [
+      "confession"
+    ],
+    "description": "Phuc secures the ledger and intervenes because the paid-and-reentered debt is linked to independently sourced gate testimony and confirmed identification."
+  },
+  "unresolved": {
+    "id": "unresolved",
+    "description": "Insufficient independent evidence; preserve all records and allow further investigation.",
+    "allowContinue": true
+  },
+  "pending": {
+    "id": "pending",
+    "description": "Network or verification failure; retry without treating uncertainty as an ending.",
+    "allowRetry": true
+  },
+  "privacy": "Return missing categories only, never hidden future quotes or the full solution.",
+  "confessionPolicy": {
+    "automatic": false,
+    "notRequiredForResolution": true,
+    "excludedAsIndependentEvidence": true
+  }
+}

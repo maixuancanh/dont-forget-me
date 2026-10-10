@@ -1,0 +1,21 @@
+import { describe,it,expect } from 'vitest';
+import { Transaction } from '@mysten/sui/transactions';
+import { validateSecurityDeleteTransaction, SecurityDeleteService } from '../src/memory/security-delete.js';
+import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
+import type { PostgresRepository } from '../src/persistence/repository.js';
+import { toBase64, normalizeSuiAddress } from '@mysten/sui/utils';
+const address=normalizeSuiAddress('0x1'), sponsor=normalizeSuiAddress('0x2'), blob=normalizeSuiAddress('0x3'),system=normalizeSuiAddress('0x4'),pkg=normalizeSuiAddress('0x5');
+async function bytes(extra=false){const tx=new Transaction();tx.setSender(address);tx.setGasOwner(sponsor);tx.setGasBudget(1000);tx.setGasPrice(1);tx.setGasPayment([{objectId:normalizeSuiAddress('0x9'),version:'1',digest:'11111111111111111111111111111111'}]);const storage=tx.moveCall({target:`${pkg}::system::delete_blob`,arguments:[tx.sharedObjectRef({objectId:system,initialSharedVersion:'1',mutable:true}),tx.objectRef({objectId:blob,version:'1',digest:'11111111111111111111111111111111'})]});tx.transferObjects([storage],address);if(extra)tx.transferObjects([tx.gas],address);return toBase64(await tx.build());}
+describe('hosted security deletion transaction boundary',()=>{
+ it('accepts exactly the scoped sponsored delete calls',async()=>{const awaited=await bytes();expect(()=>validateSecurityDeleteTransaction(awaited,address,[blob],`${pkg}::system::delete_blob`,system)).not.toThrow();});
+ it('rejects an extra command',async()=>{const tx=await bytes(true);expect(()=>validateSecurityDeleteTransaction(tx,address,[blob],`${pkg}::system::delete_blob`,system)).toThrow();});
+ it('rejects a different owner, expanded scope and wrong Move target',async()=>{const tx=await bytes();expect(()=>validateSecurityDeleteTransaction(tx,sponsor,[blob],`${pkg}::system::delete_blob`,system)).toThrow();expect(()=>validateSecurityDeleteTransaction(tx,address,[blob,system],`${pkg}::system::delete_blob`,system)).toThrow();expect(()=>validateSecurityDeleteTransaction(tx,address,[blob],`${pkg}::system::other`,system)).toThrow();});
+});
+describe('owner authentication boundary',()=>{
+ function fixture(){const key=new Ed25519Keypair();let calls=0;const repo={getRun:async()=>({})} as unknown as PostgresRepository;const service=new SecurityDeleteService(repo,{baseUrl:'https://invalid.example',deleteTarget:'',systemObjectId:system,inspect:async()=>{throw Error();},verify:async()=>{throw Error();},fetch:async(_url,init)=>{calls++;const body=JSON.parse(String(init?.body));return new Response(JSON.stringify(body.address&&body.challengeId?{token:'SERVER_ONLY_TOKEN'}:{challengeId:'c',challenge:'exact challenge bytes',expiresInSecs:30}),{status:200});}});return {service,key,calls:()=>calls};}
+ it('binds a single-use challenge to the authenticated application user and run',async()=>{const {service,key,calls}=fixture();const c=await service.challenge('alice','run',key.toSuiAddress());const signed=await key.signPersonalMessage(new TextEncoder().encode(c.message));await expect(service.authenticate('mallory','run',c.challengeId,signed.signature)).rejects.toThrow('DELETE_CHALLENGE_UNAVAILABLE');expect(calls()).toBe(1);await expect(service.authenticate('alice','run',c.challengeId,signed.signature)).rejects.toThrow('DELETE_CHALLENGE_UNAVAILABLE');});
+ it('verifies wallet signature locally and never returns bearer tokens',async()=>{const {service,key}=fixture();const c=await service.challenge('alice','run',key.toSuiAddress());const signed=await key.signPersonalMessage(new TextEncoder().encode(c.message));const result=await service.authenticate('alice','run',c.challengeId,signed.signature);expect(result).toEqual({address:key.toSuiAddress(),authenticated:true});expect(JSON.stringify(result)).not.toContain('SERVER_ONLY_TOKEN');await expect(service.authenticate('alice','run',c.challengeId,signed.signature)).rejects.toThrow();});
+ it('rejects a signature by another wallet before exchanging the challenge',async()=>{const {service,key,calls}=fixture();const c=await service.challenge('alice','run',key.toSuiAddress());const signed=await new Ed25519Keypair().signPersonalMessage(new TextEncoder().encode(c.message));await expect(service.authenticate('alice','run',c.challengeId,signed.signature)).rejects.toThrow();expect(calls()).toBe(1);});
+});
+
+

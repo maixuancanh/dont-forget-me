@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://s3jivfmjmy0o"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://n26k405dwm4r" path="res://story/itemdata/Products/Left/RebiscoBrown_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://d281aw520j2cc" path="res://assets/art/products/biscuit_rebisco.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gcl6x"]
+size = Vector2(179, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_romg0"]
+size = Vector2(2009.9998, 1169.9999)
+
+[node name="Rebisco_Dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(2.5, -3)
+shape = SubResource("RectangleShape2D_gcl6x")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+position = Vector2(-0.49999714, -2.5000005)
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_romg0")

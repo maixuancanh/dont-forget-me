@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cmtblc5lr6ouy"]
+
+[ext_resource type="Script" uid="uid://bxckhe3lpo68j" path="res://scripts/Areas/DayCounter.gd" id="1"]
+[ext_resource type="Theme" uid="uid://ml6wo1toxn2m" path="res://assets/ui/themes/DefaultTheme.tres" id="2"]
+
+[node name="DayCounter" type="Node2D" unique_id=1972693337]
+script = ExtResource("1")
+
+[node name="CameraTarget" type="Node2D" parent="." unique_id=1216239281]
+
+[node name="Graphics" type="Node2D" parent="." unique_id=2118578540]
+
+[node name="ColorRect" type="ColorRect" parent="Graphics" unique_id=447738923]
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+theme = ExtResource("2")
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Graphics/ColorRect" unique_id=911128811]
+layout_mode = 0
+offset_left = 781.0
+offset_top = 453.0
+offset_right = 1139.0
+offset_bottom = 627.0
+theme_override_font_sizes/font_size = 127
+text = "DAY 1"

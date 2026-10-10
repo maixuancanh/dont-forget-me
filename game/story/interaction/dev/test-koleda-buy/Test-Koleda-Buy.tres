@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://cmo85kw1uo2y6"]
+
+[ext_resource type="PackedScene" uid="uid://cpxugieu53pt7" path="res://scenes/prefabs/NPCs/character_lucia.tscn" id="1"]
+[ext_resource type="Script" uid="uid://nm3a4wlg01do" path="res://scripts/NPCs/Interactions/Models/InteractionSay.gd" id="2"]
+[ext_resource type="Script" uid="uid://bev6061fh60mv" path="res://scripts/NPCs/Interactions/Models/InteractionWait.gd" id="3"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="4"]
+[ext_resource type="Script" uid="uid://bvuurjibruqfq" path="res://scripts/NPCs/Interactions/Models/InteractionRequireItems.gd" id="5"]
+[ext_resource type="Script" uid="uid://l0gu2pt7yty4" path="res://scripts/NPCs/Interactions/Models/InteractionPay.gd" id="6"]
+[ext_resource type="Script" uid="uid://bgynd4nrwvaiu" path="res://scripts/NPCs/Interactions/Models/InteractionRequireChange.gd" id="7"]
+[ext_resource type="Script" uid="uid://b3lhyrtwitj7o" path="res://scripts/NPCs/Interactions/Models/DialogueSequence.gd" id="8"]
+
+[sub_resource type="Resource" id="Resource_f8j6c"]
+script = ExtResource("2")
+sentence = "Ayo!"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_ovtxy"]
+script = ExtResource("3")
+waitMs = 1000
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_kleoc"]
+script = ExtResource("2")
+sentence = "Naay duha ka red horse?"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_45r52"]
+script = ExtResource("3")
+waitMs = 1000
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_65di4"]
+script = ExtResource("5")
+required_items = {
+ExtResource("4"): 2
+}
+metadata/_custom_type_script = "uid://bvuurjibruqfq"
+
+[sub_resource type="Resource" id="Resource_i0j5j"]
+script = ExtResource("6")
+purchase_to_pay = SubResource("Resource_65di4")
+metadata/_custom_type_script = "uid://l0gu2pt7yty4"
+
+[sub_resource type="Resource" id="Resource_ku760"]
+script = ExtResource("3")
+waitMs = 1000
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_i1h2j"]
+script = ExtResource("7")
+metadata/_custom_type_script = "uid://bgynd4nrwvaiu"
+
+[sub_resource type="Resource" id="Resource_dh3vl"]
+script = ExtResource("3")
+waitMs = 1000
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_sjicx"]
+script = ExtResource("2")
+sentence = "Salamat!"
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_00wlo"]
+script = ExtResource("3")
+waitMs = 1000
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[resource]
+script = ExtResource("8")
+character_name = "lucia"
+character_template = ExtResource("1")
+interactions = [SubResource("Resource_f8j6c"), SubResource("Resource_ovtxy"), SubResource("Resource_kleoc"), SubResource("Resource_45r52"), SubResource("Resource_i0j5j"), SubResource("Resource_ku760"), SubResource("Resource_65di4"), SubResource("Resource_i1h2j"), SubResource("Resource_dh3vl"), SubResource("Resource_sjicx"), SubResource("Resource_00wlo")]
+metadata/_custom_type_script = "uid://b3lhyrtwitj7o"

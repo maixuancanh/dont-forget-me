@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://db8o3vp6rek24"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://nkp33lwiebpe" path="res://story/itemdata/Products/Left/ChipsNova_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://cj5do20gf7he0" path="res://assets/art/products/pantry_junkfood_nova.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wboo"]
+size = Vector2(201, 364)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8hrr"]
+size = Vector2(302, 402)
+
+[node name="ChipsNova_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(3.5, 0)
+shape = SubResource("RectangleShape2D_6wboo")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+shape = SubResource("RectangleShape2D_q8hrr")

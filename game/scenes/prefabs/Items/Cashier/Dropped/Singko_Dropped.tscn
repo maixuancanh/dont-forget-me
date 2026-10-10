@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dnk1cpw1qhfb6"]
+
+[ext_resource type="PackedScene" uid="uid://ba3nrsc4x7xik" path="res://scenes/prefabs/Items/Cashier/Dropped/Piso_Dropped.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://u5tfp6puem6u" path="res://story/itemdata/Cashier/P5_ItemData.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://drj3smop8che8" path="res://assets/art/environment/peso_5.png" id="3"]
+
+[node name="Singko_Dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+texture = ExtResource("3")

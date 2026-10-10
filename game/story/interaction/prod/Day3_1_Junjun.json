@@ -1,0 +1,71 @@
+{
+  "character_name": "Binh",
+  "character_template": "res://scenes/prefabs/NPCs/character_junjun_tired.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_1_Junjun.0",
+      "legacy_event_id": "Day3_1_Junjun:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_1_Junjun.2",
+      "legacy_event_id": "Day3_1_Junjun:2",
+      "input_labels": [
+        "What happened to your receipt?",
+        "You do not look well, Binh."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_1_Junjun.4",
+      "legacy_event_id": "Day3_1_Junjun:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_1_Junjun.10",
+      "legacy_event_id": "Day3_1_Junjun:10",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

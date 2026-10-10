@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DuyTrust:0",
+    "sceneId": "DuyTrust",
+    "stepIndex": 0,
+    "day": 6,
+    "speaker": "duy",
+    "quote": "Duy: I stayed beside Dad unloading the truck. The scrape came from Hanh's gate. I heard her tell me to go home, but I never went inside. You can tell Officer Phuc. Please keep my name from Hanh.",
+    "category": "claim",
+    "clueTags": [
+      "incident_witness",
+      "trusted_reveal",
+      "gate_scrape"
+    ]
+  }
+]

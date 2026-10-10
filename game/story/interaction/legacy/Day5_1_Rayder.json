@@ -1,0 +1,86 @@
+{
+  "character_name": "Tuan",
+  "character_template": "res://scenes/prefabs/NPCs/character_rayder.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] [b]One lemon soda[/b], please. The green bottle."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Did anyone collect the gloves?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] I took the parcel back. Hanh came to the depot asking for it before we opened."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Then an officer asked whether anyone had tried to collect Binh's things."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Which officer?",
+        "Did you tell him about Hanh?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Officer Phuc. I gave him the delivery times. Those are written down, at least."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "glass_sprite": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Keep your records. That was what he told me."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

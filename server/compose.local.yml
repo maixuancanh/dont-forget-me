@@ -1,0 +1,19 @@
+name: dfm-runtime-local
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: dfm_game
+      POSTGRES_USER: dfm_game
+      POSTGRES_PASSWORD: ${DFM_DATABASE_PASSWORD:?Run setup-local-database.mjs first}
+    ports:
+      - "127.0.0.1:55450:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dfm_game -d dfm_game"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    volumes:
+      - dfm-runtime-pg:/var/lib/postgresql/data
+volumes:
+  dfm-runtime-pg:

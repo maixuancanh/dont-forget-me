@@ -1,0 +1,68 @@
+{
+  "character_name": "Bao",
+  "character_template": "res://scenes/prefabs/NPCs/character_axel.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] Can I have [b]ten mint candies[/b]? From the blue jar!"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Ten is a lot, Bao.",
+        "Are you sharing them?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] Five for me. Five for Binh. He fixed the wheel on my bicycle."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] He said to count them twice. [b]Ten[/b], not nine. He always notices."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "candy_mentos": 10
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] Thanks! I will leave his five by his door if he is still out."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

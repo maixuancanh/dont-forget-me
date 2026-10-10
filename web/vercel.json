@@ -1,0 +1,17 @@
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": ".",
+  "rewrites": [
+    {"source":"/v1/:path*","destination":"https://dfm-api-production-7f63.up.railway.app/v1/:path*"},
+    {"source":"/v2/:path*","destination":"https://dfm-api-production-7f63.up.railway.app/v2/:path*"},
+    {"source":"/health","destination":"https://dfm-api-production-7f63.up.railway.app/health"},
+    {"source":"/account/:path*","destination":"https://dfm-api-production-7f63.up.railway.app/account/:path*"},
+    {"source":"/case/:path*","destination":"https://dfm-api-production-7f63.up.railway.app/case/:path*"}
+  ],
+  "headers":[
+    {"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"no-referrer"}]},
+    {"source":"/index.wasm","headers":[{"key":"Content-Type","value":"application/wasm"}]}
+  ]
+}

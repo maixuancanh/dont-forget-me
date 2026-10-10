@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Manage selected case shares</title><link rel="stylesheet" href="/case/manage.css"><script src="/case/manage.js" defer></script></head><body><main>
+<h1>Share selected case sources</h1><p>Your sources stay private until you select them, review the exact snapshot, and confirm public sharing. Anyone with the resulting link can read it until expiry or revocation. Saved copies cannot be recalled.</p>
+<p id="status" role="status">Checking account…</p><a href="/account/">Account</a>
+<section id="manager" hidden><label for="run">Saved run</label><select id="run"><option value="">Select a run</option></select>
+<h2>Choose individual sources</h2><div id="catalog"></div>
+<label class="check"><input id="private" type="checkbox"> I explicitly opt in to including selected private content.</label>
+<label for="expiry">Expires in</label><select id="expiry"><option value="3600000">1 hour</option><option value="86400000">1 day</option><option value="604740000">7 days</option></select>
+<button id="preview" type="button">Review selected snapshot</button>
+<section id="review" hidden><h2>Exact snapshot preview</h2><div id="snapshot"></div><label class="check"><input id="public" type="checkbox"> I confirm public sharing of exactly this snapshot until the displayed expiry.</label><button id="create" type="button" disabled>Create public link</button></section>
+<p id="link" role="status"></p><h2>Existing shares</h2><button id="refresh" type="button">Refresh shares</button><div id="shares"></div>
+</section></main></body></html>

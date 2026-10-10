@@ -1,0 +1,35 @@
+[
+  {
+    "id": "paid_then_reentered",
+    "minimumDay": 3,
+    "requiredTags": [
+      "debt_paid",
+      "duplicate_debt"
+    ],
+    "requireDifferentEvents": true,
+    "explanation": "A Friday paid-in-full claim and a Saturday new-loan entry need a new cash transfer to be consistent. The mismatch opens a question; it does not prove violence.",
+    "unlocksQuestion": "Was any new cash paid out on Saturday?"
+  },
+  {
+    "id": "ledger_confirms_duplicate",
+    "minimumDay": 6,
+    "requiredEventIds": [
+      "Day2_1_Junjun:4",
+      "Ledger:0"
+    ],
+    "requireDifferentEvents": true,
+    "explanation": "Binh's Friday receipt claim matches the ledger payment; the ledger records the same loan again without new cash.",
+    "unlocksQuestion": "Why was the paid loan entered again?"
+  },
+  {
+    "id": "unreleased_coffee_detail",
+    "minimumDay": 5,
+    "requiredEventIds": [
+      "Day5_2_Jomar:5",
+      "Day5_3_Lucia:4"
+    ],
+    "requireDifferentEvents": true,
+    "explanation": "Phuc had not confirmed identity, yet Hanh volunteered a coffee detail. This warrants asking how she learned it; it is not proof of guilt.",
+    "unlocksQuestion": "Who told you about the coffee sachet?"
+  }
+]

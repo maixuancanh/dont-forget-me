@@ -1,0 +1,1042 @@
+[gd_scene format=3 uid="uid://xacv2ij5tyvr"]
+
+[ext_resource type="FontFile" uid="uid://cvnixdi7irewv" path="res://assets/ui/fonts/Charcoal-Regular.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://bxjc0v722idug" path="res://assets/art/environment/calculator buttons/button_small.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dpg01sbf0h3ym" path="res://assets/art/environment/chat_bubble9slice.png" id="3"]
+[ext_resource type="FontFile" uid="uid://cojw2bfel5ovy" path="res://assets/ui/fonts/CharcoalBold-Regular.ttf" id="4"]
+[ext_resource type="Script" uid="uid://mvmen1t1k1pt" path="res://scripts/UI/DialogueManager.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://chl88mgnv138k" path="res://scenes/prefabs/UIs/speech_bubble.tscn" id="6"]
+[ext_resource type="Script" uid="uid://diueqs87710gx" path="res://scripts/UI/ResponseUIManager.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://dwbvxbr0kgh7l" path="res://scenes/prefabs/UIs/response_choice.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://ufyuos2r6c40" path="res://scenes/prefabs/UIs/paluwagan_ui.tscn" id="9"]
+[ext_resource type="Script" uid="uid://3ujt6g2xkmbv" path="res://scripts/UI/CutscenePaluwaganUI.gd" id="10"]
+[ext_resource type="Texture2D" uid="uid://csv11r1xe1pln" path="res://assets/art/environment/title ui/game_title.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://coophu0jgp8rc" path="res://assets/art/characters/lucia_smile.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://5m7kisbg8suu" path="res://assets/art/characters/carlo_sus.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cefirkxor34cb" path="res://assets/art/characters/layla.png" id="14"]
+[ext_resource type="Script" uid="uid://dh8prbay2tsxf" path="res://scripts/NPCs/Interactions/FinalCutsceneNPCInteraction.gd" id="15"]
+[ext_resource type="Resource" uid="uid://dnfbvgwf6wsce" path="res://story/itemdata/Cashier/P1_ItemData.tres" id="16"]
+[ext_resource type="PackedScene" uid="uid://ba3nrsc4x7xik" path="res://scenes/prefabs/Items/Cashier/Dropped/Piso_Dropped.tscn" id="17"]
+[ext_resource type="Resource" uid="uid://u5tfp6puem6u" path="res://story/itemdata/Cashier/P5_ItemData.tres" id="18"]
+[ext_resource type="PackedScene" uid="uid://dnk1cpw1qhfb6" path="res://scenes/prefabs/Items/Cashier/Dropped/Singko_Dropped.tscn" id="19"]
+[ext_resource type="Resource" uid="uid://brjsu3b5jx6y" path="res://story/itemdata/Cashier/P10_ItemData.tres" id="20"]
+[ext_resource type="PackedScene" uid="uid://b6annmuxjkd71" path="res://scenes/prefabs/Items/Cashier/Dropped/Dyis_Dropped.tscn" id="21"]
+[ext_resource type="Resource" uid="uid://bgt35jk74vr0h" path="res://story/itemdata/Cashier/P20_ItemData.tres" id="22"]
+[ext_resource type="PackedScene" uid="uid://d1niiqgyjew16" path="res://scenes/prefabs/Items/Cashier/Dropped/Bente_Dropped.tscn" id="23"]
+[ext_resource type="Resource" uid="uid://kocyomtavsqp" path="res://story/itemdata/Cashier/P50_ItemData.tres" id="24"]
+[ext_resource type="PackedScene" uid="uid://pbnudme1t8xl" path="res://scenes/prefabs/Items/Cashier/Dropped/P50_Dropped.tscn" id="25"]
+[ext_resource type="Resource" uid="uid://41yjnrnv2c36" path="res://story/itemdata/Cashier/P100_ItemData.tres" id="26"]
+[ext_resource type="PackedScene" uid="uid://cwri5t1yc7540" path="res://scenes/prefabs/Items/Cashier/Dropped/P100_Dropped.tscn" id="27"]
+[ext_resource type="Resource" uid="uid://ybibqnmqpwct" path="res://story/itemdata/Cashier/P500_ItemData.tres" id="28"]
+[ext_resource type="PackedScene" uid="uid://b1gvpuucolmj7" path="res://scenes/prefabs/Items/Cashier/Dropped/P500_Dropped.tscn" id="29"]
+[ext_resource type="Resource" uid="uid://df0gjqvdytpn6" path="res://story/itemdata/Cashier/P1000_ItemData.tres" id="30"]
+[ext_resource type="PackedScene" uid="uid://gnx6e367nxgg" path="res://scenes/prefabs/Items/Cashier/Dropped/P1000_Dropped.tscn" id="31"]
+[ext_resource type="PackedScene" uid="uid://ocja2y7omrxd" path="res://scenes/areas/ForwardFacing.tscn" id="32"]
+[ext_resource type="Texture2D" uid="uid://cwapjlkumq24i" path="res://assets/art/products/napkin_sisters_pack.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://cuifey7clvacj" path="res://assets/art/products/cigarette_pack.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://cbmm4rbp14s6t" path="res://assets/art/products/candy_mentos_jar.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://3g58i1fw87g7" path="res://assets/art/environment/main_scene-night.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://kp3qrw8rxkod" path="res://assets/art/environment/top_scene-night.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://brfbfoiy1rdig" path="res://assets/art/environment/main_bg-night.png" id="38"]
+[ext_resource type="PackedScene" uid="uid://bqghn4vrw4e2f" path="res://scenes/areas/OverheadArea.tscn" id="39"]
+[ext_resource type="Texture2D" uid="uid://cq0fvcywbhoc1" path="res://assets/art/products/hanging_bundle_coffee.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://bhstuk5pcci2o" path="res://assets/art/products/hanging_milo_bundle.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://bd1qyc5sc5ki5" path="res://assets/art/products/hanging_zonrox_bundle.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://cpsjiuiq5hvqp" path="res://assets/art/products/hanging_head_shoulders_bundle.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://cjefdm5s4fa8l" path="res://assets/art/products/hanging_nestea_bundle.png" id="44"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srahk"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.74978, 0.74978, 0.74977994, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f2t1u"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x4pdy"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.6131885, 0.5582878, 0.4611196, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_frjpc"]
+texture = ExtResource("3")
+texture_margin_left = 95.0
+texture_margin_top = 44.0
+texture_margin_right = 38.0
+texture_margin_bottom = 70.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 1, 210, 193)
+
+[sub_resource type="Theme" id="Theme_kuafv"]
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1")
+Button/styles/hover = SubResource("StyleBoxTexture_srahk")
+Button/styles/normal = SubResource("StyleBoxTexture_f2t1u")
+Button/styles/pressed = SubResource("StyleBoxTexture_x4pdy")
+Label/font_sizes/font_size = 64
+Label/fonts/font = ExtResource("1")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_frjpc")
+SpeechBubbleLabel/colors/font_color = Color(1, 1, 1, 1)
+SpeechBubbleRTL/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/bold_font_size = 48
+RichTextLabel/font_sizes/bold_italics_font_size = 48
+RichTextLabel/font_sizes/italics_font_size = 48
+RichTextLabel/font_sizes/mono_font_size = 48
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("4")
+RichTextLabel/fonts/bold_italics_font = ExtResource("4")
+RichTextLabel/fonts/italics_font = ExtResource("1")
+RichTextLabel/fonts/mono_font = ExtResource("1")
+RichTextLabel/fonts/normal_font = ExtResource("1")
+VBoxContainer/constants/separation = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88g1f"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1882353, 0.16078432, 0.13725491, 0.76862746)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frjpc"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_8iywi"]
+resource_name = "EndCredits"
+length = 35.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/0:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.8, 0.8), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/0:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5, 6.000001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/1_0:offset_transform_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(5, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -20)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/1_0:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5, 6, 11, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel/1_1:offset_transform_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5, 12.000002),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 20)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/1_1:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5, 6, 11, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/2_0:offset_transform_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(11, 18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 20), Vector2(0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel/2_0:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(11, 12, 17, 18),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel/2_1:offset_transform_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(11, 18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 20)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel/2_1:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(11, 12, 17, 18),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Panel/3_0:offset_transform_position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(17, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 20), Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Panel/3_0:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(17, 18, 23, 24),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Panel/3_1:offset_transform_position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(17, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -20), Vector2(0, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Panel/3_1:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(17, 18, 23, 24),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Panel/1:offset_transform_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(24, 30),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Panel/1:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(24, 25, 29, 30),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_aydie"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/0:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/0:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/1_0:offset_transform_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/1_0:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel/1_1:offset_transform_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/1_1:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/2_0:offset_transform_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 20)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel/2_0:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel/2_1:offset_transform_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel/2_1:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Panel/3_0:offset_transform_position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 20)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Panel/3_0:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Panel/3_1:offset_transform_position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -20)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Panel/3_1:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Panel/1:offset_transform_scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Panel/1:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aydie"]
+_data = {
+&"EndCredits": SubResource("Animation_8iywi"),
+&"RESET": SubResource("Animation_aydie")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc0ul"]
+size = Vector2(288, 264)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ywp2"]
+size = Vector2(176, 288)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvs8t"]
+size = Vector2(203.5, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_taa0j"]
+size = Vector2(143.47533, 1203.0076)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igiuj"]
+size = Vector2(264.9381, 1224.7074)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbhx3"]
+size = Vector2(308.72418, 1181.9453)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcu0j"]
+size = Vector2(264.9381, 1224.7074)
+
+[node name="Game" type="Node2D" unique_id=8059008]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=751750916]
+zoom = Vector2(0.6, 0.6)
+
+[node name="DialogueUI" type="Node2D" parent="." unique_id=42431897]
+
+[node name="SpeechBubbleStack" type="VBoxContainer" parent="DialogueUI" unique_id=1992951254]
+unique_name_in_owner = true
+z_index = 2
+custom_minimum_size = Vector2(1100, 400)
+custom_maximum_size = Vector2(1100, 400)
+offset_left = -285.0
+offset_top = -440.0
+offset_right = 915.0
+offset_bottom = -40.0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme = SubResource("Theme_kuafv")
+theme_override_constants/separation = 8
+alignment = 2
+script = ExtResource("5")
+speech_bubble_template = ExtResource("6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogueUI" unique_id=199716811]
+
+[node name="ResponseChoicesScreen" type="Panel" parent="DialogueUI/CanvasLayer" unique_id=87419525]
+unique_name_in_owner = true
+z_index = 10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_kuafv")
+theme_override_styles/panel = SubResource("StyleBoxFlat_88g1f")
+script = ExtResource("7")
+response_choice_template = ExtResource("8")
+
+[node name="HBoxContainer" type="HFlowContainer" parent="DialogueUI/CanvasLayer/ResponseChoicesScreen" unique_id=1807916263]
+custom_maximum_size = Vector2(1280, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -22.5
+offset_right = 128.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ResponseChoice" parent="DialogueUI/CanvasLayer/ResponseChoicesScreen/HBoxContainer" unique_id=2021157818 instance=ExtResource("8")]
+layout_mode = 2
+
+[node name="PaluwaganUI" parent="DialogueUI" unique_id=392410258 instance=ExtResource("9")]
+script = ExtResource("10")
+
+[node name="EndCredits" type="CanvasLayer" parent="DialogueUI" unique_id=431521230]
+visible = false
+
+[node name="Panel" type="Panel" parent="DialogueUI/EndCredits" unique_id=364321122]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_kuafv")
+theme_override_styles/panel = SubResource("StyleBoxFlat_frjpc")
+
+[node name="0" type="TextureRect" parent="DialogueUI/EndCredits/Panel" unique_id=1372670758]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -433.5
+offset_top = -182.5
+offset_right = 433.5
+offset_bottom = 182.5
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+texture = ExtResource("11")
+
+[node name="1_0" type="TextureRect" parent="DialogueUI/EndCredits/Panel" unique_id=1173717627]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -502.0
+offset_top = -327.0
+offset_right = -2.0
+offset_bottom = 471.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.775, 0.775)
+texture = ExtResource("12")
+
+[node name="1_1" type="Control" parent="DialogueUI/EndCredits/Panel" unique_id=409240746]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -57.0
+offset_right = -9.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+
+[node name="Label" type="Label" parent="DialogueUI/EndCredits/Panel/1_1" unique_id=271473582]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 48
+text = "Character design & Art"
+
+[node name="Label2" type="Label" parent="DialogueUI/EndCredits/Panel/1_1" unique_id=917050762]
+layout_mode = 0
+offset_top = 47.0
+offset_right = 352.0
+offset_bottom = 88.0
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 48
+text = "Faye Saulon / @krarneas"
+
+[node name="Label3" type="Label" parent="DialogueUI/EndCredits/Panel/1_1" unique_id=832438180]
+layout_mode = 0
+offset_top = 100.0
+offset_right = 391.0
+offset_bottom = 155.0
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 48
+text = "Charles Espiloy / @oreocapybara"
+
+[node name="2_1" type="TextureRect" parent="DialogueUI/EndCredits/Panel" unique_id=156758960]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 21.0
+offset_top = -327.0
+offset_right = 521.0
+offset_bottom = 471.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.775, 0.775)
+texture = ExtResource("13")
+
+[node name="2_0" type="Control" parent="DialogueUI/EndCredits/Panel" unique_id=1673453970]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -497.0
+offset_top = -168.0
+offset_right = -457.0
+offset_bottom = -128.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 20)
+
+[node name="Label" type="Label" parent="DialogueUI/EndCredits/Panel/2_0" unique_id=892463671]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 48
+text = "Programming"
+
+[node name="Label2" type="Label" parent="DialogueUI/EndCredits/Panel/2_0" unique_id=1719255508]
+layout_mode = 0
+offset_top = 47.0
+offset_right = 352.0
+offset_bottom = 88.0
+theme_override_constants/line_spacing = -15
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 48
+text = "Anthony James / @doppie
+Rex Uriel Villaflores / @yuriel1101
+Ed Ian Baguio / @ebcsr
+Alex :D / @alasdiel
+"
+
+[node name="3_0" type="Control" parent="DialogueUI/EndCredits/Panel" unique_id=2005347304]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -140.0
+offset_right = 9.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 20)
+
+[node name="Label" type="Label" parent="DialogueUI/EndCredits/Panel/3_0" unique_id=1616292631]
+layout_mode = 0
+offset_top = -27.0
+offset_right = 81.0
+offset_bottom = 26.0
+theme_override_font_sizes/font_size = 48
+text = "Audio"
+
+[node name="Label3" type="Label" parent="DialogueUI/EndCredits/Panel/3_0" unique_id=773463212]
+layout_mode = 0
+offset_top = 210.0
+offset_right = 110.0
+offset_bottom = 263.0
+theme_override_font_sizes/font_size = 48
+text = "Writing"
+
+[node name="Label2" type="Label" parent="DialogueUI/EndCredits/Panel/3_0" unique_id=1454334443]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 573.0
+offset_bottom = 208.0
+theme_override_constants/line_spacing = -10
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 48
+text = "Alex :D / @alasdiel
+Charles Espiloy / @oreocapybara
+Ed Ian Baguio / @ebcsr"
+
+[node name="Label4" type="Label" parent="DialogueUI/EndCredits/Panel/3_0" unique_id=1609848275]
+layout_mode = 0
+offset_top = 241.0
+offset_right = 433.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 48
+text = "Alex :D / @alasdiel"
+
+[node name="3_1" type="TextureRect" parent="DialogueUI/EndCredits/Panel" unique_id=1786913215]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -502.0
+offset_top = -327.0
+offset_right = -2.0
+offset_bottom = 471.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -20)
+offset_transform_scale = Vector2(0.775, 0.775)
+texture = ExtResource("14")
+
+[node name="1" type="Label" parent="DialogueUI/EndCredits/Panel" unique_id=628174695]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -26.5
+offset_right = 114.0
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+text = "VC Studios"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogueUI/EndCredits" unique_id=237892491]
+libraries/ = SubResource("AnimationLibrary_aydie")
+
+[node name="NPC Container" type="Node" parent="." unique_id=1035241772]
+script = ExtResource("15")
+ending_cutscene_file = "res://story/interaction/prod/Ending.json"
+money_denominations = {
+ExtResource("16"): ExtResource("17"),
+ExtResource("18"): ExtResource("19"),
+ExtResource("20"): ExtResource("21"),
+ExtResource("22"): ExtResource("23"),
+ExtResource("24"): ExtResource("25"),
+ExtResource("26"): ExtResource("27"),
+ExtResource("28"): ExtResource("29")
+}
+
+[node name="Areas" type="Node" parent="." unique_id=548028852]
+
+[node name="ForwardFacingArea" parent="Areas" unique_id=1956691893 node_paths=PackedStringArray("above_area") instance=ExtResource("32")]
+above_area = NodePath("../OverheadArea")
+
+[node name="Napkin_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=767655095]
+z_index = 1
+position = Vector2(619, 286)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Napkin_Dispenser" unique_id=589502100]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_xc0ul")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Napkin_Dispenser" unique_id=1015600427]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("33")
+
+[node name="Cigratte_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=256727731]
+z_index = 1
+position = Vector2(376, 276)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Cigratte_Dispenser" unique_id=1865088969]
+position = Vector2(-5, 0)
+shape = SubResource("RectangleShape2D_3ywp2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Cigratte_Dispenser" unique_id=1002433306]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("34")
+
+[node name="Mentos_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=2055219928]
+z_index = 1
+position = Vector2(797, 286)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Mentos_Dispenser" unique_id=915300996]
+position = Vector2(45, -31)
+shape = SubResource("RectangleShape2D_wvs8t")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Mentos_Dispenser" unique_id=1894301517]
+z_index = 1
+position = Vector2(46, -30)
+texture = ExtResource("35")
+
+[node name="BGs" type="Node2D" parent="Areas/ForwardFacingArea" unique_id=1101097166]
+
+[node name="Night" type="Node2D" parent="Areas/ForwardFacingArea/BGs" unique_id=1986673542]
+
+[node name="FrontFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=1160884031]
+z_index = 1
+texture = ExtResource("36")
+
+[node name="OvhFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=714008598]
+z_index = 1
+position = Vector2(0, -1080)
+texture = ExtResource("37")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=1134165610]
+z_index = -1
+texture = ExtResource("38")
+
+[node name="ColorRect" type="ColorRect" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=759934640]
+z_index = -2
+offset_left = -3688.0
+offset_top = -291.0
+offset_right = -3453.409
+offset_bottom = -138.40753
+scale = Vector2(34.89476, -9.613842)
+mouse_filter = 2
+color = Color(0.047058824, 0.05490196, 0.13333334, 1)
+
+[node name="OverheadArea" parent="Areas" unique_id=2025409447 node_paths=PackedStringArray("below_area") instance=ExtResource("39")]
+position = Vector2(0, -1080)
+below_area = NodePath("../ForwardFacingArea")
+
+[node name="CoffeeStrip_Dispenser2" type="Area2D" parent="Areas/OverheadArea" unique_id=43487435]
+position = Vector2(141, -83)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=1646577298]
+position = Vector2(33.0112, 94.50366)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_taa0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=698587333]
+z_index = 1
+position = Vector2(30, 86)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("40")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=2013661972]
+z_index = 1
+position = Vector2(-10.999996, -1076.9999)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("40")
+
+[node name="MiloSachet_Dispenser3" type="Area2D" parent="Areas/OverheadArea" unique_id=982345408]
+position = Vector2(420, 2)
+rotation = 0.06188979
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=1446505869]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_igiuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=306932841]
+z_index = 1
+position = Vector2(30, 86)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("41")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=1350379960]
+z_index = 1
+position = Vector2(-10.79031, -1063.3687)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("41")
+
+[node name="ZonroxSachet_Dispenser4" type="Area2D" parent="Areas/OverheadArea" unique_id=2134984110]
+position = Vector2(702, 65)
+rotation = 0.028449085
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=716521012]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_igiuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=1921350277]
+z_index = 1
+position = Vector2(30, 86)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("42")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=1727597892]
+z_index = 1
+position = Vector2(-8.965365, -1018.1569)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("42")
+
+[node name="Shampoo_Dispenser3" type="Area2D" parent="Areas/OverheadArea" unique_id=838860351]
+position = Vector2(-532, -153)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=1411177568]
+position = Vector2(19, 87)
+rotation = -0.04796178
+shape = SubResource("RectangleShape2D_gbhx3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=1915128988]
+z_index = 1
+position = Vector2(30, 399.99997)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("43")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=1024625042]
+z_index = 1
+position = Vector2(13.000002, -129.99994)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("43")
+
+[node name="IcedTeaSachet_Dispenser4" type="Area2D" parent="Areas/OverheadArea" unique_id=1971471690]
+position = Vector2(-150, -82)
+rotation = 0.04032771
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/IcedTeaSachet_Dispenser4" unique_id=1815884936]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_vcu0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/IcedTeaSachet_Dispenser4" unique_id=2075619300]
+z_index = 1
+position = Vector2(30, 86)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("44")

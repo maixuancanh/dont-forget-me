@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://nkp33lwiebpe"]
+
+[ext_resource type="Texture2D" uid="uid://cj5do20gf7he0" path="res://assets/art/products/pantry_junkfood_nova.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://7p8adwwcq4c1" path="res://assets/audio/gameplay/interaction/ui_sfx/plastic_bg.mp3" id="2"]
+[ext_resource type="Script" uid="uid://byyl23x4b78s2" path="res://scripts/Items/ItemData.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+item_id = "chips_nova"
+item_name = "Corn Snacks"
+item_cost = 35000
+item_stackable = false
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"

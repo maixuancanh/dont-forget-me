@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://nk7afmexsxbt"]
+
+[ext_resource type="Script" uid="uid://cuxy0i20jxa5c" path="res://scripts/Areas/AreaObject.gd" id="1"]
+
+[node name="AreaBase" type="Node2D" unique_id=1956691893]
+script = ExtResource("1")
+
+[node name="CameraTarget" type="Node2D" parent="." unique_id=1493010286]

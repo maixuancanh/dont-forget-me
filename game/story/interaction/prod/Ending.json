@@ -1,0 +1,145 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia_altn.tscn",
+  "interactions": [
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+      "volume_db": -5
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/scary_violins.ogg",
+      "volume_db": 5
+    },
+    {
+      "type": "wait",
+      "waitMs": 3500
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.3",
+      "legacy_event_id": "Ending:3",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.5",
+      "legacy_event_id": "Ending:5",
+      "input_labels": []
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/heartbeat.mp3",
+      "loop": true,
+      "volume_db": -0.25,
+      "id": "heartbeat"
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.8",
+      "legacy_event_id": "Ending:8",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.10",
+      "legacy_event_id": "Ending:10",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.12",
+      "legacy_event_id": "Ending:12",
+      "input_labels": []
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.14",
+      "legacy_event_id": "Ending:14",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.17",
+      "legacy_event_id": "Ending:17",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.19",
+      "legacy_event_id": "Ending:19",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "wait",
+      "waitMs": 3000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.23",
+      "legacy_event_id": "Ending:23",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Ending.25",
+      "legacy_event_id": "Ending:25",
+      "input_labels": [
+        "Officer, take the book. Binh paid.",
+        "His name stays in the book. Take it as evidence."
+      ]
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

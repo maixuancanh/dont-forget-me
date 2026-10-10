@@ -1,0 +1,53 @@
+{
+  "character_name": "Sau",
+  "character_template": "res://scenes/prefabs/NPCs/character_mario.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] [b]One cola[/b] and [b]one tin of fish[/b], please. My son Duy is helping me at the workshop."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "How is Duy settling in?",
+        "Working together again, Sau?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "glass_coke": 1,
+        "canned_sardines_1": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Sau:[/b][/color] If Duy seems quiet, give him time. He listens longer than most people."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

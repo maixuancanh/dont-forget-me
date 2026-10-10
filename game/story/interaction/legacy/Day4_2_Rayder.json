@@ -1,0 +1,85 @@
+{
+  "character_name": "Tuan",
+  "character_template": "res://scenes/prefabs/NPCs/character_rayder.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] [b]Two bottles of water[/b], please. I have been delivering parcels since dawn."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Two bottles. Long morning?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] The woman behind the green gate sent me away. Hanh, I think. Said she had never ordered anything."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] The parcel had Binh's name on it. He used her address for deliveries."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Do not leave his parcel with someone else."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Right. I will keep it at the depot until someone can collect it."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "bottled_water": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Tuan:[/b][/color] Thanks. I hope he turns up. It is only a box of work gloves."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

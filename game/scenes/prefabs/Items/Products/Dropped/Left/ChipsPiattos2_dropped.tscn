@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c0nnqk3ucfwjx"]
+
+[ext_resource type="PackedScene" uid="uid://begehh18he3uc" path="res://scenes/prefabs/Items/Products/Dropped/Left/ChipsPiattos_dropped.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://u8q4s2i61coh" path="res://story/itemdata/Products/Left/ChipsPiattos2_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://c2vg451ctkb22" path="res://assets/art/products/pantry_junkfood_piattos_sourcream.png" id="3"]
+
+[node name="ChipsPiattos_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+texture = ExtResource("3")

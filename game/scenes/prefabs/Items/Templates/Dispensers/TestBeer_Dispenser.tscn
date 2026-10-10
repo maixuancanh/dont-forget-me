@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bdbhsljrb0elv"]
+
+[ext_resource type="PackedScene" uid="uid://lmj0enox1hgc" path="res://scenes/prefabs/Items/Templates/Dispensers/ItemDispenserTemplate.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ubteukinrjfb" path="res://scenes/prefabs/Items/Templates/Dropped/TestBeer_Dropped.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://bk2ngnwlmtrbr" path="res://assets/art/3rd-party/Beers/Red Ale.png" id="4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mp4vj"]
+size = Vector2(68, 100)
+
+[node name="TestBeer_Dispenser" unique_id=1065646624 instance=ExtResource("1")]
+item_prefab = ExtResource("2")
+item_data = ExtResource("3")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=2079902129]
+shape = SubResource("RectangleShape2D_mp4vj")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1830372164]
+scale = Vector2(6, 6)
+texture = ExtResource("4")

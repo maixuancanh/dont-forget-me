@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://hl6cjyc2gwy5"]
+
+[ext_resource type="Texture2D" uid="uid://cnjkrcwqdcnwd" path="res://assets/art/products/ref_egg.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://bris7ex38p3uf" path="res://assets/audio/gameplay/interaction/ui_sfx/item_pickup.wav" id="2"]
+[ext_resource type="Script" uid="uid://byyl23x4b78s2" path="res://scripts/Items/ItemData.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+item_id = "egg"
+item_name = "Egg"
+item_cost = 10000
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"

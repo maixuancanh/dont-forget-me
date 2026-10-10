@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "policy": {
+    "authoredClaimsAreNotConfirmedFacts": true,
+    "requireWitnessedEvent": true,
+    "maximumRevealDay": "serverRunDay",
+    "shareOnlySelectedRecords": true,
+    "privateWitnessRecipients": [
+      "shopkeeper",
+      "duy"
+    ],
+    "npcKnowledgeRequiresExplicitShare": true,
+    "endingConfessionRequiresResolvedCase": true
+  },
+  "promise": {
+    "id": "protect_duy_from_hanh",
+    "promisor": "shopkeeper",
+    "beneficiary": "duy",
+    "forbiddenRecipients": [
+      "hanh"
+    ],
+    "permittedRecipients": [
+      "phuc"
+    ],
+    "breachNotification": "Duy learns only through an authored notification or witnessed disclosure; the global breach flag alone does not grant him that knowledge."
+  },
+  "supplementalReveals": [
+    {
+      "id": "DuyTrust:0",
+      "sceneId": "DuyTrust",
+      "stepIndex": 0,
+      "day": 6,
+      "speaker": "duy",
+      "category": "claim",
+      "clueTags": [
+        "incident_witness",
+        "trusted_reveal",
+        "gate_scrape"
+      ],
+      "requires": {
+        "minimumDay": 6,
+        "npcId": "duy",
+        "minimumTrust": 2,
+        "promiseId": "protect_duy_from_hanh",
+        "promiseUnbroken": true,
+        "witnessedEventIds": [
+          "Day5_4_Carlo:13"
+        ]
+      },
+      "knowledgeRecipients": [
+        "shopkeeper",
+        "duy"
+      ],
+      "beatId": "v2.DuyTrust.0",
+      "propositionIds": [
+        "p.duy.trusted"
+      ]
+    }
+  ],
+  "alternativeRoute": {
+    "description": "Duy trust is optional. Lan gate observations, Sau unloading corroboration, Phuc identification and the ledger can satisfy the independent evidence route.",
+    "sourceIds": [
+      "Day4_1_Layla:8",
+      "Day6_2_Mario:0",
+      "Day6_3_Jomar:10",
+      "Ledger:0"
+    ]
+  },
+  "actorKnowledge": {
+    "binh": {
+      "ownBeatPropositionIds": [
+        "p.Day1_1_Junjun.0",
+        "p.Day1_1_Junjun.4",
+        "p.Day1_1_Junjun.8",
+        "p.Day1_1_Junjun.14",
+        "p.Day2_1_Junjun.0",
+        "p.Day2_1_Junjun.4",
+        "p.Day2_1_Junjun.12",
+        "p.Day3_1_Junjun.0",
+        "p.Day3_1_Junjun.4",
+        "p.Day3_1_Junjun.10"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "hanh": {
+      "ownBeatPropositionIds": [
+        "p.Day1_2_Lucia.0",
+        "p.Day1_2_Lucia.4",
+        "p.Day1_2_Lucia.6",
+        "p.Day1_2_Lucia.10",
+        "p.Day1_2_Lucia.16",
+        "p.Day3_3_Lucia.0",
+        "p.Day3_3_Lucia.4",
+        "p.Day3_3_Lucia.6",
+        "p.Day3_3_Lucia.8",
+        "p.Day3_3_Lucia.12",
+        "p.Day3_3_Lucia.18",
+        "p.Day5_3_Lucia.0",
+        "p.Day5_3_Lucia.4",
+        "p.Day5_3_Lucia.8",
+        "p.Day5_3_Lucia.10",
+        "p.Day5_3_Lucia.16",
+        "p.Day6_4_Lucia.0",
+        "p.Day6_4_Lucia.4",
+        "p.Day6_4_Lucia.9",
+        "p.Day6_4_Lucia.11",
+        "p.Day6_4_Lucia.15",
+        "p.Ending.3",
+        "p.Ending.5",
+        "p.Ending.8",
+        "p.Ending.10",
+        "p.Ending.12",
+        "p.Ending.14",
+        "p.Ending.17",
+        "p.Ending.19"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "bao": {
+      "ownBeatPropositionIds": [
+        "p.Day1_3_Axel.0",
+        "p.Day1_3_Axel.4",
+        "p.Day1_3_Axel.6",
+        "p.Day1_3_Axel.12",
+        "p.Day2_3_Axel.0",
+        "p.Day2_3_Axel.8",
+        "p.Day3_4_Axel.0",
+        "p.Day3_4_Axel.4",
+        "p.Day3_4_Axel.6",
+        "p.Day3_4_Axel.12"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "lan": {
+      "ownBeatPropositionIds": [
+        "p.Day1_4_Layla.0",
+        "p.Day1_4_Layla.4",
+        "p.Day1_4_Layla.8",
+        "p.Day1_4_Layla.16",
+        "p.Day3_2_Layla.0",
+        "p.Day3_2_Layla.8",
+        "p.Day4_1_Layla.0",
+        "p.Day4_1_Layla.8"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "thu": {
+      "ownBeatPropositionIds": [
+        "p.Day2_2_Malu.0",
+        "p.Day2_2_Malu.4",
+        "p.Day2_2_Malu.8",
+        "p.Day2_2_Malu.14",
+        "p.Day4_3_Malu.0",
+        "p.Day4_3_Malu.4",
+        "p.Day4_3_Malu.6",
+        "p.Day4_3_Malu.12"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "sau": {
+      "ownBeatPropositionIds": [
+        "p.Day2_4_Mario.0",
+        "p.Day2_4_Mario.8",
+        "p.Day4_4_Mario.0",
+        "p.Day4_4_Mario.4",
+        "p.Day4_4_Mario.10",
+        "p.Day6_2_Mario.0",
+        "p.Day6_2_Mario.4",
+        "p.Day6_2_Mario.6"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "duy": {
+      "ownBeatPropositionIds": [
+        "p.Day5_4_Carlo.3",
+        "p.Day5_4_Carlo.5",
+        "p.Day5_4_Carlo.13",
+        "p.Day6_1_Carlo.3",
+        "p.Day6_1_Carlo.6",
+        "p.Day6_1_Carlo.11",
+        "p.Day6_1_Carlo.17",
+        "p.duy.trusted"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "tuan": {
+      "ownBeatPropositionIds": [
+        "p.Day4_2_Rayder.0",
+        "p.Day4_2_Rayder.4",
+        "p.Day4_2_Rayder.6",
+        "p.Day4_2_Rayder.10",
+        "p.Day4_2_Rayder.16",
+        "p.Day5_1_Rayder.0",
+        "p.Day5_1_Rayder.4",
+        "p.Day5_1_Rayder.6",
+        "p.Day5_1_Rayder.10",
+        "p.Day5_1_Rayder.16"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    },
+    "phuc": {
+      "ownBeatPropositionIds": [
+        "p.Day5_2_Jomar.0",
+        "p.Day5_2_Jomar.5",
+        "p.Day5_2_Jomar.9",
+        "p.Day5_2_Jomar.16",
+        "p.Day6_3_Jomar.0",
+        "p.Day6_3_Jomar.6",
+        "p.Day6_3_Jomar.10",
+        "p.Day6_3_Jomar.12",
+        "p.Day6_3_Jomar.14",
+        "p.Ending.23"
+      ],
+      "sharedKnowledgePolicy": "Only verified disclosed records addressed to this actor; no global story knowledge.",
+      "futurePolicy": "Current authenticated beat and time gate; later visit facts remain excluded."
+    }
+  }
+}

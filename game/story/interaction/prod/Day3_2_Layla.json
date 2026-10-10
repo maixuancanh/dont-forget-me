@@ -1,0 +1,60 @@
+{
+  "character_name": "Lan",
+  "character_template": "res://scenes/prefabs/NPCs/character_layla.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_2_Layla.0",
+      "legacy_event_id": "Day3_2_Layla:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_2_Layla.2",
+      "legacy_event_id": "Day3_2_Layla:2",
+      "input_labels": [
+        "One pad. Is something wrong, Lan?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "single_napkin": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day3_2_Layla.8",
+      "legacy_event_id": "Day3_2_Layla:8",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

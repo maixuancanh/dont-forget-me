@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StoryDay_File" format=3 uid="uid://dobllv3pkrqsv"]
+
+[ext_resource type="Script" uid="uid://dhi5e6niviie" path="res://scripts/NPCs/StoryDay_File.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+dialogues = ["res://story/interaction/prod/Day3_1_Junjun.json", "res://story/interaction/prod/Day3_2_Layla.json", "res://story/interaction/prod/Day3_3_Lucia.json", "res://story/interaction/prod/Day3_4_Axel.json"]
+metadata/_custom_type_script = "uid://dhi5e6niviie"

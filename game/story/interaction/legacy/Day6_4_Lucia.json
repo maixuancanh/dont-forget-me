@@ -1,0 +1,87 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I need you to hold something for me. Just until morning."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "What are you carrying, Hanh?",
+        "Why come after closing?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] This slip goes with my debt book. I will leave the book here too. Keep them behind the counter."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Why not give it to Officer Phuc?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] The police are searching houses. Loose pages get lost when strangers handle them."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Everything I have collected is in that book. People trust you. It will be safe here."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Leave it on the counter."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Do not open it. If anyone asks, you never saw me tonight."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "place_items",
+      "items_to_place": [
+        "res://scenes/prefabs/Items/Misc/Paluwagan_dropped.tscn"
+      ]
+    }
+  ]
+}

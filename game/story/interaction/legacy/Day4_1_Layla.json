@@ -1,0 +1,51 @@
+{
+  "character_name": "Lan",
+  "character_template": "res://scenes/prefabs/NPCs/character_layla.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] [b]Two tins of canned meat[/b], please. I do not want to go out again tonight."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Did something happen outside?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "canned_cornedbeef": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] Hanh was washing the tiles outside her gate before sunrise. She stopped when she saw me."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

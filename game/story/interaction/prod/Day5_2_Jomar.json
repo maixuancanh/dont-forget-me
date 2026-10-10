@@ -1,0 +1,102 @@
+{
+  "character_name": "Phuc",
+  "character_template": "res://scenes/prefabs/NPCs/character_jomar.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.0",
+      "legacy_event_id": "Day5_2_Jomar:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.2",
+      "legacy_event_id": "Day5_2_Jomar:2",
+      "input_labels": [
+        "Binh came here for coffee three mornings running.",
+        "Binh said his receipt and Hanh's book did not match."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "suppress_ambient"
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.5",
+      "legacy_event_id": "Day5_2_Jomar:5",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.7",
+      "legacy_event_id": "Day5_2_Jomar:7",
+      "input_labels": [
+        "Please check on Binh.",
+        "His neighbors have not seen him since."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.9",
+      "legacy_event_id": "Day5_2_Jomar:9",
+      "input_labels": []
+    },
+    {
+      "type": "control_bgm",
+      "action": "unsuppress_ambient"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "bottled_water": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_2_Jomar.16",
+      "legacy_event_id": "Day5_2_Jomar:16",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

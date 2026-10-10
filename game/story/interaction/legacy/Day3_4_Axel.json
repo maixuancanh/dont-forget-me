@@ -1,0 +1,68 @@
+{
+  "character_name": "Bao",
+  "character_template": "res://scenes/prefabs/NPCs/character_axel.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] [b]Ten mint candies[/b], please. Like last time."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Did you see Binh today?",
+        "Has Binh come home?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] Binh was sitting by the drain this morning, before he went to Hanh. He waved and told me he was waiting to speak to her."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] I will get him [b]ten[/b] this time. Maybe he did not like sharing."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "candy_mentos": 10
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] If he comes here, tell him I remembered his five from yesterday."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

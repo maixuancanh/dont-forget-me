@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://0ihg65g2rhw3"]
+
+[ext_resource type="Texture2D" uid="uid://b0jpbyb0dg5db" path="res://assets/art/products/ref_drink_sprite.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://ildmokq52r40" path="res://assets/audio/gameplay/interaction/ui_sfx/glass_bg.wav" id="2"]
+[ext_resource type="Script" uid="uid://byyl23x4b78s2" path="res://scripts/Items/ItemData.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+item_id = "glass_sprite"
+item_name = "Lemon Soda"
+item_cost = 18000
+item_stackable = false
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://321arxpt3glc"]
+
+[ext_resource type="PackedScene" uid="uid://lmj0enox1hgc" path="res://scenes/prefabs/Items/Templates/Dispensers/ItemDispenserTemplate.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://s3jivfmjmy0o" path="res://scenes/prefabs/Items/Products/Dropped/Left/RebiscoBrown_Dropped.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://n26k405dwm4r" path="res://story/itemdata/Products/Left/RebiscoBrown_itemdata.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://d281aw520j2cc" path="res://assets/art/products/biscuit_rebisco.png" id="4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2uvf"]
+size = Vector2(356.5, 198)
+
+[node name="Rebisco_Dispenser" unique_id=1065646624 instance=ExtResource("1")]
+item_prefab = ExtResource("2")
+item_data = ExtResource("3")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=2079902129]
+position = Vector2(52.75, 46)
+shape = SubResource("RectangleShape2D_d2uvf")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1830372164]
+position = Vector2(-21, 18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="2" unique_id=98662184]
+texture_filter = 1
+position = Vector2(15.000002, 18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." index="3" unique_id=1025683733]
+texture_filter = 1
+position = Vector2(88, 15)
+scale = Vector2(0.11799999, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." index="4" unique_id=793510524]
+texture_filter = 1
+position = Vector2(120.00001, 17)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." index="5" unique_id=799706655]
+texture_filter = 1
+position = Vector2(-17, 84.99999)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." index="6" unique_id=199059272]
+texture_filter = 1
+position = Vector2(19.000002, 84.99999)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." index="7" unique_id=1037969929]
+texture_filter = 1
+position = Vector2(92, 82)
+scale = Vector2(0.11799999, 0.1)
+texture = ExtResource("4")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." index="8" unique_id=1673034612]
+texture_filter = 1
+position = Vector2(124.00001, 83.99999)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4")

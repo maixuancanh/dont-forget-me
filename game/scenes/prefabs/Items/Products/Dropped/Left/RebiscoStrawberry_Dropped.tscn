@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cvyhcrmb38816"]
+
+[ext_resource type="PackedScene" uid="uid://bu04o23wkvy6" path="res://scenes/prefabs/Items/Products/Dropped/Left/RebiscoCream_Dropped.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://o154k3te7uyp" path="res://story/itemdata/Products/Left/RebiscoStrawberry_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://c2y6f35xm8jvp" path="res://assets/art/products/biscuit_rebisco_strawberry.png" id="3"]
+
+[node name="Rebisco_Dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+texture = ExtResource("3")

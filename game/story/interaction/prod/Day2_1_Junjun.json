@@ -1,0 +1,83 @@
+{
+  "character_name": "Binh",
+  "character_template": "res://scenes/prefabs/NPCs/character_junjun.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_1_Junjun.0",
+      "legacy_event_id": "Day2_1_Junjun:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_1_Junjun.2",
+      "legacy_event_id": "Day2_1_Junjun:2",
+      "input_labels": [
+        "Did Hanh find your payment?",
+        "Did you get the receipt?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_1_Junjun.4",
+      "legacy_event_id": "Day2_1_Junjun:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_1_Junjun.6",
+      "legacy_event_id": "Day2_1_Junjun:6",
+      "input_labels": [
+        "Keep your copy somewhere safe."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_1_Junjun.12",
+      "legacy_event_id": "Day2_1_Junjun:12",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

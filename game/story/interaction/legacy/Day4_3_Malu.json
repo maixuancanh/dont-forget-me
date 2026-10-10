@@ -1,0 +1,68 @@
+{
+  "character_name": "Thu",
+  "character_template": "res://scenes/prefabs/NPCs/character_malu.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] [b]One beer[/b], please. I closed the stall early."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Why did you close early, Thu?",
+        "Was the street blocked?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] Nobody wanted a drink once the police arrived."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] They found someone in the drainage channel beyond the alley. They put up a sheet before I could see."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "beer": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] I keep thinking about Binh asking for his receipt. I wish I had listened."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

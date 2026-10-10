@@ -1,0 +1,400 @@
+[gd_scene format=3 uid="uid://ccyf168qmbvvf"]
+
+[ext_resource type="PackedScene" uid="uid://nk7afmexsxbt" path="res://scenes/areas/AreaBase.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://0131tjjm8cr2" path="res://assets/art/environment/bottom_scene_drawer.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://b8nb4pmrbx8s4" path="res://scenes/prefabs/Items/Cashier/Dispensers/Piso_Dispenser.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://blwj0xjvmjt1u" path="res://scenes/prefabs/Items/Cashier/Dispensers/Singko_Dispenser.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bq1fq7gprk0ld" path="res://scenes/prefabs/Items/Cashier/Dispensers/Dyis_Dispenser.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://c65bhdbovks44" path="res://scenes/prefabs/Items/Cashier/Dispensers/Bente_Dispenser.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://3ig67wvsfx7o" path="res://scenes/prefabs/Items/Cashier/Dispensers/P50_Dispenser.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://cg2mdglbrii4x" path="res://scenes/prefabs/Items/Cashier/Dispensers/P100_Dispenser.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://bquv6gcaqxu6e" path="res://scenes/prefabs/Items/Cashier/Dispensers/P500_Dispenser.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://cn6og5kksxxo6" path="res://scenes/prefabs/Items/Cashier/Dispensers/P1000_Dispenser.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://bm5ts0clguygs" path="res://assets/art/environment/bottom_scene.png" id="11"]
+[ext_resource type="Script" uid="uid://cgrurvrn38l6w" path="res://scripts/Areas/Interactable/InteractibleCalc.gd" id="12"]
+[ext_resource type="Texture2D" uid="uid://clipeimyht64y" path="res://assets/art/environment/calculator buttons/calculator_base.png" id="13"]
+[ext_resource type="FontFile" uid="uid://bvv6xr3wsehua" path="res://assets/ui/fonts/7segments.ttf" id="14"]
+[ext_resource type="Texture2D" uid="uid://vt08fudst1e" path="res://assets/art/environment/calculator buttons/button_C.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://82uh4sggrdbi" path="res://assets/art/environment/calculator buttons/button_C pressed.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://d3n3vpg6jxups" path="res://assets/art/environment/calculator buttons/button_00.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://b6s5jdr47xtpc" path="res://assets/art/environment/calculator buttons/button_00 pressed.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://hhb641bs4xux" path="res://assets/art/environment/calculator buttons/button_blank.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cxbsjsjrcw4xq" path="res://assets/art/environment/calculator buttons/button_blank pressed.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://ciyx6o3fk4jwu" path="res://assets/art/environment/calculator buttons/button_blankL.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://cga2o1hdhsnit" path="res://assets/art/environment/calculator buttons/button_blankL pressed.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://belk5t33avjm0" path="res://assets/art/environment/calculator buttons/button_equals.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bccybqxc25r5x" path="res://assets/art/environment/calculator buttons/button_equals pressed.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://dsqfchkjpecv5" path="res://assets/art/environment/calculator buttons/button_0.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://cv73m5bqdu2cy" path="res://assets/art/environment/calculator buttons/button_0 pressed.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://4wpwwxb7gufc" path="res://assets/art/environment/calculator buttons/button_1.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://coe1conho31k6" path="res://assets/art/environment/calculator buttons/button_1 pressed.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://dp5e06gbxrepb" path="res://assets/art/environment/calculator buttons/button_2.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://otqem6xuk4xy" path="res://assets/art/environment/calculator buttons/button_2 pressed.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://2tew78vu515c" path="res://assets/art/environment/calculator buttons/button_3.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://bf6f1jhmximpg" path="res://assets/art/environment/calculator buttons/button_3 pressed.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://bb8o8pi0v0isq" path="res://assets/art/environment/calculator buttons/button_4.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://dn8vy6tr8rona" path="res://assets/art/environment/calculator buttons/button_4 pressed.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://i7umnqpwxp4c" path="res://assets/art/environment/calculator buttons/button_5.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://bs6c6jnw2onlt" path="res://assets/art/environment/calculator buttons/button_5 pressed.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://bj6t8ahsdaxb" path="res://assets/art/environment/calculator buttons/button_6.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://br5o0bchbxlqx" path="res://assets/art/environment/calculator buttons/button_6 pressed.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://dpxq4f44ele3" path="res://assets/art/environment/calculator buttons/button_7.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://02hervvcavac" path="res://assets/art/environment/calculator buttons/button_7 pressed.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://brp6ki866xcee" path="res://assets/art/environment/calculator buttons/button_8.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://cd5i0qkhye2x6" path="res://assets/art/environment/calculator buttons/button_8 pressed.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://c1mo8cak2yx7c" path="res://assets/art/environment/calculator buttons/button_9_.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://q1rk0iprhfyg" path="res://assets/art/environment/calculator buttons/button_9 pressed_.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://dff5isbswd43r" path="res://assets/art/environment/calculator buttons/button_add.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://dac1ngq3rwsmb" path="res://assets/art/environment/calculator buttons/button_add pressed.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://b1po0yxayhv5e" path="res://assets/art/environment/calculator buttons/button_minus.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://b14sr3nnu5rk8" path="res://assets/art/environment/calculator buttons/button_minus pressed.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://d16ipdngqv4jo" path="res://assets/art/environment/calculator buttons/button_mult.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://c480obqan8oy6" path="res://assets/art/environment/calculator buttons/button_mult pressed.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://bsapfa28y5aqo" path="res://assets/art/environment/calculator buttons/button_divide.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://qij0hyhpaspr" path="res://assets/art/environment/calculator buttons/button_divide pressed.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://bxjc0v722idug" path="res://assets/art/environment/calculator buttons/button_small.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://whslnu8pp5q5" path="res://assets/art/environment/calculator buttons/button_small pressed.png" id="54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7yfm"]
+size = Vector2(547.4186, 761.9281)
+
+[node name="BottomArea" unique_id=1956691893 instance=ExtResource("1")]
+ambient_id = "tindahan_interior"
+
+[node name="Graphics" type="Node2D" parent="." index="1" unique_id=794667434]
+
+[node name="ChangeContainer" type="Node2D" parent="Graphics" index="0" unique_id=2032870673]
+
+[node name="CashRegister" type="Node2D" parent="Graphics/ChangeContainer" index="0" unique_id=1961976637]
+
+[node name="CashRegister" type="Sprite2D" parent="Graphics/ChangeContainer/CashRegister" index="0" unique_id=934441209]
+position = Vector2(0, 150)
+texture = ExtResource("2")
+
+[node name="Piso_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="1" unique_id=1065646624 instance=ExtResource("3")]
+position = Vector2(-527, 309)
+
+[node name="Singko_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="2" unique_id=429373279 instance=ExtResource("4")]
+position = Vector2(-190, 306)
+
+[node name="Dyis_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="3" unique_id=812314595 instance=ExtResource("5")]
+position = Vector2(149, 306)
+
+[node name="Bente_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="4" unique_id=1276261274 instance=ExtResource("6")]
+position = Vector2(519, 304)
+
+[node name="P50_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="5" unique_id=369539619 instance=ExtResource("7")]
+position = Vector2(-520, -133)
+
+[node name="P100_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="6" unique_id=6283153 instance=ExtResource("8")]
+position = Vector2(-177, -133)
+
+[node name="P500_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="7" unique_id=1996745989 instance=ExtResource("9")]
+position = Vector2(141, -134)
+
+[node name="P1000_Dispenser" parent="Graphics/ChangeContainer/CashRegister" index="8" unique_id=511707085 instance=ExtResource("10")]
+position = Vector2(507, -127)
+
+[node name="ChangeTable" type="Sprite2D" parent="Graphics/ChangeContainer" index="1" unique_id=526718658]
+texture = ExtResource("11")
+
+[node name="CalculatorContainer" type="Node2D" parent="Graphics" index="1" unique_id=1378340237]
+script = ExtResource("12")
+
+[node name="CalculatorBase" type="Sprite2D" parent="Graphics/CalculatorContainer" index="0" unique_id=1226876837]
+position = Vector2(892.0001, -187)
+rotation = -0.34906584
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("13")
+
+[node name="CalculatorScreen" type="Label" parent="Graphics/CalculatorContainer/CalculatorBase" index="0" unique_id=1299397447]
+offset_left = -201.6825
+offset_top = -248.7352
+offset_right = 202.50085
+offset_bottom = -135.98938
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 70
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="CalcClickArea" type="Area2D" parent="Graphics/CalculatorContainer/CalculatorBase" index="1" unique_id=1396509405]
+scale = Vector2(0.99999994, 0.99999994)
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Graphics/CalculatorContainer/CalculatorBase/CalcClickArea" index="0" unique_id=95291375]
+position = Vector2(-0.53344727, -2.189499)
+shape = SubResource("RectangleShape2D_v7yfm")
+debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
+
+[node name="Panel" type="Panel" parent="Graphics/CalculatorContainer/CalculatorBase" index="2" unique_id=94992173]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -290.5
+offset_top = -385.00003
+offset_right = -290.5
+offset_bottom = -385.00003
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="C" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="3" unique_id=1811028286 groups=["calc_buttons"]]
+offset_left = -235.00012
+offset_top = 185.99997
+offset_right = -149.00012
+offset_bottom = 257.99997
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("15")
+texture_pressed = ExtResource("16")
+
+[node name="00" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="4" unique_id=819323954 groups=["calc_buttons"]]
+offset_left = -139.00012
+offset_top = 260.0
+offset_right = -53.000122
+offset_bottom = 332.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("17")
+texture_pressed = ExtResource("18")
+
+[node name="BlankButton" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="5" unique_id=1830525345]
+offset_left = -43.000122
+offset_top = 259.99997
+offset_right = 44.999878
+offset_bottom = 331.99997
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("19")
+texture_pressed = ExtResource("20")
+
+[node name="BlankButtonL1" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="6" unique_id=21794178]
+offset_left = -235.00006
+offset_top = 111.99997
+offset_right = -147.00006
+offset_bottom = 183.99997
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="BlankButtonL2" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="7" unique_id=1301815510]
+offset_left = -235.00006
+offset_top = 38.0
+offset_right = -147.00006
+offset_bottom = 110.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="BlankButtonL3" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="8" unique_id=1779941267]
+offset_left = -235.00006
+offset_top = -35.999985
+offset_right = -147.00006
+offset_bottom = 36.000015
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="BlankButtonL4" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="9" unique_id=884657483]
+offset_left = -139.00006
+offset_top = -36.000046
+offset_right = -51.00006
+offset_bottom = 35.999954
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="BlankButtonL5" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="10" unique_id=1293221751]
+offset_left = -43.000122
+offset_top = -35.99997
+offset_right = 44.999878
+offset_bottom = 36.00003
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="BlankButtonL6" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="11" unique_id=1769205187]
+offset_left = 51.999878
+offset_top = -36.0
+offset_right = 139.99988
+offset_bottom = 36.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("21")
+texture_pressed = ExtResource("22")
+
+[node name="=" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="12" unique_id=1545262188 groups=["calc_buttons"]]
+offset_left = 52.0
+offset_top = 259.99997
+offset_right = 140.0
+offset_bottom = 331.99997
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("23")
+texture_pressed = ExtResource("24")
+
+[node name="0" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="13" unique_id=1025222648 groups=["calc_buttons"]]
+offset_left = -235.00018
+offset_top = 259.99994
+offset_right = -149.00018
+offset_bottom = 331.99994
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("25")
+texture_pressed = ExtResource("26")
+
+[node name="1" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="14" unique_id=512151625 groups=["calc_buttons"]]
+offset_left = -139.00006
+offset_top = 186.0
+offset_right = -53.00006
+offset_bottom = 258.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("27")
+texture_pressed = ExtResource("28")
+
+[node name="2" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="15" unique_id=524706565 groups=["calc_buttons"]]
+offset_left = -43.0
+offset_top = 185.99994
+offset_right = 43.0
+offset_bottom = 257.99994
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("29")
+texture_pressed = ExtResource("30")
+
+[node name="3" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="16" unique_id=1863633074 groups=["calc_buttons"]]
+offset_left = 52.000122
+offset_top = 186.0
+offset_right = 138.00012
+offset_bottom = 258.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("31")
+texture_pressed = ExtResource("32")
+
+[node name="4" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="17" unique_id=898503486 groups=["calc_buttons"]]
+offset_left = -139.00012
+offset_top = 111.99997
+offset_right = -53.000122
+offset_bottom = 183.99997
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("33")
+texture_pressed = ExtResource("34")
+
+[node name="5" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="18" unique_id=1014019346 groups=["calc_buttons"]]
+offset_left = -43.000122
+offset_top = 112.0
+offset_right = 42.999878
+offset_bottom = 184.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("35")
+texture_pressed = ExtResource("36")
+
+[node name="6" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="19" unique_id=984628195 groups=["calc_buttons"]]
+offset_left = 52.0
+offset_top = 112.0
+offset_right = 138.0
+offset_bottom = 184.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("37")
+texture_pressed = ExtResource("38")
+
+[node name="7" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="20" unique_id=677985786 groups=["calc_buttons"]]
+offset_left = -139.00012
+offset_top = 37.999985
+offset_right = -53.000122
+offset_bottom = 109.999985
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("39")
+texture_pressed = ExtResource("40")
+
+[node name="8" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="21" unique_id=546341050 groups=["calc_buttons"]]
+offset_left = -43.0
+offset_top = 38.00003
+offset_right = 43.0
+offset_bottom = 110.00003
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("41")
+texture_pressed = ExtResource("42")
+
+[node name="9" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="22" unique_id=872523992 groups=["calc_buttons"]]
+offset_left = 52.000122
+offset_top = 37.999985
+offset_right = 138.00012
+offset_bottom = 109.999985
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("43")
+texture_pressed = ExtResource("44")
+
+[node name="AddButton" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="23" unique_id=1796733419 groups=["calc_buttons"]]
+offset_left = 148.0
+offset_top = 187.0
+offset_right = 236.0
+offset_bottom = 333.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("45")
+texture_pressed = ExtResource("46")
+
+[node name="MinusButton" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="24" unique_id=1771655760 groups=["calc_buttons"]]
+offset_left = 147.99988
+offset_top = 112.00003
+offset_right = 233.99988
+offset_bottom = 184.00003
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("47")
+texture_pressed = ExtResource("48")
+
+[node name="MultButton" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="25" unique_id=185403251 groups=["calc_buttons"]]
+offset_left = 148.0
+offset_top = 38.00006
+offset_right = 234.0
+offset_bottom = 110.00006
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("49")
+texture_pressed = ExtResource("50")
+
+[node name="DivButton" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="26" unique_id=1370549414 groups=["calc_buttons"]]
+offset_left = 148.0
+offset_top = -36.0
+offset_right = 234.0
+offset_bottom = 36.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("51")
+texture_pressed = ExtResource("52")
+
+[node name="BlankButtonS1" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="27" unique_id=590661186]
+offset_left = 51.999878
+offset_top = -105.0
+offset_right = 137.99988
+offset_bottom = -33.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("53")
+texture_pressed = ExtResource("54")
+
+[node name="BlankButtonS2" type="TextureButton" parent="Graphics/CalculatorContainer/CalculatorBase" index="28" unique_id=1222695716]
+offset_left = 148.0
+offset_top = -105.0
+offset_right = 234.0
+offset_bottom = -43.0
+pivot_offset = Vector2(43, 37)
+mouse_filter = 1
+texture_normal = ExtResource("53")
+texture_pressed = ExtResource("54")

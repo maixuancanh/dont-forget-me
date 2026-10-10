@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cq6c6pvax4fvx"]
+
+[ext_resource type="PackedScene" uid="uid://dm3pn3l7d5npf" path="res://scenes/prefabs/NPCs/character_layla.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://c30now0w0biwl" path="res://assets/art/characters/layla_v2.png" id="2"]
+
+[node name="CharacterTemplate" unique_id=2097212404 instance=ExtResource("1")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=52607391]
+texture = ExtResource("2")

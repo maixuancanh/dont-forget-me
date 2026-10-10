@@ -1,0 +1,103 @@
+{
+  "character_name": "Tuan",
+  "character_template": "res://scenes/prefabs/NPCs/character_rayder.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.0",
+      "legacy_event_id": "Day5_1_Rayder:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.2",
+      "legacy_event_id": "Day5_1_Rayder:2",
+      "input_labels": [
+        "Did anyone collect the gloves?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.4",
+      "legacy_event_id": "Day5_1_Rayder:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.6",
+      "legacy_event_id": "Day5_1_Rayder:6",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.8",
+      "legacy_event_id": "Day5_1_Rayder:8",
+      "input_labels": [
+        "Which officer?",
+        "Did you tell him about Hanh?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.10",
+      "legacy_event_id": "Day5_1_Rayder:10",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "glass_sprite": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day5_1_Rayder.16",
+      "legacy_event_id": "Day5_1_Rayder:16",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

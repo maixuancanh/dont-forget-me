@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://lmj0enox1hgc"]
+
+[ext_resource type="Script" uid="uid://bevk7erjnns4e" path="res://scripts/Items/ItemDispener.gd" id="1"]
+
+[node name="ItemDispenserTemplate" type="Area2D" unique_id=1065646624]
+collision_layer = 4
+script = ExtResource("1")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2079902129]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1830372164]
+texture_filter = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

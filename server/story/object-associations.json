@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "bill_1000",
+      "displayName": "Cash denomination 1000000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P1000_ItemData.tres"
+    },
+    {
+      "itemId": "bill_100",
+      "displayName": "Cash denomination 100000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P100_ItemData.tres"
+    },
+    {
+      "itemId": "coin_10",
+      "displayName": "Cash denomination 10000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P10_ItemData.tres"
+    },
+    {
+      "itemId": "coin_1",
+      "displayName": "Cash denomination 1000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P1_ItemData.tres"
+    },
+    {
+      "itemId": "coin_20",
+      "displayName": "Cash denomination 20000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P20_ItemData.tres"
+    },
+    {
+      "itemId": "bill_500",
+      "displayName": "Cash denomination 500000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P500_ItemData.tres"
+    },
+    {
+      "itemId": "bill_50",
+      "displayName": "Cash denomination 50000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P50_ItemData.tres"
+    },
+    {
+      "itemId": "coin_5",
+      "displayName": "Cash denomination 5000 VND",
+      "semanticEntities": [
+        "money"
+      ],
+      "sourceLut": "game/story/itemdata/Cashier/P5_ItemData.tres"
+    },
+    {
+      "itemId": "candy_mentos",
+      "displayName": "Mint Candy",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Front/Mentos_itemdata.tres"
+    },
+    {
+      "itemId": "single_napkin",
+      "displayName": "An Tam Sanitary Pad",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Front/Napkin_itemdata.tres"
+    },
+    {
+      "itemId": "single_cigarette",
+      "displayName": "Single Cigarette",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Front/SoloCigarette_itemdata.tres"
+    },
+    {
+      "itemId": "canned_cornedbeef",
+      "displayName": "Canned Meat",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/CanCornedBeef_itemdata.tres"
+    },
+    {
+      "itemId": "canned_sardines_1",
+      "displayName": "Tinned Fish",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/CanSardines1_itemdata.tres"
+    },
+    {
+      "itemId": "canned_sardines_2",
+      "displayName": "Fish in Tomato Sauce",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/CanSardines2_itemdata.tres"
+    },
+    {
+      "itemId": "chips_nova",
+      "displayName": "Corn Snacks",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/ChipsNova_itemdata.tres"
+    },
+    {
+      "itemId": "chips_piattos_2",
+      "displayName": "Seaweed Snacks",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/ChipsPiattos2_itemdata.tres"
+    },
+    {
+      "itemId": "chips_piattos",
+      "displayName": "Shrimp Snacks",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/ChipsPiattos_itemdata.tres"
+    },
+    {
+      "itemId": "noodles_pancit_canton",
+      "displayName": "Stir-fry Noodles",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/Noodles_PancitCanton_itemdata.tres"
+    },
+    {
+      "itemId": "noodles_soup",
+      "displayName": "Soup Noodles",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/Noodles_Soup_itemdata.tres"
+    },
+    {
+      "itemId": "biscuit_rebisco_brown",
+      "displayName": "Salted Crackers",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/RebiscoBrown_itemdata.tres"
+    },
+    {
+      "itemId": "biscuit_rebisco_cream",
+      "displayName": "Cream Biscuits",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/RebiscoCream_itemdata.tres"
+    },
+    {
+      "itemId": "biscuit_rebisco_strawberry",
+      "displayName": "Strawberry Biscuits",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Left/RebiscoStrawberry_itemdata.tres"
+    },
+    {
+      "itemId": "bleach_sachet",
+      "displayName": "Laundry Detergent Sachet",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ovh/BleachSachet_itemdata.tres"
+    },
+    {
+      "itemId": "coffee_strip",
+      "displayName": "Coffee Sachet",
+      "semanticEntities": [
+        "coffee"
+      ],
+      "sourceLut": "game/story/itemdata/Products/Ovh/CoffeeStrip_itemdata.tres"
+    },
+    {
+      "itemId": "iced_tea_sachet",
+      "displayName": "Lemon Tea Sachet",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ovh/IcedTea_itemdata.tres"
+    },
+    {
+      "itemId": "milo_sachet",
+      "displayName": "Cocoa Sachet",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ovh/MiloSachet_itemdata.tres"
+    },
+    {
+      "itemId": "shampoo_sachet",
+      "displayName": "Shampoo Sachet",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ovh/Shampoo_itemdata.tres"
+    },
+    {
+      "itemId": "beer",
+      "displayName": "Beer",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/Beer_itemdata.tres"
+    },
+    {
+      "itemId": "bottled_water",
+      "displayName": "Bottled Water",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/BottledWater_itemdata.tres"
+    },
+    {
+      "itemId": "egg",
+      "displayName": "Egg",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/Egg_itemdata.tres"
+    },
+    {
+      "itemId": "glass_coke",
+      "displayName": "Cola",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/GlassCoke_itemdata.tres"
+    },
+    {
+      "itemId": "glass_royal",
+      "displayName": "Orange Soda",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/GlassRoyal_itemdata.tres"
+    },
+    {
+      "itemId": "glass_sprite",
+      "displayName": "Lemon Soda",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/GlassSprite_itemdata.tres"
+    },
+    {
+      "itemId": "ice",
+      "displayName": "Bag of Ice",
+      "semanticEntities": [],
+      "sourceLut": "game/story/itemdata/Products/Ref/Ice_itemdata.tres"
+    },
+    {
+      "itemId": "ledger",
+      "displayName": "Ledger",
+      "semanticEntities": [
+        "ledger",
+        "accounts"
+      ],
+      "sourceLut": "game/story/itemdata/Misc/ledger.tres"
+    },
+    {
+      "itemId": "debt_receipt",
+      "displayName": "Receipt",
+      "semanticEntities": [
+        "receipt",
+        "debt"
+      ],
+      "sourceLut": "game/story/itemdata/Misc/debt_receipt.tres"
+    }
+  ],
+  "nonPhysicalEntities": []
+}

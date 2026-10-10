@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://vin21s3ghc3w"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Script" uid="uid://b8wdgrlcga6tp" path="res://scripts/Items/CustomDroppedPaluwagan.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://c0vf7xjx1w0nb" path="res://assets/art/environment/paluwagan book/paluwagan_receive.png" id="3"]
+[ext_resource type="PackedScene" uid="uid://ufyuos2r6c40" path="res://scenes/prefabs/UIs/paluwagan_ui.tscn" id="4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r8m6"]
+size = Vector2(254, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m06l7"]
+size = Vector2(290, 196)
+
+[node name="Paluwagan_Dropped" unique_id=723382183 instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+shape = SubResource("RectangleShape2D_5r8m6")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+shape = SubResource("RectangleShape2D_m06l7")
+
+[node name="PaluwaganUI" parent="." index="4" unique_id=392410258 instance=ExtResource("4")]
+visible = false

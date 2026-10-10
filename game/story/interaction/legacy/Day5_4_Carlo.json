@@ -1,0 +1,76 @@
+{
+  "character_name": "Duy",
+  "character_template": "res://scenes/prefabs/NPCs/character_carlo_altn.tscn",
+  "interactions": [
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+      "volume_db": -5
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/heartbeat.mp3",
+      "loop": true,
+      "volume_db": -0.25
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+      "volume_db": 1.0
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Duy:[/b][/color] Is Hanh still here?"
+    },
+    {
+      "type": "wait",
+      "waitMs": 3500
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Duy:[/b][/color] [b]One bag of corn snacks[/b], please. I just need a minute."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "She has gone. You can wait here."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "chips_nova": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Duy:[/b][/color] I heard Binh at her gate. Please do not tell her I said that."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

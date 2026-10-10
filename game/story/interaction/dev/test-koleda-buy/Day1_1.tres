@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://du5tj7owtd0q2"]
+
+[ext_resource type="PackedScene" uid="uid://cpxugieu53pt7" path="res://scenes/prefabs/NPCs/character_lucia.tscn" id="1"]
+[ext_resource type="Script" uid="uid://nm3a4wlg01do" path="res://scripts/NPCs/Interactions/Models/InteractionSay.gd" id="2"]
+[ext_resource type="Script" uid="uid://bev6061fh60mv" path="res://scripts/NPCs/Interactions/Models/InteractionWait.gd" id="3"]
+[ext_resource type="Script" uid="uid://c1qyc2872reru" path="res://scripts/NPCs/Interactions/Models/InteractionChoice.gd" id="4"]
+[ext_resource type="Resource" uid="uid://nsd8ibcuqehj" path="res://story/itemdata/TestBeer_itemdata.tres" id="5"]
+[ext_resource type="Script" uid="uid://bvuurjibruqfq" path="res://scripts/NPCs/Interactions/Models/InteractionRequireItems.gd" id="6"]
+[ext_resource type="Script" uid="uid://l0gu2pt7yty4" path="res://scripts/NPCs/Interactions/Models/InteractionPay.gd" id="7"]
+[ext_resource type="Script" uid="uid://bgynd4nrwvaiu" path="res://scripts/NPCs/Interactions/Models/InteractionRequireChange.gd" id="8"]
+[ext_resource type="Script" uid="uid://b3lhyrtwitj7o" path="res://scripts/NPCs/Interactions/Models/DialogueSequence.gd" id="9"]
+
+[sub_resource type="Resource" id="Resource_tqxdc"]
+script = ExtResource("2")
+sentence = "A stick coffee, ate."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_u31hy"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_srenb"]
+script = ExtResource("4")
+response_choices = ["Do you have plans to pay your debts today?", "Not until you pay your debt, Junjun"]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[sub_resource type="Resource" id="Resource_xpoev"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_70100"]
+script = ExtResource("2")
+sentence = "Right, right… 50 pesos… I have it."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_x44lp"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_j7hxr"]
+script = ExtResource("4")
+response_choices = ["You know what? Don’t bother Junjun."]
+metadata/_custom_type_script = "uid://c1qyc2872reru"
+
+[sub_resource type="Resource" id="Resource_ul176"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_2tswb"]
+script = ExtResource("2")
+sentence = "Seriously? You’re an angel, ate."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_q4sy8"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_uy172"]
+script = ExtResource("6")
+required_items = {
+ExtResource("5"): 1
+}
+metadata/_custom_type_script = "uid://bvuurjibruqfq"
+
+[sub_resource type="Resource" id="Resource_d5uta"]
+script = ExtResource("7")
+purchase_to_pay = SubResource("Resource_uy172")
+wealth_factor = 0.2
+metadata/_custom_type_script = "uid://l0gu2pt7yty4"
+
+[sub_resource type="Resource" id="Resource_87twf"]
+script = ExtResource("8")
+metadata/_custom_type_script = "uid://bgynd4nrwvaiu"
+
+[sub_resource type="Resource" id="Resource_mbx2w"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[sub_resource type="Resource" id="Resource_aq62a"]
+script = ExtResource("2")
+sentence = "Salamat ulit, ate. I’ll pay you back when I get a stable job some day."
+metadata/_custom_type_script = "uid://nm3a4wlg01do"
+
+[sub_resource type="Resource" id="Resource_m25cs"]
+script = ExtResource("3")
+metadata/_custom_type_script = "uid://bev6061fh60mv"
+
+[resource]
+script = ExtResource("9")
+character_name = "Junjun"
+character_template = ExtResource("1")
+interactions = [SubResource("Resource_tqxdc"), SubResource("Resource_u31hy"), SubResource("Resource_srenb"), SubResource("Resource_xpoev"), SubResource("Resource_70100"), SubResource("Resource_x44lp"), SubResource("Resource_j7hxr"), SubResource("Resource_ul176"), SubResource("Resource_2tswb"), SubResource("Resource_q4sy8"), SubResource("Resource_d5uta"), SubResource("Resource_uy172"), SubResource("Resource_87twf"), SubResource("Resource_mbx2w"), SubResource("Resource_aq62a"), SubResource("Resource_m25cs")]
+metadata/_custom_type_script = "uid://b3lhyrtwitj7o"

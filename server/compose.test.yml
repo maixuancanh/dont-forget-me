@@ -1,0 +1,19 @@
+name: dfm-memory-test
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: dfm_test
+      POSTGRES_USER: dfm_test
+      POSTGRES_PASSWORD: dfm_test_fixture_only
+    ports:
+      - "127.0.0.1:55449:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dfm_test -d dfm_test"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    volumes:
+      - dfm-test-pg:/var/lib/postgresql/data
+volumes:
+  dfm-test-pg:

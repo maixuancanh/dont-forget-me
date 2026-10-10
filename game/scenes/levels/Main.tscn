@@ -1,0 +1,1983 @@
+[gd_scene format=3 uid="uid://b48appixms3f8"]
+
+[ext_resource type="FontFile" uid="uid://cvnixdi7irewv" path="res://assets/ui/fonts/Charcoal-Regular.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://bxjc0v722idug" path="res://assets/art/environment/calculator buttons/button_small.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dpg01sbf0h3ym" path="res://assets/art/environment/chat_bubble9slice.png" id="3"]
+[ext_resource type="FontFile" uid="uid://cojw2bfel5ovy" path="res://assets/ui/fonts/CharcoalBold-Regular.ttf" id="4"]
+[ext_resource type="Script" uid="uid://mvmen1t1k1pt" path="res://scripts/UI/DialogueManager.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://chl88mgnv138k" path="res://scenes/prefabs/UIs/speech_bubble.tscn" id="6"]
+[ext_resource type="Script" uid="uid://diueqs87710gx" path="res://scripts/UI/ResponseUIManager.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://dwbvxbr0kgh7l" path="res://scenes/prefabs/UIs/response_choice.tscn" id="8"]
+[ext_resource type="Script" uid="uid://bu7nr2o06g6f3" path="res://scripts/NPCs/Interactions/NPCInteractionManager.gd" id="9"]
+[ext_resource type="Resource" uid="uid://dnfbvgwf6wsce" path="res://story/itemdata/Cashier/P1_ItemData.tres" id="10"]
+[ext_resource type="PackedScene" uid="uid://ba3nrsc4x7xik" path="res://scenes/prefabs/Items/Cashier/Dropped/Piso_Dropped.tscn" id="11"]
+[ext_resource type="Resource" uid="uid://u5tfp6puem6u" path="res://story/itemdata/Cashier/P5_ItemData.tres" id="12"]
+[ext_resource type="PackedScene" uid="uid://dnk1cpw1qhfb6" path="res://scenes/prefabs/Items/Cashier/Dropped/Singko_Dropped.tscn" id="13"]
+[ext_resource type="Resource" uid="uid://brjsu3b5jx6y" path="res://story/itemdata/Cashier/P10_ItemData.tres" id="14"]
+[ext_resource type="PackedScene" uid="uid://b6annmuxjkd71" path="res://scenes/prefabs/Items/Cashier/Dropped/Dyis_Dropped.tscn" id="15"]
+[ext_resource type="Resource" uid="uid://bgt35jk74vr0h" path="res://story/itemdata/Cashier/P20_ItemData.tres" id="16"]
+[ext_resource type="PackedScene" uid="uid://d1niiqgyjew16" path="res://scenes/prefabs/Items/Cashier/Dropped/Bente_Dropped.tscn" id="17"]
+[ext_resource type="Resource" uid="uid://kocyomtavsqp" path="res://story/itemdata/Cashier/P50_ItemData.tres" id="18"]
+[ext_resource type="PackedScene" uid="uid://pbnudme1t8xl" path="res://scenes/prefabs/Items/Cashier/Dropped/P50_Dropped.tscn" id="19"]
+[ext_resource type="Resource" uid="uid://41yjnrnv2c36" path="res://story/itemdata/Cashier/P100_ItemData.tres" id="20"]
+[ext_resource type="PackedScene" uid="uid://cwri5t1yc7540" path="res://scenes/prefabs/Items/Cashier/Dropped/P100_Dropped.tscn" id="21"]
+[ext_resource type="Resource" uid="uid://ybibqnmqpwct" path="res://story/itemdata/Cashier/P500_ItemData.tres" id="22"]
+[ext_resource type="PackedScene" uid="uid://b1gvpuucolmj7" path="res://scenes/prefabs/Items/Cashier/Dropped/P500_Dropped.tscn" id="23"]
+[ext_resource type="Resource" uid="uid://df0gjqvdytpn6" path="res://story/itemdata/Cashier/P1000_ItemData.tres" id="24"]
+[ext_resource type="PackedScene" uid="uid://gnx6e367nxgg" path="res://scenes/prefabs/Items/Cashier/Dropped/P1000_Dropped.tscn" id="25"]
+[ext_resource type="PackedScene" uid="uid://cy3ifwo4m8a1f" path="res://scenes/prefabs/NPCs/character_junjun.tscn" id="26"]
+[ext_resource type="Script" uid="uid://cbaucnf2hwyti" path="res://scripts/NPCs/Interactions/ScenePlayer.gd" id="27"]
+[ext_resource type="Resource" uid="uid://c4ohrn2hckq2h" path="res://story/interaction/prod/Day1.tres" id="28"]
+[ext_resource type="Resource" uid="uid://d1oqvp7a3lynl" path="res://story/interaction/prod/Day2.tres" id="29"]
+[ext_resource type="Resource" uid="uid://dobllv3pkrqsv" path="res://story/interaction/prod/Day3.tres" id="30"]
+[ext_resource type="Resource" uid="uid://bguv0ln4ogtjk" path="res://story/interaction/prod/Day4.tres" id="31"]
+[ext_resource type="Resource" uid="uid://d8xupiveoncd" path="res://story/interaction/prod/Day5.tres" id="32"]
+[ext_resource type="Resource" uid="uid://dn1xbcqgl3wmi" path="res://story/interaction/prod/Day6.tres" id="33"]
+[ext_resource type="Script" uid="uid://dau0k0n5rmgs3" path="res://scripts/Areas/AreaManager.gd" id="34"]
+[ext_resource type="PackedScene" uid="uid://ocja2y7omrxd" path="res://scenes/areas/ForwardFacing.tscn" id="35"]
+[ext_resource type="Script" uid="uid://bevk7erjnns4e" path="res://scripts/Items/ItemDispener.gd" id="36"]
+[ext_resource type="PackedScene" uid="uid://bmq0mj217uiaf" path="res://scenes/prefabs/Items/Products/Dropped/Front/Napkin_dropped.tscn" id="37"]
+[ext_resource type="Resource" uid="uid://12owlv88g0in" path="res://story/itemdata/Products/Front/Napkin_itemdata.tres" id="38"]
+[ext_resource type="Texture2D" uid="uid://cwapjlkumq24i" path="res://assets/art/products/napkin_sisters_pack.png" id="39"]
+[ext_resource type="PackedScene" uid="uid://d2800xgvs5au5" path="res://scenes/prefabs/Items/Products/Dropped/Front/Mentos_dropped.tscn" id="40"]
+[ext_resource type="Resource" uid="uid://hcumk5h0881l" path="res://story/itemdata/Products/Front/Mentos_itemdata.tres" id="41"]
+[ext_resource type="Texture2D" uid="uid://cbmm4rbp14s6t" path="res://assets/art/products/candy_mentos_jar.png" id="42"]
+[ext_resource type="PackedScene" uid="uid://d062kt8dqb3qq" path="res://scenes/prefabs/Items/Products/Dropped/Front/SingleCigarette_dropped.tscn" id="43"]
+[ext_resource type="Resource" uid="uid://b45p5vhby600s" path="res://story/itemdata/Products/Front/SoloCigarette_itemdata.tres" id="44"]
+[ext_resource type="Texture2D" uid="uid://cuifey7clvacj" path="res://assets/art/products/cigarette_pack.png" id="45"]
+[ext_resource type="Script" uid="uid://r35i68aiovr2" path="res://scripts/Items/ItemSuspender.gd" id="46"]
+[ext_resource type="Script" uid="uid://c8w3kirx5xyta" path="res://scripts/Items/ItemReceiver.gd" id="47"]
+[ext_resource type="Script" uid="uid://dlrq7vm1w7qem" path="res://scripts/Items/ItemSpawner.gd" id="48"]
+[ext_resource type="Script" uid="uid://bx1a2851h1fal" path="res://scripts/UI/TemporaryUserTips.gd" id="49"]
+[ext_resource type="Script" uid="uid://c16r67ofmql2q" path="res://scripts/Areas/DayNightCycle.gd" id="50"]
+[ext_resource type="Texture2D" uid="uid://ch6i6hrkmugac" path="res://assets/art/environment/main_scene.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://bxpqa7sfqefbt" path="res://assets/art/environment/top_scene.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://dusqk0uyxnvdk" path="res://assets/art/environment/main_bg-day.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://3g58i1fw87g7" path="res://assets/art/environment/main_scene-night.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://kp3qrw8rxkod" path="res://assets/art/environment/top_scene-night.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://brfbfoiy1rdig" path="res://assets/art/environment/main_bg-night.png" id="56"]
+[ext_resource type="PackedScene" uid="uid://bqghn4vrw4e2f" path="res://scenes/areas/OverheadArea.tscn" id="57"]
+[ext_resource type="PackedScene" uid="uid://jc6f3ogy0lru" path="res://scenes/prefabs/Items/Products/Dropped/Ovh/CoffeeStrip_dropped.tscn" id="58"]
+[ext_resource type="Resource" uid="uid://b1hr4g7w0hvy7" path="res://story/itemdata/Products/Ovh/CoffeeStrip_itemdata.tres" id="59"]
+[ext_resource type="Texture2D" uid="uid://cq0fvcywbhoc1" path="res://assets/art/products/hanging_bundle_coffee.png" id="60"]
+[ext_resource type="PackedScene" uid="uid://d0cryofmlpjnl" path="res://scenes/prefabs/Items/Products/Dropped/Ovh/Shampoo_dropped.tscn" id="61"]
+[ext_resource type="Resource" uid="uid://ceka3gco0oriu" path="res://story/itemdata/Products/Ovh/Shampoo_itemdata.tres" id="62"]
+[ext_resource type="Texture2D" uid="uid://cpsjiuiq5hvqp" path="res://assets/art/products/hanging_head_shoulders_bundle.png" id="63"]
+[ext_resource type="PackedScene" uid="uid://bb0ulcly0pj" path="res://scenes/prefabs/Items/Products/Dropped/Ovh/MiloSachet_dropped.tscn" id="64"]
+[ext_resource type="Resource" uid="uid://bpua3275de2e6" path="res://story/itemdata/Products/Ovh/MiloSachet_itemdata.tres" id="65"]
+[ext_resource type="Texture2D" uid="uid://bhstuk5pcci2o" path="res://assets/art/products/hanging_milo_bundle.png" id="66"]
+[ext_resource type="PackedScene" uid="uid://bg4arunjvn8mi" path="res://scenes/prefabs/Items/Products/Dropped/Ovh/IcedTea_dropped.tscn" id="67"]
+[ext_resource type="Resource" uid="uid://b4fk1jf4jqf68" path="res://story/itemdata/Products/Ovh/IcedTea_itemdata.tres" id="68"]
+[ext_resource type="Texture2D" uid="uid://cjefdm5s4fa8l" path="res://assets/art/products/hanging_nestea_bundle.png" id="69"]
+[ext_resource type="PackedScene" uid="uid://b8pqs7pj36t5q" path="res://scenes/prefabs/Items/Products/Dropped/Ovh/BleachSachet_dropped.tscn" id="70"]
+[ext_resource type="Resource" uid="uid://gbtecd3v07g5" path="res://story/itemdata/Products/Ovh/BleachSachet_itemdata.tres" id="71"]
+[ext_resource type="Texture2D" uid="uid://bd1qyc5sc5ki5" path="res://assets/art/products/hanging_zonrox_bundle.png" id="72"]
+[ext_resource type="PackedScene" uid="uid://ck8n6qiv0rtwu" path="res://scenes/areas/RightArea.tscn" id="73"]
+[ext_resource type="Script" uid="uid://cuxy0i20jxa5c" path="res://scripts/Areas/AreaObject.gd" id="74"]
+[ext_resource type="Script" uid="uid://3wmhnj3afdgh" path="res://scripts/Items/ItemDestroyer.gd" id="75"]
+[ext_resource type="Script" uid="uid://b7sbgy3ekarjc" path="res://scripts/Areas/Interactable/InteractibleRef.gd" id="76"]
+[ext_resource type="Texture2D" uid="uid://cac1t63675pfn" path="res://assets/art/environment/ref_inside.png" id="77"]
+[ext_resource type="PackedScene" uid="uid://dc8s8gieg1tan" path="res://scenes/prefabs/Items/Products/Dropped/Ref/Beer_dropped.tscn" id="78"]
+[ext_resource type="Resource" uid="uid://c35id8jpvpscx" path="res://story/itemdata/Products/Ref/Beer_itemdata.tres" id="79"]
+[ext_resource type="Texture2D" uid="uid://dr7mrr82wrmgb" path="res://assets/art/products/ref_drink_beer.png" id="80"]
+[ext_resource type="PackedScene" uid="uid://cihq2ao1twswn" path="res://scenes/prefabs/Items/Products/Dropped/Ref/GlassCoke_dropped.tscn" id="81"]
+[ext_resource type="Resource" uid="uid://wblgfdixy042" path="res://story/itemdata/Products/Ref/GlassCoke_itemdata.tres" id="82"]
+[ext_resource type="Texture2D" uid="uid://dr5v8t7w0a5py" path="res://assets/art/products/ref_drink_coke.png" id="83"]
+[ext_resource type="PackedScene" uid="uid://bsbahdnm4o07s" path="res://scenes/prefabs/Items/Products/Dropped/Ref/IcePack_dropped.tscn" id="84"]
+[ext_resource type="Resource" uid="uid://qo18r44hm3bm" path="res://story/itemdata/Products/Ref/Ice_itemdata.tres" id="85"]
+[ext_resource type="Texture2D" uid="uid://b1trnrf20wos3" path="res://assets/art/products/ref_ice.png" id="86"]
+[ext_resource type="PackedScene" uid="uid://honbxy5cwn3w" path="res://scenes/prefabs/Items/Products/Dropped/Ref/GlassSprite_dropped.tscn" id="87"]
+[ext_resource type="Resource" uid="uid://0ihg65g2rhw3" path="res://story/itemdata/Products/Ref/GlassSprite_itemdata.tres" id="88"]
+[ext_resource type="Texture2D" uid="uid://b0jpbyb0dg5db" path="res://assets/art/products/ref_drink_sprite.png" id="89"]
+[ext_resource type="PackedScene" uid="uid://coplf3rbw8dgq" path="res://scenes/prefabs/Items/Products/Dropped/Ref/GlassRoyal_dropped.tscn" id="90"]
+[ext_resource type="Resource" uid="uid://cvijkeg45sstn" path="res://story/itemdata/Products/Ref/GlassRoyal_itemdata.tres" id="91"]
+[ext_resource type="Texture2D" uid="uid://w7d0m13tnq00" path="res://assets/art/products/ref_drink_royal.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://bynebv83e7e0p" path="res://assets/art/environment/ref_open_top.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://dr1xh20g6opau" path="res://assets/art/environment/ref_open_topL1.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://cx4dugd2u1m5x" path="res://assets/art/environment/ref_open_bottom.png" id="95"]
+[ext_resource type="PackedScene" uid="uid://bq77sah3yvcrc" path="res://scenes/prefabs/Items/Products/Dropped/Ref/BottledWater_dropped.tscn" id="96"]
+[ext_resource type="Resource" uid="uid://byayfhfjopaal" path="res://story/itemdata/Products/Ref/BottledWater_itemdata.tres" id="97"]
+[ext_resource type="Texture2D" uid="uid://l8hhk20jlqej" path="res://assets/art/products/ref_drink_water.png" id="98"]
+[ext_resource type="PackedScene" uid="uid://tmk3iusso2qj" path="res://scenes/prefabs/Items/Products/Dropped/Ref/Egg_dropped.tscn" id="99"]
+[ext_resource type="Resource" uid="uid://hl6cjyc2gwy5" path="res://story/itemdata/Products/Ref/Egg_itemdata.tres" id="100"]
+[ext_resource type="Texture2D" uid="uid://cnjkrcwqdcnwd" path="res://assets/art/products/ref_egg.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://byc8fviyveqw" path="res://assets/art/environment/ref_open_bottomL1.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://u60png1nn6ed" path="res://assets/art/environment/ref_closed_top.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://b3x7xdfwy5rvb" path="res://assets/art/environment/ref_closed_bottom.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://b2mjo78qrn0bp" path="res://assets/art/products/background_case_green.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://b8pokgp1opr1x" path="res://assets/art/products/background_case_red.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://cjgdfftgk131q" path="res://assets/art/products/background_case_blue.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://bi84pqw44j2qy" path="res://assets/art/products/background_case_green_other_bottle.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://cbe7riq60nlo1" path="res://assets/art/products/background_case_red_partial.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://wx8flqubxoaw" path="res://assets/art/products/background_case_blue_partial.png" id="110"]
+[ext_resource type="PackedScene" uid="uid://b5pvjq0r2vi10" path="res://scenes/areas/LeftArea.tscn" id="111"]
+[ext_resource type="Texture2D" uid="uid://busq2tbuk4ule" path="res://assets/art/environment/shelf.png" id="112"]
+[ext_resource type="PackedScene" uid="uid://1ar17xw221vm" path="res://scenes/prefabs/Items/Products/Dropped/Left/Noodles_Soup_dropped.tscn" id="113"]
+[ext_resource type="Resource" uid="uid://b0p4k6g47j8g1" path="res://story/itemdata/Products/Left/Noodles_Soup_itemdata.tres" id="114"]
+[ext_resource type="Texture2D" uid="uid://dd02desf0wqmy" path="res://assets/art/products/pantry_noodles.png" id="115"]
+[ext_resource type="PackedScene" uid="uid://8aaxmk2ox3a4" path="res://scenes/prefabs/Items/Products/Dropped/Left/Noodles_PancitCanton_dropped.tscn" id="116"]
+[ext_resource type="Resource" uid="uid://dbioj4xuejc67" path="res://story/itemdata/Products/Left/Noodles_PancitCanton_itemdata.tres" id="117"]
+[ext_resource type="Texture2D" uid="uid://b1ll6hm473wrj" path="res://assets/art/products/pantry_pancit_canton.png" id="118"]
+[ext_resource type="PackedScene" uid="uid://db8o3vp6rek24" path="res://scenes/prefabs/Items/Products/Dropped/Left/ChipsNova_dropped.tscn" id="119"]
+[ext_resource type="Resource" uid="uid://nkp33lwiebpe" path="res://story/itemdata/Products/Left/ChipsNova_itemdata.tres" id="120"]
+[ext_resource type="Texture2D" uid="uid://cj5do20gf7he0" path="res://assets/art/products/pantry_junkfood_nova.png" id="121"]
+[ext_resource type="PackedScene" uid="uid://bv1dny761sx6n" path="res://scenes/prefabs/Items/Products/Dropped/Left/CanCornbeef_dropped.tscn" id="122"]
+[ext_resource type="Resource" uid="uid://y0j6vvuwxbxw" path="res://story/itemdata/Products/Left/CanCornedBeef_itemdata.tres" id="123"]
+[ext_resource type="Texture2D" uid="uid://n4s5pqhv58ti" path="res://assets/art/products/pantry_can_corned_beef.png" id="124"]
+[ext_resource type="PackedScene" uid="uid://boqp4mry0i7jc" path="res://scenes/prefabs/Items/Products/Dropped/Left/CanSardines1_dropped.tscn" id="125"]
+[ext_resource type="Resource" uid="uid://ct6l6edykehkk" path="res://story/itemdata/Products/Left/CanSardines1_itemdata.tres" id="126"]
+[ext_resource type="Texture2D" uid="uid://bqrqqfe0qylpc" path="res://assets/art/products/pantry_can_sardines.png" id="127"]
+[ext_resource type="PackedScene" uid="uid://ckbgx6kevmh5t" path="res://scenes/prefabs/Items/Products/Dropped/Left/CanSardines2_dropped.tscn" id="128"]
+[ext_resource type="Resource" uid="uid://cfok6jiu6imll" path="res://story/itemdata/Products/Left/CanSardines2_itemdata.tres" id="129"]
+[ext_resource type="Texture2D" uid="uid://8r1de60ppj1s" path="res://assets/art/products/pantry_can_sardines_red.png" id="130"]
+[ext_resource type="PackedScene" uid="uid://begehh18he3uc" path="res://scenes/prefabs/Items/Products/Dropped/Left/ChipsPiattos_dropped.tscn" id="131"]
+[ext_resource type="Resource" uid="uid://sggf5tpfp5jb" path="res://story/itemdata/Products/Left/ChipsPiattos_itemdata.tres" id="132"]
+[ext_resource type="Texture2D" uid="uid://5bfijye6t251" path="res://assets/art/products/pantry_junkfood_piattos.png" id="133"]
+[ext_resource type="PackedScene" uid="uid://c0nnqk3ucfwjx" path="res://scenes/prefabs/Items/Products/Dropped/Left/ChipsPiattos2_dropped.tscn" id="134"]
+[ext_resource type="Resource" uid="uid://u8q4s2i61coh" path="res://story/itemdata/Products/Left/ChipsPiattos2_itemdata.tres" id="135"]
+[ext_resource type="Texture2D" uid="uid://c2vg451ctkb22" path="res://assets/art/products/pantry_junkfood_piattos_sourcream.png" id="136"]
+[ext_resource type="PackedScene" uid="uid://321arxpt3glc" path="res://scenes/prefabs/Items/Products/Dispensers/RebiscoBrown_Dispenser.tscn" id="137"]
+[ext_resource type="PackedScene" uid="uid://b60f1ivjbp4jp" path="res://scenes/prefabs/Items/Products/Dispensers/RebiscoCream_Dispenser.tscn" id="138"]
+[ext_resource type="PackedScene" uid="uid://bryaw3gqc2xc" path="res://scenes/prefabs/Items/Products/Dispensers/RebiscoStrawberry_Dispenser.tscn" id="139"]
+[ext_resource type="PackedScene" uid="uid://ccyf168qmbvvf" path="res://scenes/areas/BottomArea.tscn" id="140"]
+[ext_resource type="PackedScene" uid="uid://cmtblc5lr6ouy" path="res://scenes/areas/DayCounter.tscn" id="141"]
+[ext_resource type="Script" uid="uid://cebojgmaui8k" path="res://scripts/Items/ItemManager.gd" id="142"]
+[ext_resource type="Texture2D" uid="uid://digm55b7ekgni" path="res://assets/art/environment/controls ui/under.png" id="143"]
+[ext_resource type="Texture2D" uid="uid://n34q4p4fv67f" path="res://assets/art/environment/controls ui/over.png" id="144"]
+[ext_resource type="Texture2D" uid="uid://bvkwtsnkhc5ms" path="res://assets/art/environment/controls ui/progress.png" id="145"]
+[ext_resource type="Texture2D" uid="uid://dg4bl8yo7341i" path="res://assets/art/environment/controls ui/lmb.png" id="146"]
+[ext_resource type="Texture2D" uid="uid://ciyx6o3fk4jwu" path="res://assets/art/environment/calculator buttons/button_blankL.png" id="147"]
+[ext_resource type="Texture2D" uid="uid://nxqcl0y7xfnt" path="res://assets/art/environment/controls ui/hold lmb_alt.png" id="148"]
+
+[ext_resource type="PackedScene" path="res://scenes/prefabs/Items/Misc/ledger_dropped.tscn" id="memory_ledger"]
+[ext_resource type="PackedScene" path="res://scenes/prefabs/Items/Misc/debt_receipt_dropped.tscn" id="memory_debt_receipt"]
+[ext_resource type="PackedScene" path="res://scenes/prefabs/Items/Cashier/Dropped/P100_Dropped.tscn" id="memory_bill_100"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srahk"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.74978, 0.74978, 0.74977994, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f2t1u"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x4pdy"]
+texture = ExtResource("2")
+texture_margin_left = 25.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 25.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.6131885, 0.5582878, 0.4611196, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_frjpc"]
+texture = ExtResource("3")
+texture_margin_left = 95.0
+texture_margin_top = 44.0
+texture_margin_right = 38.0
+texture_margin_bottom = 70.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 1, 210, 193)
+
+[sub_resource type="Theme" id="Theme_kuafv"]
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1")
+Button/styles/hover = SubResource("StyleBoxTexture_srahk")
+Button/styles/normal = SubResource("StyleBoxTexture_f2t1u")
+Button/styles/pressed = SubResource("StyleBoxTexture_x4pdy")
+Label/font_sizes/font_size = 64
+Label/fonts/font = ExtResource("1")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_frjpc")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/bold_font_size = 48
+RichTextLabel/font_sizes/bold_italics_font_size = 48
+RichTextLabel/font_sizes/italics_font_size = 48
+RichTextLabel/font_sizes/mono_font_size = 48
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("4")
+RichTextLabel/fonts/bold_italics_font = ExtResource("4")
+RichTextLabel/fonts/italics_font = ExtResource("1")
+RichTextLabel/fonts/mono_font = ExtResource("1")
+RichTextLabel/fonts/normal_font = ExtResource("1")
+VBoxContainer/constants/separation = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88g1f"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1882353, 0.16078432, 0.13725491, 0.76862746)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc0ul"]
+size = Vector2(288, 264)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mir8a"]
+size = Vector2(203.5, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ywp2"]
+size = Vector2(176, 288)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vl1nj"]
+size = Vector2(1877, 1243)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frjpc"]
+size = Vector2(470, 274)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjbp7"]
+size = Vector2(462, 271)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_taa0j"]
+size = Vector2(143.47533, 1203.0076)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1yut4"]
+size = Vector2(308.72418, 1181.9453)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igiuj"]
+size = Vector2(264.9381, 1224.7074)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l0led"]
+size = Vector2(1877, 104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ucrtl"]
+size = Vector2(348, 266)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7sl2"]
+size = Vector2(340, 173)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1njp3"]
+size = Vector2(388, 198)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7on2"]
+size = Vector2(172, 141.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oi3uc"]
+size = Vector2(301, 230)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kk107"]
+size = Vector2(406, 113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_top_full"]
+size = Vector2(400, 460)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_top_handle"]
+size = Vector2(62, 460)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bot_full"]
+size = Vector2(400, 780)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bot_handle"]
+size = Vector2(68, 780)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e82fq"]
+size = Vector2(326, 222)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oi3uc"]
+texture = ExtResource("147")
+texture_margin_left = 23.290764
+texture_margin_top = 19.53419
+texture_margin_right = 20.285503
+texture_margin_bottom = 18.0
+region_rect = Rect2(0, 0, 86, 72)
+modulate_color = Color(1.8106562, 0.44889736, 0.44889736, 1)
+
+[node name="Game" type="Node2D" unique_id=8059008]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=751750916]
+zoom = Vector2(0.6, 0.6)
+
+[node name="DialogueUI" type="Node2D" parent="." unique_id=42431897]
+
+[node name="SpeechBubbleStack" type="VBoxContainer" parent="DialogueUI" unique_id=1992951254]
+unique_name_in_owner = true
+z_index = 2
+custom_minimum_size = Vector2(1100, 400)
+custom_maximum_size = Vector2(1100, 400)
+offset_left = -285.0
+offset_top = -440.0
+offset_right = 915.0
+offset_bottom = -40.0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme = SubResource("Theme_kuafv")
+theme_override_constants/separation = 8
+alignment = 2
+script = ExtResource("5")
+speech_bubble_template = ExtResource("6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogueUI" unique_id=199716811]
+
+[node name="ResponseChoicesScreen" type="Panel" parent="DialogueUI/CanvasLayer" unique_id=87419525]
+unique_name_in_owner = true
+z_index = 11
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_kuafv")
+theme_override_styles/panel = SubResource("StyleBoxFlat_88g1f")
+script = ExtResource("7")
+response_choice_template = ExtResource("8")
+
+[node name="HBoxContainer" type="HFlowContainer" parent="DialogueUI/CanvasLayer/ResponseChoicesScreen" unique_id=1807916263]
+custom_maximum_size = Vector2(1280, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -22.5
+offset_right = 128.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ResponseChoice" parent="DialogueUI/CanvasLayer/ResponseChoicesScreen/HBoxContainer" unique_id=2021157818 instance=ExtResource("8")]
+layout_mode = 2
+
+[node name="NPC Container" type="Node" parent="." unique_id=1035241772 node_paths=PackedStringArray("item_receiver", "item_spawner")]
+script = ExtResource("9")
+item_receiver = NodePath("../Areas/ForwardFacingArea/ItemReceiver")
+item_spawner = NodePath("../Areas/ForwardFacingArea/ItemSpawner")
+money_denominations = {
+ExtResource("10"): ExtResource("11"),
+ExtResource("12"): ExtResource("13"),
+ExtResource("14"): ExtResource("15"),
+ExtResource("16"): ExtResource("17"),
+ExtResource("18"): ExtResource("19"),
+ExtResource("20"): ExtResource("21"),
+ExtResource("22"): ExtResource("23")
+}
+
+[node name="CharacterTemplate" parent="NPC Container" unique_id=2097212404 instance=ExtResource("26")]
+
+[node name="ScenePlayer" type="Node" parent="." unique_id=953588893]
+script = ExtResource("27")
+active_day = 5
+story_line = {
+0: ExtResource("28"),
+1: ExtResource("29"),
+2: ExtResource("30"),
+3: ExtResource("31"),
+4: ExtResource("32"),
+5: ExtResource("33")
+}
+
+[node name="Areas" type="Node" parent="." unique_id=548028852 node_paths=PackedStringArray("active_area", "cam", "default_area")]
+script = ExtResource("34")
+active_area = NodePath("ForwardFacingArea")
+cam = NodePath("../Camera2D")
+default_area = NodePath("ForwardFacingArea")
+
+[node name="ForwardFacingArea" parent="Areas" unique_id=1956691893 node_paths=PackedStringArray("left_area", "right_area", "above_area", "below_area") instance=ExtResource("35")]
+left_area = NodePath("../LeftArea")
+right_area = NodePath("../RightArea")
+above_area = NodePath("../OverheadArea")
+below_area = NodePath("../BottomArea")
+
+[node name="Napkin_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=767655095]
+z_index = 1
+position = Vector2(527, 190)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("37")
+item_data = ExtResource("38")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Napkin_Dispenser" unique_id=589502100]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_xc0ul")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Napkin_Dispenser" unique_id=1015600427]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("39")
+
+[node name="Mentos_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=1595811038]
+z_index = 1
+position = Vector2(737, 238)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("40")
+item_data = ExtResource("41")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Mentos_Dispenser" unique_id=1653522282]
+position = Vector2(45, -31)
+shape = SubResource("RectangleShape2D_mir8a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Mentos_Dispenser" unique_id=1882603698]
+z_index = 1
+position = Vector2(46, -30)
+texture = ExtResource("42")
+
+[node name="Cigratte_Dispenser" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=256727731]
+z_index = 1
+position = Vector2(288, 180)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("43")
+item_data = ExtResource("44")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/Cigratte_Dispenser" unique_id=1865088969]
+position = Vector2(-5, 0)
+shape = SubResource("RectangleShape2D_3ywp2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/ForwardFacingArea/Cigratte_Dispenser" unique_id=1002433306]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("45")
+
+[node name="ItemSuspender" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=125133956]
+position = Vector2(0, 1)
+collision_mask = 3
+script = ExtResource("46")
+
+[node name="SuspenderArea" type="CollisionShape2D" parent="Areas/ForwardFacingArea/ItemSuspender" unique_id=612729220]
+z_index = 2
+position = Vector2(0, 1053.5)
+shape = SubResource("RectangleShape2D_vl1nj")
+
+[node name="ItemReceiver" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=1078031329]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("47")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/ItemReceiver" unique_id=64669418]
+z_index = 1
+position = Vector2(0, 211)
+shape = SubResource("RectangleShape2D_frjpc")
+
+[node name="ItemSpawner" type="Area2D" parent="Areas/ForwardFacingArea" unique_id=238570491]
+collision_layer = 3
+script = ExtResource("48")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/ForwardFacingArea/ItemSpawner" unique_id=1146165643]
+position = Vector2(0, 215.5)
+shape = SubResource("RectangleShape2D_tjbp7")
+
+[node name="Tooltips" type="Node2D" parent="Areas/ForwardFacingArea" unique_id=1591009855]
+z_index = 1
+script = ExtResource("49")
+
+[node name="Label" type="RichTextLabel" parent="Areas/ForwardFacingArea/Tooltips" unique_id=1859759812]
+z_index = 1
+offset_left = -902.0
+offset_top = -21.0
+offset_right = 898.0
+offset_bottom = 32.0
+theme = SubResource("Theme_kuafv")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[b]Left Click:[/b] Take/drop items, [b]Left Click (HOLD):[/b] Return items, [b]Right Click:[/b] Check price"
+vertical_alignment = 1
+
+[node name="Label2" type="RichTextLabel" parent="Areas/ForwardFacingArea/Tooltips" unique_id=807129716]
+z_index = 1
+offset_left = 858.99994
+offset_top = 417.00003
+offset_right = 1060.0
+offset_bottom = 467.00003
+rotation = -0.0345368
+offset_transform_enabled = true
+offset_transform_scale = Vector2(2, 2)
+theme = SubResource("Theme_kuafv")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[b]fridge →[/b]"
+vertical_alignment = 1
+
+[node name="Label3" type="RichTextLabel" parent="Areas/ForwardFacingArea/Tooltips" unique_id=1630858471]
+z_index = 1
+offset_left = -848.0
+offset_top = 400.0
+offset_right = -646.99994
+offset_bottom = 450.0
+rotation = -0.0345368
+offset_transform_enabled = true
+offset_transform_scale = Vector2(2, 2)
+theme = SubResource("Theme_kuafv")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[b]← shelf[/b]"
+vertical_alignment = 1
+
+[node name="Label4" type="RichTextLabel" parent="Areas/ForwardFacingArea/Tooltips" unique_id=1365160686]
+z_index = 1
+offset_left = -88.999985
+offset_top = 460.99994
+offset_right = 112.00008
+offset_bottom = 510.99994
+rotation = 0.084504604
+offset_transform_enabled = true
+offset_transform_scale = Vector2(2, 2)
+theme = SubResource("Theme_kuafv")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[b]counter ↓[/b]"
+vertical_alignment = 1
+
+[node name="Label5" type="RichTextLabel" parent="Areas/ForwardFacingArea/Tooltips" unique_id=1821673007]
+z_index = 1
+offset_left = -194.99998
+offset_top = -537.0
+offset_right = 6.0000763
+offset_bottom = -487.0
+rotation = -0.0345368
+offset_transform_enabled = true
+offset_transform_scale = Vector2(2, 2)
+theme = SubResource("Theme_kuafv")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[b]sachets ↑[/b]"
+vertical_alignment = 1
+
+[node name="BGs" type="Node2D" parent="Areas/ForwardFacingArea" unique_id=422780137 node_paths=PackedStringArray("scene_player")]
+script = ExtResource("50")
+scene_player = NodePath("../../../ScenePlayer")
+
+[node name="Day" type="Node2D" parent="Areas/ForwardFacingArea/BGs" unique_id=1629210248]
+
+[node name="FrontFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Day" unique_id=935273402]
+z_index = 1
+texture = ExtResource("51")
+
+[node name="OvhFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Day" unique_id=1799763965]
+z_index = 1
+position = Vector2(0, -1080)
+texture = ExtResource("52")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Day" unique_id=936380794]
+z_index = -1
+texture = ExtResource("53")
+
+[node name="ColorRect" type="ColorRect" parent="Areas/ForwardFacingArea/BGs/Day" unique_id=346314768]
+z_index = -2
+offset_left = -3688.0
+offset_top = -291.0
+offset_right = -3453.409
+offset_bottom = -138.40753
+scale = Vector2(34.89476, -9.613842)
+mouse_filter = 2
+color = Color(0.7647059, 0.9254902, 0.9372549, 1)
+
+[node name="Night" type="Node2D" parent="Areas/ForwardFacingArea/BGs" unique_id=77150271]
+modulate = Color(1, 1, 1, 0)
+
+[node name="FrontFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=449163059]
+z_index = 1
+texture = ExtResource("54")
+
+[node name="OvhFrame" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=425935045]
+z_index = 1
+position = Vector2(0, -1080)
+texture = ExtResource("55")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=536404966]
+z_index = -1
+texture = ExtResource("56")
+
+[node name="ColorRect" type="ColorRect" parent="Areas/ForwardFacingArea/BGs/Night" unique_id=1532523137]
+z_index = -2
+offset_left = -3688.0
+offset_top = -291.0
+offset_right = -3453.409
+offset_bottom = -138.40753
+scale = Vector2(34.89476, -9.613842)
+mouse_filter = 2
+color = Color(0.047058824, 0.05490196, 0.13333334, 1)
+
+[node name="OverheadArea" parent="Areas" unique_id=2025409447 node_paths=PackedStringArray("below_area") instance=ExtResource("57")]
+position = Vector2(0, -1080)
+below_area = NodePath("../ForwardFacingArea")
+
+[node name="CoffeeStrip_Dispenser2" type="Area2D" parent="Areas/OverheadArea" unique_id=43487435]
+position = Vector2(141, -83)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("58")
+item_data = ExtResource("59")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=1646577298]
+position = Vector2(33.0112, 94.50366)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_taa0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=698587333]
+z_index = 1
+position = Vector2(30, 254)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("60")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/CoffeeStrip_Dispenser2" unique_id=2013661972]
+z_index = 1
+visible = false
+position = Vector2(-10.999996, 254)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("60")
+
+[node name="Shampoo_Dispenser3" type="Area2D" parent="Areas/OverheadArea" unique_id=148129705]
+position = Vector2(-532, -153)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("61")
+item_data = ExtResource("62")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=1439509033]
+position = Vector2(19, 87)
+rotation = -0.04796178
+shape = SubResource("RectangleShape2D_1yut4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=397182855]
+z_index = 1
+position = Vector2(30, 297)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("63")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/Shampoo_Dispenser3" unique_id=270528645]
+z_index = 1
+visible = false
+position = Vector2(13.000002, 297)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("63")
+
+[node name="MiloSachet_Dispenser3" type="Area2D" parent="Areas/OverheadArea" unique_id=982345408]
+position = Vector2(420, 2)
+rotation = 0.06188979
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("64")
+item_data = ExtResource("65")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=1446505869]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_igiuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=306932841]
+z_index = 1
+position = Vector2(30, 218)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("66")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/MiloSachet_Dispenser3" unique_id=1350379960]
+z_index = 1
+visible = false
+position = Vector2(-10.79031, 218)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("66")
+
+[node name="IcedTeaSachet_Dispenser4" type="Area2D" parent="Areas/OverheadArea" unique_id=1731561141]
+position = Vector2(-150, -82)
+rotation = 0.04032771
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("67")
+item_data = ExtResource("68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/IcedTeaSachet_Dispenser4" unique_id=215428148]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_igiuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/IcedTeaSachet_Dispenser4" unique_id=2104234568]
+z_index = 1
+position = Vector2(30, 301)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("69")
+
+[node name="ZonroxSachet_Dispenser4" type="Area2D" parent="Areas/OverheadArea" unique_id=2134984110]
+position = Vector2(702, 65)
+rotation = 0.028449085
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("70")
+item_data = ExtResource("71")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=716521012]
+position = Vector2(31.614471, 31.690063)
+rotation = -0.022232445
+shape = SubResource("RectangleShape2D_igiuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=1921350277]
+z_index = 1
+position = Vector2(30, 106)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("72")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/OverheadArea/ZonroxSachet_Dispenser4" unique_id=1727597892]
+z_index = 1
+visible = false
+position = Vector2(-8.965365, 106)
+rotation = -0.035120618
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("72")
+
+[node name="RightArea" parent="Areas" unique_id=599874864 node_paths=PackedStringArray("left_area") instance=ExtResource("73")]
+z_as_relative = false
+position = Vector2(1920, 0)
+script = ExtResource("74")
+left_area = NodePath("../ForwardFacingArea")
+ambient_id = ""
+
+[node name="ItemDestroyer" type="Area2D" parent="Areas/RightArea" unique_id=143534591]
+position = Vector2(0, 1)
+script = ExtResource("75")
+
+[node name="SuspenderArea" type="CollisionShape2D" parent="Areas/RightArea/ItemDestroyer" unique_id=484283527]
+z_index = 2
+position = Vector2(81.5, 484)
+shape = SubResource("RectangleShape2D_l0led")
+
+[node name="RefContainer" type="Node2D" parent="Areas/RightArea" unique_id=2135227505]
+z_index = 1
+position = Vector2(-191, 18)
+scale = Vector2(0.38, 0.38)
+script = ExtResource("76")
+
+[node name="RefInterior" type="Sprite2D" parent="Areas/RightArea/RefContainer" unique_id=1294254776]
+position = Vector2(-15, 0)
+texture = ExtResource("77")
+
+[node name="Beer_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefInterior" unique_id=774085843]
+position = Vector2(-397, 364)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("78")
+item_data = ExtResource("79")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=1430915190]
+position = Vector2(144, 0)
+shape = SubResource("RectangleShape2D_ucrtl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=280418844]
+modulate = Color(0.40069774, 0.40069774, 0.40069768, 1)
+position = Vector2(79, -4)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("80")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=1279615705]
+modulate = Color(0.40069774, 0.40069774, 0.40069768, 1)
+position = Vector2(204, -4)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("80")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=387537297]
+position = Vector2(13, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("80")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=1735891951]
+position = Vector2(138, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("80")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Beer_Dispenser" unique_id=269999882]
+position = Vector2(263, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("80")
+
+[node name="Coke_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefInterior" unique_id=1966302763]
+position = Vector2(-397, -87)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("81")
+item_data = ExtResource("82")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=1825314538]
+position = Vector2(140, 23.5)
+shape = SubResource("RectangleShape2D_p7sl2")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=1849051992]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(24, 23.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=356965126]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(77, 23.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=168163523]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(129, 23.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=2031872986]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(179, 23.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=2085106001]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(235, 23.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=447541647]
+position = Vector2(0, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=127481179]
+position = Vector2(53.000008, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=1782422216]
+position = Vector2(105.000015, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=1029815988]
+position = Vector2(155.00003, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=673173660]
+position = Vector2(211.00003, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Coke_Dispenser" unique_id=896977779]
+position = Vector2(263.00003, 25.000004)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("83")
+
+[node name="Ice_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefInterior" unique_id=1221787221]
+position = Vector2(-384, -390)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("84")
+item_data = ExtResource("85")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=406115361]
+position = Vector2(139, 22)
+shape = SubResource("RectangleShape2D_1njp3")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=2036140922]
+modulate = Color(0.24202776, 0.5115169, 0.75787747, 1)
+position = Vector2(146, 8.999999)
+rotation = 0.014994085
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1398018938]
+modulate = Color(0.24202776, 0.5115169, 0.75787747, 1)
+position = Vector2(243, -1.0000019)
+rotation = 3.3860276
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1565451037]
+modulate = Color(0.24202776, 0.5115169, 0.75787747, 1)
+position = Vector2(153, -24.999998)
+rotation = 2.8741293
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1734120049]
+modulate = Color(0.24202776, 0.5115169, 0.75787747, 1)
+position = Vector2(59.000015, -5.9999976)
+rotation = -0.36149397
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=707535352]
+modulate = Color(0.49164724, 0.7351037, 0.911732, 1)
+position = Vector2(210, 2.0000005)
+rotation = 0.34564435
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=2100009874]
+modulate = Color(0.49164724, 0.7351037, 0.911732, 1)
+position = Vector2(98, 4.000002)
+rotation = -0.24985719
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1069613374]
+modulate = Color(0.6784627, 0.7908285, 0.894448, 1)
+position = Vector2(239, 26)
+rotation = 0.089606166
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1695086704]
+modulate = Color(0.6784627, 0.7908285, 0.894448, 1)
+position = Vector2(156, 29)
+rotation = 0.15936701
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1365603283]
+modulate = Color(0.6784627, 0.7908285, 0.894448, 1)
+position = Vector2(47, 32)
+rotation = -3.1608274
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("86")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1082768505]
+modulate = Color(0.82982457, 0.868808, 0.9254519, 1)
+position = Vector2(237, 58)
+rotation = -0.029521775
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1366575726]
+modulate = Color(0.82982457, 0.868808, 0.9254519, 1)
+position = Vector2(154, 58)
+rotation = 0.051100392
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=334789248]
+modulate = Color(0.82982457, 0.868808, 0.9254519, 1)
+position = Vector2(40, 58)
+rotation = -0.035433847
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1609606118]
+position = Vector2(244, 86)
+rotation = 0.027370648
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=2099969870]
+position = Vector2(157, 86)
+rotation = -0.022676691
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Ice_Dispenser" unique_id=1953344883]
+position = Vector2(30, 86)
+rotation = 0.019370437
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("86")
+
+[node name="Sprite_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefInterior" unique_id=628432546]
+position = Vector2(-397, 77)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("87")
+item_data = ExtResource("88")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=2044783438]
+position = Vector2(56, 36.75)
+shape = SubResource("RectangleShape2D_y7on2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=1976568251]
+modulate = Color(0.42365062, 0.42365065, 0.42365062, 1)
+position = Vector2(30, 38)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("89")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=1343294850]
+modulate = Color(0.42365062, 0.42365065, 0.42365062, 1)
+position = Vector2(90, 38)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("89")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=752950854]
+position = Vector2(0, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("89")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=753463027]
+position = Vector2(60, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("89")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Sprite_Dispenser" unique_id=1674755658]
+position = Vector2(113, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("89")
+
+[node name="Royal_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefInterior" unique_id=2098361411]
+position = Vector2(-215, 77)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("90")
+item_data = ExtResource("91")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=134992428]
+position = Vector2(56, 36.75)
+shape = SubResource("RectangleShape2D_y7on2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=229782022]
+modulate = Color(0.7975215, 0.5353984, 0.5075211, 1)
+position = Vector2(14, 38)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("92")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=2053371628]
+modulate = Color(0.7975215, 0.5353984, 0.5075211, 1)
+position = Vector2(63, 38)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("92")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=329172222]
+modulate = Color(0.7975215, 0.5353984, 0.5075211, 1)
+position = Vector2(112, 38)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("92")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=1822648564]
+position = Vector2(-13, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("92")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=948233936]
+position = Vector2(38, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("92")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefInterior/Royal_Dispenser" unique_id=1511126790]
+position = Vector2(89, 43.000004)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("92")
+
+[node name="RefDoorTop_Open" type="Sprite2D" parent="Areas/RightArea/RefContainer" unique_id=679418606]
+position = Vector2(0, -210)
+texture = ExtResource("93")
+
+[node name="RefDoorTop_Open_Tray" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorTop_Open" unique_id=1800467949]
+texture = ExtResource("94")
+
+[node name="RefDoorBot_Open" type="Sprite2D" parent="Areas/RightArea/RefContainer" unique_id=2043489966]
+position = Vector2(0, 210)
+texture = ExtResource("95")
+
+[node name="ProductContainer" type="Node2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open" unique_id=1612350567]
+
+[node name="WaterBottle_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer" unique_id=706677979]
+position = Vector2(99, 364)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("96")
+item_data = ExtResource("97")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=1393082924]
+position = Vector2(155, 0)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=144360204]
+modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
+position = Vector2(35.999996, -4.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=317511384]
+modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
+position = Vector2(111.999985, -4.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=304027768]
+modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
+position = Vector2(191.99998, -4.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=1662545077]
+modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
+position = Vector2(267.99997, -4.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=331971282]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=193206832]
+position = Vector2(76, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=288469529]
+position = Vector2(156, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=1063569260]
+position = Vector2(232, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/WaterBottle_Dispenser" unique_id=660091503]
+position = Vector2(306.99997, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("98")
+
+[node name="Egg_Dispenser" type="Area2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer" unique_id=1674163750]
+position = Vector2(99, -87)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("99")
+item_data = ExtResource("100")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=2120597027]
+position = Vector2(152, 47.5)
+shape = SubResource("RectangleShape2D_kk107")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1742156879]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(28, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=964301303]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(81, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=562937260]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(133, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1775145766]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(186, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=172544683]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(237, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1138520469]
+modulate = Color(0.8701275, 0.74843425, 0.7207913, 1)
+position = Vector2(290, 40)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=2056273220]
+position = Vector2(0, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1081015911]
+position = Vector2(53, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1936923080]
+position = Vector2(105, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=82231900]
+position = Vector2(158, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1981371696]
+position = Vector2(209, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=1373990519]
+position = Vector2(262, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open/ProductContainer/Egg_Dispenser" unique_id=530874709]
+position = Vector2(314, 48)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("101")
+
+[node name="RefDoorTop_Bottom_Tray" type="Sprite2D" parent="Areas/RightArea/RefContainer/RefDoorBot_Open" unique_id=843515852]
+visible = false
+texture = ExtResource("102")
+
+[node name="RefDoorTop_Closed" type="Sprite2D" parent="Areas/RightArea/RefContainer" unique_id=2106376671]
+visible = false
+position = Vector2(0, -210)
+texture = ExtResource("103")
+
+[node name="RefDoorBot_Closed" type="Sprite2D" parent="Areas/RightArea/RefContainer" unique_id=575553829]
+visible = false
+position = Vector2(0, 210)
+texture = ExtResource("104")
+
+[node name="TopDoorArea" type="Area2D" parent="Areas/RightArea/RefContainer" unique_id=188953031]
+collision_layer = 8
+
+[node name="FullDoorShape" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/TopDoorArea" unique_id=133441068]
+position = Vector2(-243, -431)
+shape = SubResource("RectangleShape2D_top_full")
+disabled = true
+
+[node name="HandleShape" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/TopDoorArea" unique_id=2058602505]
+position = Vector2(484, -434)
+shape = SubResource("RectangleShape2D_top_handle")
+
+[node name="BottomDoorArea" type="Area2D" parent="Areas/RightArea/RefContainer" unique_id=1011148412]
+collision_layer = 8
+
+[node name="FullDoorShape" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/BottomDoorArea" unique_id=90604217]
+position = Vector2(-248, 160)
+shape = SubResource("RectangleShape2D_bot_full")
+disabled = true
+
+[node name="HandleShape" type="CollisionShape2D" parent="Areas/RightArea/RefContainer/BottomDoorArea" unique_id=797254573]
+position = Vector2(488, 193)
+shape = SubResource("RectangleShape2D_bot_handle")
+
+[node name="Cases" type="Node2D" parent="Areas/RightArea" unique_id=671155234]
+position = Vector2(402, 426)
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=13767281]
+z_index = 2
+position = Vector2(78, 15)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("105")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=968489736]
+z_index = 2
+position = Vector2(78, -173)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("106")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=1283240216]
+z_index = 2
+position = Vector2(321, 16)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("107")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=954611917]
+z_index = 2
+position = Vector2(321, -173)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("108")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=1011988916]
+z_index = 2
+position = Vector2(321, -374)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("109")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/RightArea/Cases" unique_id=29291314]
+z_index = 2
+position = Vector2(78, -373)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("110")
+
+[node name="LeftArea" parent="Areas" unique_id=1842672799 node_paths=PackedStringArray("right_area") instance=ExtResource("111")]
+position = Vector2(-1920, 0)
+right_area = NodePath("../ForwardFacingArea")
+
+[node name="Shelf" type="Sprite2D" parent="Areas/LeftArea" unique_id=829176436]
+z_index = 1
+position = Vector2(-69, 67)
+texture = ExtResource("112")
+
+[node name="Noodles_Soup_Dispenser" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=746744473]
+position = Vector2(45, 215)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("113")
+item_data = ExtResource("114")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=1731697617]
+position = Vector2(127.5, 5)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=143568757]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(70, -50)
+rotation = -0.041477233
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=738528849]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(102, -50)
+rotation = 0.021697957
+scale = Vector2(0.11000001, 0.11000001)
+texture = ExtResource("115")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=1120035075]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(135, -49)
+rotation = -0.022344705
+scale = Vector2(0.11000001, 0.11000001)
+texture = ExtResource("115")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=1993895887]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(171, -51)
+rotation = 0.015384879
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=402159053]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(70, 57)
+rotation = -0.041477233
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=387375344]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(102, 57)
+rotation = 0.021697959
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=691959688]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(135, 58)
+rotation = -0.022344705
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=1973479556]
+modulate = Color(0.72506404, 0.6153642, 0.52344334, 1)
+position = Vector2(171, 56)
+rotation = 0.015384879
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("115")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=1672719454]
+position = Vector2(200, -52)
+rotation = 0.02488883
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("115")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Soup_Dispenser" unique_id=813203447]
+position = Vector2(199.99997, 55)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("115")
+
+[node name="Noodles_Pancit_Dispenser" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=1916127409]
+position = Vector2(412, 215)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("116")
+item_data = ExtResource("117")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1286737517]
+position = Vector2(124, -1.5)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1526512108]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(70, -50)
+rotation = -0.041477233
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1697814494]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(102, -50)
+rotation = 0.021697957
+scale = Vector2(0.11000001, 0.11000001)
+texture = ExtResource("118")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=313150062]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(135, -49)
+rotation = -0.022344705
+scale = Vector2(0.11000001, 0.11000001)
+texture = ExtResource("118")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1659121401]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(171, -51)
+rotation = 0.015384879
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1213555897]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(70, 57)
+rotation = -0.041477233
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=603109072]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(102, 57)
+rotation = 0.021697959
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1088219358]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(135, 58)
+rotation = -0.022344705
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=585301065]
+modulate = Color(0.6250994, 0.6619835, 0.47255957, 1)
+position = Vector2(171, 56)
+rotation = 0.015384879
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("118")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1445731684]
+position = Vector2(200, -52)
+rotation = 0.02488883
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("118")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/Noodles_Pancit_Dispenser" unique_id=1373690512]
+position = Vector2(199.99997, 55)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("118")
+
+[node name="ChipsNova_Dispenser" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=1962726864]
+position = Vector2(412, -302)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("119")
+item_data = ExtResource("120")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/ChipsNova_Dispenser" unique_id=82383135]
+position = Vector2(124, -1.5)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsNova_Dispenser" unique_id=260825117]
+modulate = Color(0.7579693, 0.51738936, 0.5014537, 1)
+position = Vector2(46, 10)
+rotation = 0.044238143
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("121")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsNova_Dispenser" unique_id=2095141888]
+modulate = Color(0.7579693, 0.51738936, 0.5014537, 1)
+position = Vector2(99, 10)
+rotation = -0.06419772
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("121")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsNova_Dispenser" unique_id=2069795976]
+modulate = Color(0.7579693, 0.51738936, 0.5014537, 1)
+position = Vector2(156, 11)
+rotation = 0.036130186
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("121")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsNova_Dispenser" unique_id=1713306821]
+position = Vector2(202.99997, 0)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("121")
+
+[node name="CanCornBeef_Dispenser" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=2130624287]
+position = Vector2(416, -46)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("122")
+item_data = ExtResource("123")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=65039130]
+position = Vector2(118, 0)
+shape = SubResource("RectangleShape2D_e82fq")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1764374843]
+position = Vector2(19, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=39595054]
+position = Vector2(19, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1784343315]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-4, -43)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("124")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1169951224]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-4, 55)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("124")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1281719105]
+position = Vector2(19, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=7598628]
+position = Vector2(19, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1879965907]
+position = Vector2(88, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=372274058]
+position = Vector2(88, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=3634292]
+position = Vector2(163, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=446370987]
+position = Vector2(163, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=908164178]
+position = Vector2(163, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=361674432]
+position = Vector2(163, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1265965073]
+position = Vector2(232, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanCornBeef_Dispenser" unique_id=1941329381]
+position = Vector2(231.99997, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("124")
+
+[node name="CanSardines_Dispenser2" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=1040007271]
+position = Vector2(57, -46)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("125")
+item_data = ExtResource("126")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=869139340]
+position = Vector2(118, 0)
+shape = SubResource("RectangleShape2D_e82fq")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1859008292]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-13, -43)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("127")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=804609435]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-13, 55)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("127")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1639307495]
+position = Vector2(19, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1570792748]
+position = Vector2(19, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=441896377]
+position = Vector2(63, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1609016529]
+position = Vector2(63, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=304339141]
+position = Vector2(121, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=174541770]
+position = Vector2(121, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1045128150]
+position = Vector2(179, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1624481439]
+position = Vector2(179, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=912446998]
+position = Vector2(232, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser2" unique_id=1324571214]
+position = Vector2(231.99997, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("127")
+
+[node name="CanSardines_Dispenser3" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=872595205]
+position = Vector2(-284, -46)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("128")
+item_data = ExtResource("129")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=552097819]
+position = Vector2(118, 0)
+shape = SubResource("RectangleShape2D_e82fq")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=1355519929]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-13, -43)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("130")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=1510129446]
+modulate = Color(0.7204239, 0.56337124, 0.4103663, 1)
+position = Vector2(-13, 55)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("130")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=1139787345]
+position = Vector2(19, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=945245640]
+position = Vector2(19, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=439858171]
+position = Vector2(63, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=408473284]
+position = Vector2(63, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=1769614217]
+position = Vector2(121, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=173719852]
+position = Vector2(121, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=408135451]
+position = Vector2(179, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=461411880]
+position = Vector2(179, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=769342483]
+position = Vector2(232, -49)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/CanSardines_Dispenser3" unique_id=949435114]
+position = Vector2(231.99997, 55)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("130")
+
+[node name="ChipsPiattos_Dispenser2" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=439868840]
+position = Vector2(42, -312)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("131")
+item_data = ExtResource("132")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2" unique_id=1568486903]
+position = Vector2(124, -1.5)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2" unique_id=1197648938]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(62.756958, 8.830322)
+rotation = 0.044238143
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("133")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2" unique_id=410226618]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(115.75696, 8.830322)
+rotation = -0.06419772
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("133")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2" unique_id=520327638]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(172.75696, 9.830322)
+rotation = 0.036130186
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("133")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser2" unique_id=1209040057]
+position = Vector2(202.99997, 0)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("133")
+
+[node name="ChipsPiattos_Dispenser3" type="Area2D" parent="Areas/LeftArea/Shelf" unique_id=1952641987]
+position = Vector2(-302, -312)
+collision_layer = 4
+script = ExtResource("36")
+item_prefab = ExtResource("134")
+item_data = ExtResource("135")
+is_returnable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3" unique_id=120910873]
+position = Vector2(124, -1.5)
+shape = SubResource("RectangleShape2D_oi3uc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3" unique_id=869337059]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(62.756958, 8.830322)
+rotation = 0.044238143
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("136")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3" unique_id=501558702]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(115.75696, 8.830322)
+rotation = -0.06419772
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("136")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3" unique_id=344855836]
+modulate = Color(0.5809285, 0.5765756, 0.68482614, 1)
+position = Vector2(172.75696, 9.830322)
+rotation = 0.036130186
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("136")
+
+[node name="Sprite2D" type="Sprite2D" parent="Areas/LeftArea/Shelf/ChipsPiattos_Dispenser3" unique_id=1014714974]
+position = Vector2(202.99997, 0)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("136")
+
+[node name="Rebisco1_Dispenser" parent="Areas/LeftArea/Shelf" unique_id=1065646624 instance=ExtResource("137")]
+position = Vector2(-232, 186)
+
+[node name="Rebisco_Dispenser" parent="Areas/LeftArea/Shelf" unique_id=1756084517 instance=ExtResource("138")]
+position = Vector2(-580, -86)
+
+[node name="Rebisco_Dispenser2" parent="Areas/LeftArea/Shelf" unique_id=346485904 instance=ExtResource("139")]
+position = Vector2(-594, -348)
+
+[node name="BottomArea" parent="Areas" unique_id=860115404 node_paths=PackedStringArray("above_area") instance=ExtResource("140")]
+position = Vector2(0, 1080)
+above_area = NodePath("../ForwardFacingArea")
+
+[node name="DayCounter" parent="." unique_id=1972693337 instance=ExtResource("141")]
+z_index = 12
+
+[node name="DroppedItemHolder" type="Control" parent="." unique_id=2094314732]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("142")
+
+[node name="HoldProgress" type="TextureProgressBar" parent="DroppedItemHolder" unique_id=1462491783]
+visible = false
+z_index = 10
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(-0.5, -0.5)
+mouse_filter = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+fill_mode = 4
+texture_under = ExtResource("143")
+texture_over = ExtResource("144")
+texture_progress = ExtResource("145")
+
+[node name="Tooltips" type="Node2D" parent="DroppedItemHolder" unique_id=1704819796]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DroppedItemHolder/Tooltips" unique_id=2057001999]
+z_index = 10
+offset_right = 40.0
+offset_bottom = 40.0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(-1, 0)
+mouse_filter = 2
+theme = SubResource("Theme_kuafv")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78039217)
+theme_override_constants/shadow_outline_size = 10
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[b]Get item[/b]"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="DroppedItemHolder/Tooltips" unique_id=554585533]
+z_index = 10
+offset_right = 40.0
+offset_bottom = 40.0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(-1, 0)
+mouse_filter = 2
+theme = SubResource("Theme_kuafv")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78039217)
+theme_override_constants/shadow_outline_size = 10
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "
+
+[b]Return item[/b]"
+fit_content = true
+autowrap_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="DroppedItemHolder/Tooltips" unique_id=1925858771]
+z_index = 10
+offset_left = -191.0
+offset_top = -46.0
+offset_right = -91.0
+offset_bottom = 79.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("146")
+
+[node name="TextureRect3" type="PanelContainer" parent="DroppedItemHolder/Tooltips" unique_id=1265106653]
+z_index = 10
+offset_left = -229.0
+offset_top = 35.0
+offset_right = -129.0
+offset_bottom = 78.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_oi3uc")
+
+[node name="TextureRect2" type="TextureRect" parent="DroppedItemHolder/Tooltips" unique_id=1064301747]
+z_index = 10
+offset_left = -229.0
+offset_right = -129.0
+offset_bottom = 157.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("148")
+
+[node name="MemoryLedger" parent="DroppedItemHolder" instance=ExtResource("memory_ledger")]
+visible = false
+position = Vector2(220, 780)
+freeze = true
+metadata/memory_stock_slot = "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryLedger"
+
+[node name="MemoryReceipt" parent="DroppedItemHolder" instance=ExtResource("memory_debt_receipt")]
+visible = false
+position = Vector2(320, 780)
+freeze = true
+metadata/memory_stock_slot = "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryReceipt"
+
+[node name="MemoryCash100" parent="DroppedItemHolder" instance=ExtResource("memory_bill_100")]
+visible = false
+position = Vector2(420, 780)
+freeze = true
+metadata/memory_stock_slot = "res://scenes/levels/Main.tscn#DroppedItemHolder/MemoryCash100"
+
+[connection signal="day_ended" from="ScenePlayer" to="DayCounter" method="_on_scene_player_day_ended"]
+[connection signal="day_ended2" from="Areas" to="DayCounter" method="_on_areas_day_ended_2"]
+[connection signal="body_entered" from="Areas/ForwardFacingArea/ItemSuspender" to="Areas/ForwardFacingArea/ItemSuspender" method="_on_body_entered"]
+[connection signal="body_exited" from="Areas/ForwardFacingArea/ItemSuspender" to="Areas/ForwardFacingArea/ItemSuspender" method="_on_body_exited"]
+[connection signal="body_entered" from="Areas/ForwardFacingArea/ItemReceiver" to="Areas/ForwardFacingArea/ItemReceiver" method="_on_body_entered"]
+[connection signal="body_exited" from="Areas/ForwardFacingArea/ItemReceiver" to="Areas/ForwardFacingArea/ItemReceiver" method="_on_body_exited"]
+[connection signal="body_shape_entered" from="Areas/RightArea/ItemDestroyer" to="Areas/RightArea/ItemDestroyer" method="_on_body_shape_entered"]
+[connection signal="input_event" from="Areas/RightArea/RefContainer/TopDoorArea" to="Areas/RightArea/RefContainer" method="_on_top_door_area_input_event"]
+[connection signal="input_event" from="Areas/RightArea/RefContainer/BottomDoorArea" to="Areas/RightArea/RefContainer" method="_on_bottom_door_area_input_event"]
+[connection signal="day_intro_finished" from="DayCounter" to="ScenePlayer" method="_on_day_counter_day_intro_finished"]
+[connection signal="day_intro_finished" from="DayCounter" to="Areas" method="_on_day_counter_day_intro_finished"]
+[connection signal="day_intro_starting" from="DayCounter" to="Areas" method="_on_day_counter_day_intro_starting"]

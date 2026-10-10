@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ejwxk2cyqhsx"]
+
+[ext_resource type="PackedScene" uid="uid://cy3ifwo4m8a1f" path="res://scenes/prefabs/NPCs/character_junjun.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://dt3koekqbcbwm" path="res://assets/art/characters/junjun_tired.png" id="2"]
+
+[node name="CharacterTemplate" unique_id=2097212404 instance=ExtResource("1")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=52607391]
+texture = ExtResource("2")

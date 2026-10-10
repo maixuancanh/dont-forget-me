@@ -1,0 +1,106 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.0",
+      "legacy_event_id": "Day6_4_Lucia:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.2",
+      "legacy_event_id": "Day6_4_Lucia:2",
+      "input_labels": [
+        "What are you carrying, Hanh?",
+        "Why come after closing?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.4",
+      "legacy_event_id": "Day6_4_Lucia:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.7",
+      "legacy_event_id": "Day6_4_Lucia:7",
+      "input_labels": [
+        "Why not give it to Officer Phuc?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.9",
+      "legacy_event_id": "Day6_4_Lucia:9",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.11",
+      "legacy_event_id": "Day6_4_Lucia:11",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.13",
+      "legacy_event_id": "Day6_4_Lucia:13",
+      "input_labels": [
+        "Leave it on the counter."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_4_Lucia.15",
+      "legacy_event_id": "Day6_4_Lucia:15",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "place_items",
+      "items_to_place": [
+        "res://scenes/prefabs/Items/Misc/Paluwagan_dropped.tscn"
+      ]
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

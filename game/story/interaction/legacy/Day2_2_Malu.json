@@ -1,0 +1,78 @@
+{
+  "character_name": "Thu",
+  "character_template": "res://scenes/prefabs/NPCs/character_malu.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] [b]Three bags of ice[/b], please. My drinks are warm already."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Busy at the drinks stall, Thu?",
+        "How is business today?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] Good morning for sales. Bad morning for gossip. Hanh told everyone Binh had not paid her."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Keep your receipts, Thu."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] I paid her too. Now I am wondering whether I should ask to see my line in that book."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "ice": 3
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Thu:[/b][/color] Thanks. Three bags should get me through the afternoon."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

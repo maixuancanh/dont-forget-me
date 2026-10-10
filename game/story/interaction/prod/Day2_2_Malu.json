@@ -1,0 +1,93 @@
+{
+  "character_name": "Thu",
+  "character_template": "res://scenes/prefabs/NPCs/character_malu.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.0",
+      "legacy_event_id": "Day2_2_Malu:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.2",
+      "legacy_event_id": "Day2_2_Malu:2",
+      "input_labels": [
+        "Busy at the drinks stall, Thu?",
+        "How is business today?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.4",
+      "legacy_event_id": "Day2_2_Malu:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.6",
+      "legacy_event_id": "Day2_2_Malu:6",
+      "input_labels": [
+        "Keep your receipts, Thu."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.8",
+      "legacy_event_id": "Day2_2_Malu:8",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "ice": 3
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day2_2_Malu.14",
+      "legacy_event_id": "Day2_2_Malu:14",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

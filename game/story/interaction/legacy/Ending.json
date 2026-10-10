@@ -1,0 +1,122 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia_altn.tscn",
+  "interactions": [
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+      "volume_db": -5
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/scary_violins.ogg",
+      "volume_db": 5.0
+    },
+    {
+      "type": "wait",
+      "waitMs": 3500
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You opened it."
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] That line is private. Close the book."
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/heartbeat.mp3",
+      "loop": true,
+      "volume_db": -0.25,
+      "id": "heartbeat"
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Binh paid on Friday. I know what the receipt says."
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I entered the loan again. I needed the money. He came back and would not leave without the book."
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I pushed him. He hit the step. He was still breathing when I shut the gate."
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Open up. We can fix the figures together."
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]GIVE ME THE BOOK.[/b]"
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] You sell a little on credit every day. You know how easy it is to change one line."
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/loud_door_bang.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "wait",
+      "waitMs": 3000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Step away from the gate, Hanh. Keep the book where I can see it."
+    },
+    {
+      "type": "wait",
+      "waitMs": 5000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Officer, take the book. Binh paid.",
+        "His name stays in the book. Take it as evidence."
+      ]
+    }
+  ]
+}

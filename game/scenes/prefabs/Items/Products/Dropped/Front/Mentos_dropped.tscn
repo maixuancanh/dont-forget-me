@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d2800xgvs5au5"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://hcumk5h0881l" path="res://story/itemdata/Products/Front/Mentos_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://dddp0cd1ivgax" path="res://assets/art/products/candy_mentos.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gaaq"]
+size = Vector2(76, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8hrr"]
+size = Vector2(116, 94)
+
+[node name="Napkin_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(4, -1)
+shape = SubResource("RectangleShape2D_6gaaq")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+shape = SubResource("RectangleShape2D_q8hrr")

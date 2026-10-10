@@ -1,0 +1,80 @@
+{
+  "character_name": "Phuc",
+  "character_template": "res://scenes/prefabs/NPCs/character_jomar.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I have news about Binh. May I step out of the rain for a moment?"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Come under the roof. Take a coffee sachet.",
+        "I will get you a coffee sachet."
+      ]
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+      "volume_db": -10.0
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Thank you for the coffee. We have identified the man in the drainage channel."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Was it him?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] Binh. His family confirmed it this afternoon."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] We found a wet payment slip in his pocket. The date is readable. The signature is not."
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Phuc:[/b][/color] I will be at the end of the alley. Keep anything that could tell us who he went to see."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "character_name": "Binh",
+  "character_template": "res://scenes/prefabs/NPCs/character_junjun.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] One [b]coffee sachet[/b]. Same as yesterday."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Did Hanh find your payment?",
+        "Did you get the receipt?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] I found my copy. Friday, one million, paid in full. Her signature is still there."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Keep your copy somewhere safe."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] I will show it to her tonight. Keep yesterday in your head, all right? People change their stories."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ufyuos2r6c40"]
+
+[ext_resource type="Theme" uid="uid://ml6wo1toxn2m" path="res://assets/ui/themes/DefaultTheme.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://cvo1e4ffpqhcl" path="res://assets/art/environment/paluwagan book/full_paluwagan.png" id="2"]
+[ext_resource type="FontFile" uid="uid://cojw2bfel5ovy" path="res://assets/ui/fonts/CharcoalBold-Regular.ttf" id="3"]
+
+[node name="PaluwaganUI" type="CanvasLayer" unique_id=392410258]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1709550065]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+theme = ExtResource("1")
+color = Color(0, 0, 0, 0)
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect" unique_id=1995112011]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -18.459412
+offset_bottom = 18.459412
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="Sprite2D" type="TextureRect" parent="ColorRect/MarginContainer" unique_id=102484147]
+layout_mode = 2
+texture = ExtResource("2")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="ColorRect" unique_id=874746859]
+visible = false
+modulate = Color(1, 0.8752345, 0.86248696, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 71.0
+offset_top = -226.0
+offset_right = 398.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 32
+text = "Binh paid. Why charge him again?"

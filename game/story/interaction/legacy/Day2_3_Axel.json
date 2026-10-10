@@ -1,0 +1,52 @@
+{
+  "character_name": "Bao",
+  "character_template": "res://scenes/prefabs/NPCs/character_axel.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] [b]Two stir-fry noodle packets[/b], please. Mum is working late."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Two packets. Give me a moment.",
+        "The stir-fry ones, coming up."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "noodles_pancit_canton": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Bao:[/b][/color] Binh did not take the candies. They are still by his door. Maybe he forgot."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dc8s8gieg1tan"]
+
+[ext_resource type="PackedScene" uid="uid://cyypw235yqdfd" path="res://scenes/prefabs/Items/Templates/Dropped/DroppedItemTemplate.tscn" id="1"]
+[ext_resource type="Resource" uid="uid://c35id8jpvpscx" path="res://story/itemdata/Products/Ref/Beer_itemdata.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://dr7mrr82wrmgb" path="res://assets/art/products/ref_drink_beer.png" id="3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_03aip"]
+radius = 73.0
+height = 480.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aov8w"]
+size = Vector2(160, 510)
+
+[node name="Beer_dropped" unique_id=723382183 instance=ExtResource("1")]
+item_data = ExtResource("2")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1311200424]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3")
+
+[node name="PhysicsCollision" parent="." index="2" unique_id=1693377301]
+position = Vector2(8, 3)
+shape = SubResource("CapsuleShape2D_03aip")
+
+[node name="CollisionShape2D" parent="ClickArea" parent_id_path=PackedInt32Array(1279197079) index="0" unique_id=1065524152]
+position = Vector2(9, 0)
+shape = SubResource("RectangleShape2D_aov8w")

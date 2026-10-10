@@ -1,0 +1,88 @@
+{
+  "character_name": "Hanh",
+  "character_template": "res://scenes/prefabs/NPCs/character_lucia.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] [b]Two soup noodle packets[/b] and [b]one tin of canned meat[/b], please."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "He bought his coffee.",
+        "He mentioned a receipt."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Binh was here, was he? He gets confused about money. Always has."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] I keep the neighborhood debt book. Without it, people would forget what they owe."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Then you can check it together.",
+        "A receipt should settle it."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Of course. I only want the figures to be right. It is a lot of responsibility."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "canned_cornedbeef": 1,
+        "noodles_soup": 2
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Hanh:[/b][/color] Thank you. If Binh leaves any paper with you, send him to me."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

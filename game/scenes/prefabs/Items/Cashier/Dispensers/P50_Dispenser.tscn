@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://3ig67wvsfx7o"]
+
+[ext_resource type="PackedScene" uid="uid://lmj0enox1hgc" path="res://scenes/prefabs/Items/Templates/Dispensers/ItemDispenserTemplate.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://pbnudme1t8xl" path="res://scenes/prefabs/Items/Cashier/Dropped/P50_Dropped.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://kocyomtavsqp" path="res://story/itemdata/Cashier/P50_ItemData.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://ba4vx4kfen3t" path="res://assets/art/environment/peso_50.png" id="4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x846i"]
+size = Vector2(284, 349)
+
+[node name="P50_Dispenser" unique_id=1065646624 instance=ExtResource("1")]
+item_prefab = ExtResource("2")
+item_data = ExtResource("3")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=2079902129]
+position = Vector2(6, 155.5)
+shape = SubResource("RectangleShape2D_x846i")
+
+[node name="Bill3" type="Sprite2D" parent="." index="1" unique_id=2105307759]
+modulate = Color(0.32544088, 0.3254409, 0.32544088, 1)
+texture_filter = 1
+position = Vector2(9.094947e-13, 51.00003)
+rotation = -1.5327182
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("4")
+
+[node name="Bill2" type="Sprite2D" parent="." index="2" unique_id=1358837402]
+modulate = Color(0.5609549, 0.5609549, 0.5609549, 1)
+texture_filter = 1
+position = Vector2(0, 27.999985)
+rotation = -1.6019033
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("4")
+
+[node name="Sprite2D" parent="." index="3" unique_id=1830372164]
+rotation = -1.5707964
+texture = ExtResource("4")

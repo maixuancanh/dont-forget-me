@@ -1,0 +1,52 @@
+{
+  "character_name": "Sau",
+  "character_template": "res://scenes/prefabs/NPCs/character_mario.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_2_Mario.0",
+      "legacy_event_id": "Day6_2_Mario:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_2_Mario.2",
+      "legacy_event_id": "Day6_2_Mario:2",
+      "input_labels": [
+        "Hanh tried to blame him.",
+        "He told me what he heard."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_2_Mario.4",
+      "legacy_event_id": "Day6_2_Mario:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 500
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_2_Mario.6",
+      "legacy_event_id": "Day6_2_Mario:6",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 1000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

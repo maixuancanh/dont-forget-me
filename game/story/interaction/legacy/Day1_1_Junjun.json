@@ -1,0 +1,78 @@
+{
+  "character_name": "Binh",
+  "character_template": "res://scenes/prefabs/NPCs/character_junjun.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] One [b]coffee sachet[/b], please. The red strip above you. Another early shift."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Still working on the house repairs?",
+        "You look tired, Binh."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] Hanh says I still owe a million. I paid her last Friday. She kept the receipt to update her book."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Ask her to write you another receipt."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] Just charge me for the coffee today. I am going back for that receipt."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.0,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Binh:[/b][/color] You see everyone who comes through this alley. If she asks, remember I was here."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

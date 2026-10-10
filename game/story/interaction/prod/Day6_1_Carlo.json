@@ -1,0 +1,111 @@
+{
+  "character_name": "Duy",
+  "character_template": "res://scenes/prefabs/NPCs/character_carlo.tscn",
+  "interactions": [
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/bgmusic.mp3",
+      "volume": 5
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "pause"
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_1_Carlo.3",
+      "legacy_event_id": "Day6_1_Carlo:3",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+      "volume_db": -4
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_1_Carlo.6",
+      "legacy_event_id": "Day6_1_Carlo:6",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_1_Carlo.8",
+      "legacy_event_id": "Day6_1_Carlo:8",
+      "input_labels": [
+        "You are safe at the counter, Duy."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "play_sfx",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/jump.mp3",
+      "volume_db": -5
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_1_Carlo.11",
+      "legacy_event_id": "Day6_1_Carlo:11",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "chips_nova": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_1_Carlo.17",
+      "legacy_event_id": "Day6_1_Carlo:17",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/bgmusic.mp3",
+      "volume": 5
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

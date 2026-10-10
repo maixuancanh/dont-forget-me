@@ -1,0 +1,88 @@
+{
+  "character_name": "Lan",
+  "character_template": "res://scenes/prefabs/NPCs/character_layla_altn.tscn",
+  "interactions": [
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] [b]One bottle of beer[/b], please. I have just finished closing the sewing shop."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Did you see Binh on your way?",
+        "Was someone arguing outside?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] Binh was outside Hanh's gate earlier. He had a little folded slip in his hand."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "A receipt?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] He kept saying the same thing: \"Read the date.\" She would not let him finish."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "choice",
+      "response_choices": [
+        "Keep your door locked tonight, Lan."
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "beer": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "say",
+      "sentence": "[color=#ffffff][b]Lan:[/b][/color] I should go. You can hear every word through those metal gates."
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ]
+}

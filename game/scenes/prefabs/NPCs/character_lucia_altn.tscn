@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bhytjjf4g6p5p"]
+
+[ext_resource type="PackedScene" uid="uid://cpxugieu53pt7" path="res://scenes/prefabs/NPCs/character_lucia.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://coophu0jgp8rc" path="res://assets/art/characters/lucia_smile.png" id="2"]
+
+[node name="CharacterTemplate" unique_id=2097212404 instance=ExtResource("1")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=52607391]
+texture = ExtResource("2")

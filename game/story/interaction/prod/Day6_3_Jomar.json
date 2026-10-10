@@ -1,0 +1,97 @@
+{
+  "character_name": "Phuc",
+  "character_template": "res://scenes/prefabs/NPCs/character_jomar.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.0",
+      "legacy_event_id": "Day6_3_Jomar:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.2",
+      "legacy_event_id": "Day6_3_Jomar:2",
+      "input_labels": [
+        "Come under the roof. Take a coffee sachet.",
+        "I will get you a coffee sachet."
+      ]
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "coffee_strip": 1
+      }
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "control_bgm",
+      "action": "play",
+      "audio_path": "res://assets/audio/gameplay/interaction/story_audio/horror_bg.mp3",
+      "volume_db": -10
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.6",
+      "legacy_event_id": "Day6_3_Jomar:6",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.8",
+      "legacy_event_id": "Day6_3_Jomar:8",
+      "input_labels": [
+        "Was it him?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.10",
+      "legacy_event_id": "Day6_3_Jomar:10",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.12",
+      "legacy_event_id": "Day6_3_Jomar:12",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 4000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day6_3_Jomar.14",
+      "legacy_event_id": "Day6_3_Jomar:14",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

@@ -1,0 +1,81 @@
+{
+  "character_name": "Thu",
+  "character_template": "res://scenes/prefabs/NPCs/character_malu.tscn",
+  "interactions": [
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day4_3_Malu.0",
+      "legacy_event_id": "Day4_3_Malu:0",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day4_3_Malu.2",
+      "legacy_event_id": "Day4_3_Malu:2",
+      "input_labels": [
+        "Why did you close early, Thu?",
+        "Was the street blocked?"
+      ]
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day4_3_Malu.4",
+      "legacy_event_id": "Day4_3_Malu:4",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day4_3_Malu.6",
+      "legacy_event_id": "Day4_3_Malu:6",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "pay",
+      "wealth_factor": 0.5,
+      "purchase": 0
+    },
+    {
+      "id": 0,
+      "type": "require_items",
+      "required_items": {
+        "beer": 1
+      }
+    },
+    {
+      "type": "require_change"
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    },
+    {
+      "type": "dialogue_beat",
+      "beat_id": "v2.Day4_3_Malu.12",
+      "legacy_event_id": "Day4_3_Malu:12",
+      "input_labels": []
+    },
+    {
+      "type": "wait",
+      "waitMs": 2000
+    }
+  ],
+  "schema_version": 2,
+  "story_version": "full-memory-v2",
+  "requires_generated_dialogue": true
+}

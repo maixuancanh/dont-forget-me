@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dwbvxbr0kgh7l"]
+
+[ext_resource type="Theme" uid="uid://ml6wo1toxn2m" path="res://assets/ui/themes/DefaultTheme.tres" id="1"]
+
+[node name="ResponseChoice" type="MarginContainer" unique_id=2021157818]
+custom_minimum_size = Vector2(600, 0)
+offset_right = 45.0
+offset_bottom = 45.0
+theme = ExtResource("1")
+
+[node name="Button" type="Button" parent="." unique_id=2092677087]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2092677088]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=1219950556]
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "LOREM [b]IPSUM[/b]"
+fit_content = true
+scroll_active = false

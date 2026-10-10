@@ -1,0 +1,6526 @@
+{
+  "schemaVersion": 2,
+  "storyVersion": "full-memory-v2",
+  "beats": [
+    {
+      "beatId": "v2.Day1_1_Junjun.0",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 0,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day1_1_Junjun.0"
+      ],
+      "legacyEventId": "Day1_1_Junjun:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.2",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 2,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "player_input",
+      "objective": "Ask about repair work or acknowledge Binh's fatigue.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_1_Junjun:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Still working on the house repairs?",
+        "You look tired, Binh."
+      ],
+      "actionIntents": [
+        "ask_work",
+        "reassure"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_work",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "reassure",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.4",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 4,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day1_1_Junjun.4"
+      ],
+      "legacyEventId": "Day1_1_Junjun:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.6",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 6,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "player_input",
+      "objective": "Suggest requesting a replacement receipt without treating it as recovered.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_1_Junjun:6",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Ask her to write you another receipt."
+      ],
+      "actionIntents": [
+        "suggest_check_record"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "suggest_check_record",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.8",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 8,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_1_Junjun.8"
+      ],
+      "legacyEventId": "Day1_1_Junjun:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.14",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 14,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_1_Junjun.14"
+      ],
+      "legacyEventId": "Day1_1_Junjun:14",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.0",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 0,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day1_2_Lucia.0"
+      ],
+      "legacyEventId": "Day1_2_Lucia:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.2",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 2,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Offer a selected witnessed coffee visit or receipt claim to Hanh; never fabricate having heard it.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_2_Lucia:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "He bought his coffee.",
+        "He mentioned a receipt."
+      ],
+      "actionIntents": [
+        "preview_disclosure"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.4",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 4,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_2_Lucia.4"
+      ],
+      "legacyEventId": "Day1_2_Lucia:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.6",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 6,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_2_Lucia.6"
+      ],
+      "legacyEventId": "Day1_2_Lucia:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.8",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 8,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Suggest comparing the records together without adjudicating the debt.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_2_Lucia:8",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Then you can check it together.",
+        "A receipt should settle it."
+      ],
+      "actionIntents": [
+        "suggest_check_record",
+        "ask_receipt"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "suggest_check_record",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_receipt",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.10",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 10,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_2_Lucia.10"
+      ],
+      "legacyEventId": "Day1_2_Lucia:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.16",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 16,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_2_Lucia.16"
+      ],
+      "legacyEventId": "Day1_2_Lucia:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.0",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 0,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day1_3_Axel.0"
+      ],
+      "legacyEventId": "Day1_3_Axel:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.2",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 2,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "player_input",
+      "objective": "Ask Bao about candy sharing while preserving his requested count.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_3_Axel:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Ten is a lot, Bao.",
+        "Are you sharing them?"
+      ],
+      "actionIntents": [
+        "ask_quantity",
+        "ask_sharing"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_quantity",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_sharing",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.4",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 4,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_3_Axel.4"
+      ],
+      "legacyEventId": "Day1_3_Axel:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.6",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 6,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_3_Axel.6"
+      ],
+      "legacyEventId": "Day1_3_Axel:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.12",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 12,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_3_Axel.12"
+      ],
+      "legacyEventId": "Day1_3_Axel:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.0",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 0,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day1_4_Layla.0"
+      ],
+      "legacyEventId": "Day1_4_Layla:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.2",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 2,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "player_input",
+      "objective": "Ask whether Lan personally saw Binh or heard an argument.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_4_Layla:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Did you see Binh on your way?",
+        "Was someone arguing outside?"
+      ],
+      "actionIntents": [
+        "ask_sighting",
+        "ask_sound"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_sighting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_sound",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.4",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 4,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day1_4_Layla.4"
+      ],
+      "legacyEventId": "Day1_4_Layla:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.6",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 6,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "player_input",
+      "objective": "Clarify whether the folded slip was identified as a receipt.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_4_Layla:6",
+      "legacyType": "choice",
+      "inputLabels": [
+        "A receipt?"
+      ],
+      "actionIntents": [
+        "ask_object_identification"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_object_identification",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.8",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 8,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day1_4_Layla.8"
+      ],
+      "legacyEventId": "Day1_4_Layla:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.10",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 10,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "player_input",
+      "objective": "Offer ordinary concern for Lan's safety without asserting a known threat.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_4_Layla:10",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Keep your door locked tonight, Lan."
+      ],
+      "actionIntents": [
+        "reassure"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "reassure",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.16",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 16,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day1_4_Layla.16"
+      ],
+      "legacyEventId": "Day1_4_Layla:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 1
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.0",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 0,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day2_1_Junjun.0"
+      ],
+      "legacyEventId": "Day2_1_Junjun:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.2",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 2,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "player_input",
+      "objective": "Ask about payment acknowledgment or recovery of Binh's copy.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_1_Junjun:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Did Hanh find your payment?",
+        "Did you get the receipt?"
+      ],
+      "actionIntents": [
+        "ask_payment",
+        "ask_receipt"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_payment",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_receipt",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.4",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 4,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day2_1_Junjun.4"
+      ],
+      "legacyEventId": "Day2_1_Junjun:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.6",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 6,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "player_input",
+      "objective": "Suggest preserving the copy without automatically reserving or storing an item.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_1_Junjun:6",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Keep your copy somewhere safe."
+      ],
+      "actionIntents": [
+        "suggest_check_record"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "suggest_check_record",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.12",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 12,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day2_1_Junjun.12"
+      ],
+      "legacyEventId": "Day2_1_Junjun:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.0",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 0,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day2_2_Malu.0"
+      ],
+      "legacyEventId": "Day2_2_Malu:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.2",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 2,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "player_input",
+      "objective": "Ask Thu about the drinks stall and today's business.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_2_Malu:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Busy at the drinks stall, Thu?",
+        "How is business today?"
+      ],
+      "actionIntents": [
+        "ask_work",
+        "ask_business"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_work",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_business",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.4",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 4,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day2_2_Malu.4"
+      ],
+      "legacyEventId": "Day2_2_Malu:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.6",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 6,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "player_input",
+      "objective": "Suggest that Thu retain her own payment documents.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_2_Malu:6",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Keep your receipts, Thu."
+      ],
+      "actionIntents": [
+        "suggest_check_record"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "suggest_check_record",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.8",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 8,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day2_2_Malu.8"
+      ],
+      "legacyEventId": "Day2_2_Malu:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.14",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 14,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day2_2_Malu.14"
+      ],
+      "legacyEventId": "Day2_2_Malu:14",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_3_Axel.0",
+      "sceneId": "Day2_3_Axel",
+      "stepIndex": 0,
+      "day": 2,
+      "npcId": "bao",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day2_3_Axel.0"
+      ],
+      "legacyEventId": "Day2_3_Axel:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "noodles_pancit_canton": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_3_Axel.2",
+      "sceneId": "Day2_3_Axel",
+      "stepIndex": 2,
+      "day": 2,
+      "npcId": "bao",
+      "kind": "player_input",
+      "objective": "Acknowledge the exact pending stir-fry noodle order.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_3_Axel:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Two packets. Give me a moment.",
+        "The stir-fry ones, coming up."
+      ],
+      "actionIntents": [
+        "acknowledge_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "noodles_pancit_canton": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "acknowledge_order",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "acknowledge_order",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_3_Axel.8",
+      "sceneId": "Day2_3_Axel",
+      "stepIndex": 8,
+      "day": 2,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day2_3_Axel.8"
+      ],
+      "legacyEventId": "Day2_3_Axel:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "noodles_pancit_canton": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_4_Mario.0",
+      "sceneId": "Day2_4_Mario",
+      "stepIndex": 0,
+      "day": 2,
+      "npcId": "sau",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day2_4_Mario.0"
+      ],
+      "legacyEventId": "Day2_4_Mario:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "glass_coke": 1,
+          "canned_sardines_1": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day2_4_Mario.2",
+      "sceneId": "Day2_4_Mario",
+      "stepIndex": 2,
+      "day": 2,
+      "npcId": "sau",
+      "kind": "player_input",
+      "objective": "Ask Sau about Duy's adjustment or their workshop work.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_4_Mario:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "How is Duy settling in?",
+        "Working together again, Sau?"
+      ],
+      "actionIntents": [
+        "ask_duy",
+        "ask_work"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "glass_coke": 1,
+          "canned_sardines_1": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_duy",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_work",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day2_4_Mario.8",
+      "sceneId": "Day2_4_Mario",
+      "stepIndex": 8,
+      "day": 2,
+      "npcId": "sau",
+      "kind": "reassurance",
+      "objective": "Acknowledge the personal concern and give space to respond.",
+      "propositionIds": [
+        "p.Day2_4_Mario.8"
+      ],
+      "legacyEventId": "Day2_4_Mario:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 2
+      },
+      "orderContract": {
+        "items": {
+          "glass_coke": 1,
+          "canned_sardines_1": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_1_Junjun.0",
+      "sceneId": "Day3_1_Junjun",
+      "stepIndex": 0,
+      "day": 3,
+      "npcId": "binh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day3_1_Junjun.0"
+      ],
+      "legacyEventId": "Day3_1_Junjun:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_1_Junjun.2",
+      "sceneId": "Day3_1_Junjun",
+      "stepIndex": 2,
+      "day": 3,
+      "npcId": "binh",
+      "kind": "player_input",
+      "objective": "Ask about the receipt discrepancy or Binh's fatigue while he is alive.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_1_Junjun:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "What happened to your receipt?",
+        "You do not look well, Binh."
+      ],
+      "actionIntents": [
+        "ask_receipt",
+        "reassure"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_receipt",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "reassure",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day3_1_Junjun.4",
+      "sceneId": "Day3_1_Junjun",
+      "stepIndex": 4,
+      "day": 3,
+      "npcId": "binh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day3_1_Junjun.4"
+      ],
+      "legacyEventId": "Day3_1_Junjun:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_1_Junjun.10",
+      "sceneId": "Day3_1_Junjun",
+      "stepIndex": 10,
+      "day": 3,
+      "npcId": "binh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day3_1_Junjun.10"
+      ],
+      "legacyEventId": "Day3_1_Junjun:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_2_Layla.0",
+      "sceneId": "Day3_2_Layla",
+      "stepIndex": 0,
+      "day": 3,
+      "npcId": "lan",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day3_2_Layla.0"
+      ],
+      "legacyEventId": "Day3_2_Layla:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "single_napkin": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_2_Layla.2",
+      "sceneId": "Day3_2_Layla",
+      "stepIndex": 2,
+      "day": 3,
+      "npcId": "lan",
+      "kind": "player_input",
+      "objective": "Acknowledge the pad order and invite Lan to describe her concern.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_2_Layla:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "One pad. Is something wrong, Lan?"
+      ],
+      "actionIntents": [
+        "acknowledge_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "single_napkin": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "acknowledge_order",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day3_2_Layla.8",
+      "sceneId": "Day3_2_Layla",
+      "stepIndex": 8,
+      "day": 3,
+      "npcId": "lan",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day3_2_Layla.8"
+      ],
+      "legacyEventId": "Day3_2_Layla:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "single_napkin": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.0",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 0,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.0"
+      ],
+      "legacyEventId": "Day3_3_Lucia:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.2",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 2,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Preview a selected discrepancy claim or ask Hanh about the planned meeting.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_3_Lucia:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "He said your dates did not match.",
+        "He was looking for you."
+      ],
+      "actionIntents": [
+        "preview_disclosure",
+        "ask_meeting"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_meeting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.4",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 4,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.4"
+      ],
+      "legacyEventId": "Day3_3_Lucia:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.6",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 6,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.6"
+      ],
+      "legacyEventId": "Day3_3_Lucia:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.8",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 8,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.8"
+      ],
+      "legacyEventId": "Day3_3_Lucia:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.10",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 10,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Ask if Binh will attend the meal and how the order relates to the meeting.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_3_Lucia:10",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Is Binh coming to dinner?",
+        "Are these for the meeting?"
+      ],
+      "actionIntents": [
+        "ask_meeting",
+        "ask_order_purpose"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_meeting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_order_purpose",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.12",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 12,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.12"
+      ],
+      "legacyEventId": "Day3_3_Lucia:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.18",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 18,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day3_3_Lucia.18"
+      ],
+      "legacyEventId": "Day3_3_Lucia:18",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.0",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 0,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day3_4_Axel.0"
+      ],
+      "legacyEventId": "Day3_4_Axel:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.2",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 2,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "player_input",
+      "objective": "Ask Bao about his own current-day sighting of Binh.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_4_Axel:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Did you see Binh today?",
+        "Has Binh come home?"
+      ],
+      "actionIntents": [
+        "ask_sighting"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_sighting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_sighting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.4",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 4,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day3_4_Axel.4"
+      ],
+      "legacyEventId": "Day3_4_Axel:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.6",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 6,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day3_4_Axel.6"
+      ],
+      "legacyEventId": "Day3_4_Axel:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.12",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 12,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day3_4_Axel.12"
+      ],
+      "legacyEventId": "Day3_4_Axel:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 3
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_1_Layla.0",
+      "sceneId": "Day4_1_Layla",
+      "stepIndex": 0,
+      "day": 4,
+      "npcId": "lan",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day4_1_Layla.0"
+      ],
+      "legacyEventId": "Day4_1_Layla:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_1_Layla.2",
+      "sceneId": "Day4_1_Layla",
+      "stepIndex": 2,
+      "day": 4,
+      "npcId": "lan",
+      "kind": "player_input",
+      "objective": "Ask Lan about something she actually observed outside.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_1_Layla:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Did something happen outside?"
+      ],
+      "actionIntents": [
+        "ask_sighting"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_sighting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day4_1_Layla.8",
+      "sceneId": "Day4_1_Layla",
+      "stepIndex": 8,
+      "day": 4,
+      "npcId": "lan",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day4_1_Layla.8"
+      ],
+      "legacyEventId": "Day4_1_Layla:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.0",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 0,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day4_2_Rayder.0"
+      ],
+      "legacyEventId": "Day4_2_Rayder:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.2",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 2,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "player_input",
+      "objective": "Acknowledge water quantities and ask about the delivery shift.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_2_Rayder:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Two bottles. Long morning?"
+      ],
+      "actionIntents": [
+        "ask_work"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_work",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.4",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 4,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_2_Rayder.4"
+      ],
+      "legacyEventId": "Day4_2_Rayder:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.6",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 6,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_2_Rayder.6"
+      ],
+      "legacyEventId": "Day4_2_Rayder:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.8",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 8,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "player_input",
+      "objective": "Suggest secure retention of the parcel rather than authorizing an unverified recipient.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_2_Rayder:8",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Do not leave his parcel with someone else."
+      ],
+      "actionIntents": [
+        "suggest_preserve_parcel"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "suggest_preserve_parcel",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.10",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 10,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_2_Rayder.10"
+      ],
+      "legacyEventId": "Day4_2_Rayder:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.16",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 16,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_2_Rayder.16"
+      ],
+      "legacyEventId": "Day4_2_Rayder:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.0",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 0,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day4_3_Malu.0"
+      ],
+      "legacyEventId": "Day4_3_Malu:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.2",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 2,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "player_input",
+      "objective": "Ask Thu why her stall closed and what street disruption she saw.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_3_Malu:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Why did you close early, Thu?",
+        "Was the street blocked?"
+      ],
+      "actionIntents": [
+        "ask_business",
+        "ask_sighting"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_business",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_sighting",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.4",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 4,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_3_Malu.4"
+      ],
+      "legacyEventId": "Day4_3_Malu:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.6",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 6,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_3_Malu.6"
+      ],
+      "legacyEventId": "Day4_3_Malu:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.12",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 12,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day4_3_Malu.12"
+      ],
+      "legacyEventId": "Day4_3_Malu:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_4_Mario.0",
+      "sceneId": "Day4_4_Mario",
+      "stepIndex": 0,
+      "day": 4,
+      "npcId": "sau",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day4_4_Mario.0"
+      ],
+      "legacyEventId": "Day4_4_Mario:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_4_Mario.2",
+      "sceneId": "Day4_4_Mario",
+      "stepIndex": 2,
+      "day": 4,
+      "npcId": "sau",
+      "kind": "player_input",
+      "objective": "Ask Sau about Duy's wellbeing.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_4_Mario:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Is Duy all right?"
+      ],
+      "actionIntents": [
+        "ask_duy"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_duy",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day4_4_Mario.4",
+      "sceneId": "Day4_4_Mario",
+      "stepIndex": 4,
+      "day": 4,
+      "npcId": "sau",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day4_4_Mario.4"
+      ],
+      "legacyEventId": "Day4_4_Mario:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day4_4_Mario.10",
+      "sceneId": "Day4_4_Mario",
+      "stepIndex": 10,
+      "day": 4,
+      "npcId": "sau",
+      "kind": "reassurance",
+      "objective": "Acknowledge the personal concern and give space to respond.",
+      "propositionIds": [
+        "p.Day4_4_Mario.10"
+      ],
+      "legacyEventId": "Day4_4_Mario:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 4
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.0",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 0,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day5_1_Rayder.0"
+      ],
+      "legacyEventId": "Day5_1_Rayder:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.2",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 2,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "player_input",
+      "objective": "Ask about attempted glove-parcel collection.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_1_Rayder:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Did anyone collect the gloves?"
+      ],
+      "actionIntents": [
+        "ask_parcel"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_parcel",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.4",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 4,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_1_Rayder.4"
+      ],
+      "legacyEventId": "Day5_1_Rayder:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.6",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 6,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_1_Rayder.6"
+      ],
+      "legacyEventId": "Day5_1_Rayder:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.8",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 8,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "player_input",
+      "objective": "Clarify officer identity or whether Tuan reported his delivery observations.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_1_Rayder:8",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Which officer?",
+        "Did you tell him about Hanh?"
+      ],
+      "actionIntents": [
+        "ask_officer",
+        "ask_report"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_officer",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_report",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.10",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 10,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "reassurance",
+      "objective": "Acknowledge the personal concern and give space to respond.",
+      "propositionIds": [
+        "p.Day5_1_Rayder.10"
+      ],
+      "legacyEventId": "Day5_1_Rayder:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.16",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 16,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_1_Rayder.16"
+      ],
+      "legacyEventId": "Day5_1_Rayder:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.0",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 0,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day5_2_Jomar.0"
+      ],
+      "legacyEventId": "Day5_2_Jomar:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.2",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 2,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "player_input",
+      "objective": "Preview reporting actual coffee visits or Binh's receipt discrepancy to Phuc.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_2_Jomar:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Binh came here for coffee three mornings running.",
+        "Binh said his receipt and Hanh's book did not match."
+      ],
+      "actionIntents": [
+        "preview_disclosure"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.5",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 5,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day5_2_Jomar.5"
+      ],
+      "legacyEventId": "Day5_2_Jomar:5",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.7",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 7,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "player_input",
+      "objective": "Ask for a welfare check or preview reporting witnessed absence; do not invent neighbors' statements.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_2_Jomar:7",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Please check on Binh.",
+        "His neighbors have not seen him since."
+      ],
+      "actionIntents": [
+        "ask_welfare_check",
+        "preview_disclosure"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_welfare_check",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.9",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 9,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day5_2_Jomar.9"
+      ],
+      "legacyEventId": "Day5_2_Jomar:9",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.16",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 16,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_2_Jomar.16"
+      ],
+      "legacyEventId": "Day5_2_Jomar:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.0",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 0,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day5_3_Lucia.0"
+      ],
+      "legacyEventId": "Day5_3_Lucia:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.2",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 2,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Preview disclosing Phuc's investigation or the still-unconfirmed identity status.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_3_Lucia:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Officer Phuc was here about the body.",
+        "The police still need to identify him."
+      ],
+      "actionIntents": [
+        "preview_disclosure"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.4",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 4,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day5_3_Lucia.4"
+      ],
+      "legacyEventId": "Day5_3_Lucia:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.6",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 6,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Question the provenance of Hanh's unreleased coffee detail.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_3_Lucia:6",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Who told you about the coffee?"
+      ],
+      "actionIntents": [
+        "ask_rumor_source"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_rumor_source",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.8",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 8,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day5_3_Lucia.8"
+      ],
+      "legacyEventId": "Day5_3_Lucia:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.10",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 10,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day5_3_Lucia.10"
+      ],
+      "legacyEventId": "Day5_3_Lucia:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.16",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 16,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_3_Lucia.16"
+      ],
+      "legacyEventId": "Day5_3_Lucia:16",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_4_Carlo.3",
+      "sceneId": "Day5_4_Carlo",
+      "stepIndex": 3,
+      "day": 5,
+      "npcId": "duy",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day5_4_Carlo.3"
+      ],
+      "legacyEventId": "Day5_4_Carlo:3",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_4_Carlo.5",
+      "sceneId": "Day5_4_Carlo",
+      "stepIndex": 5,
+      "day": 5,
+      "npcId": "duy",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day5_4_Carlo.5"
+      ],
+      "legacyEventId": "Day5_4_Carlo:5",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day5_4_Carlo.7",
+      "sceneId": "Day5_4_Carlo",
+      "stepIndex": 7,
+      "day": 5,
+      "npcId": "duy",
+      "kind": "player_input",
+      "objective": "Offer Duy time at the counter; Hanh's departure must be validated by scene state.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_4_Carlo:7",
+      "legacyType": "choice",
+      "inputLabels": [
+        "She has gone. You can wait here."
+      ],
+      "actionIntents": [
+        "reassure"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "reassure",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day5_4_Carlo.13",
+      "sceneId": "Day5_4_Carlo",
+      "stepIndex": 13,
+      "day": 5,
+      "npcId": "duy",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day5_4_Carlo.13"
+      ],
+      "legacyEventId": "Day5_4_Carlo:13",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order",
+        "offer_confidentiality"
+      ],
+      "revealConditions": {
+        "minimumDay": 5
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.3",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 3,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_1_Carlo.3"
+      ],
+      "legacyEventId": "Day6_1_Carlo:3",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.6",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 6,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "order",
+      "objective": "Request the exact authorized shop order in the character's voice.",
+      "propositionIds": [
+        "p.Day6_1_Carlo.6"
+      ],
+      "legacyEventId": "Day6_1_Carlo:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "request_order"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.8",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 8,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "player_input",
+      "objective": "Offer support at the counter without creating a confidentiality promise implicitly.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_1_Carlo:8",
+      "legacyType": "choice",
+      "inputLabels": [
+        "You are safe at the counter, Duy."
+      ],
+      "actionIntents": [
+        "reassure"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "reassure",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.11",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 11,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day6_1_Carlo.11"
+      ],
+      "legacyEventId": "Day6_1_Carlo:11",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.17",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 17,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_1_Carlo.17"
+      ],
+      "legacyEventId": "Day6_1_Carlo:17",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_2_Mario.0",
+      "sceneId": "Day6_2_Mario",
+      "stepIndex": 0,
+      "day": 6,
+      "npcId": "sau",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day6_2_Mario.0"
+      ],
+      "legacyEventId": "Day6_2_Mario:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_2_Mario.2",
+      "sceneId": "Day6_2_Mario",
+      "stepIndex": 2,
+      "day": 6,
+      "npcId": "sau",
+      "kind": "player_input",
+      "objective": "Preview showing Hanh's accusation or Duy's selected testimony to Sau; honor confidentiality and source availability.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_2_Mario:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Hanh tried to blame him.",
+        "He told me what he heard."
+      ],
+      "actionIntents": [
+        "preview_disclosure"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null,
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "preview_disclosure",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_2_Mario.4",
+      "sceneId": "Day6_2_Mario",
+      "stepIndex": 4,
+      "day": 6,
+      "npcId": "sau",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day6_2_Mario.4"
+      ],
+      "legacyEventId": "Day6_2_Mario:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_2_Mario.6",
+      "sceneId": "Day6_2_Mario",
+      "stepIndex": 6,
+      "day": 6,
+      "npcId": "sau",
+      "kind": "reassurance",
+      "objective": "Acknowledge the personal concern and give space to respond.",
+      "propositionIds": [
+        "p.Day6_2_Mario.6"
+      ],
+      "legacyEventId": "Day6_2_Mario:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.0",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 0,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day6_3_Jomar.0"
+      ],
+      "legacyEventId": "Day6_3_Jomar:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.2",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 2,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "player_input",
+      "objective": "Offer shelter and the exact coffee item without granting the item before the core handoff.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_3_Jomar:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Come under the roof. Take a coffee sachet.",
+        "I will get you a coffee sachet."
+      ],
+      "actionIntents": [
+        "offer_hospitality"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "offer_hospitality",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "offer_hospitality",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.6",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 6,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_3_Jomar.6"
+      ],
+      "legacyEventId": "Day6_3_Jomar:6",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.8",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 8,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "player_input",
+      "objective": "Ask for confirmed identity; await Phuc's current authorized identification beat.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_3_Jomar:8",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Was it him?"
+      ],
+      "actionIntents": [
+        "ask_identity"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_identity",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.10",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 10,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day6_3_Jomar.10"
+      ],
+      "legacyEventId": "Day6_3_Jomar:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.12",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 12,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "reveal",
+      "objective": "Express this source's observation or claim, keeping uncertainty and temporal limits.",
+      "propositionIds": [
+        "p.Day6_3_Jomar.12"
+      ],
+      "legacyEventId": "Day6_3_Jomar:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_3_Jomar.14",
+      "sceneId": "Day6_3_Jomar",
+      "stepIndex": 14,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_3_Jomar.14"
+      ],
+      "legacyEventId": "Day6_3_Jomar:14",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      }
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.0",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 0,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "greeting",
+      "objective": "Establish this visit and its immediate purpose.",
+      "propositionIds": [
+        "p.Day6_4_Lucia.0"
+      ],
+      "legacyEventId": "Day6_4_Lucia:0",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.2",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 2,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Ask what object Hanh carries or why she arrives late.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_4_Lucia:2",
+      "legacyType": "choice",
+      "inputLabels": [
+        "What are you carrying, Hanh?",
+        "Why come after closing?"
+      ],
+      "actionIntents": [
+        "ask_object",
+        "ask_visit"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null,
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_object",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "ask_visit",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.4",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 4,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_4_Lucia.4"
+      ],
+      "legacyEventId": "Day6_4_Lucia:4",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.7",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 7,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Ask why Hanh is withholding the book from police; do not auto-report it.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_4_Lucia:7",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Why not give it to Officer Phuc?"
+      ],
+      "actionIntents": [
+        "ask_custody"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null,
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "ask_custody",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.9",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 9,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_4_Lucia.9"
+      ],
+      "legacyEventId": "Day6_4_Lucia:9",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.11",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 11,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_4_Lucia.11"
+      ],
+      "legacyEventId": "Day6_4_Lucia:11",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.13",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 13,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "player_input",
+      "objective": "Offer a place to deposit the book; no promise of secrecy or physical deposit occurs merely through this input.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_4_Lucia:13",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Leave it on the counter."
+      ],
+      "actionIntents": [
+        "offer_item_deposit"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null,
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "offer_item_deposit",
+          "requiresPlayerConfirmation": false,
+          "requiresVerifiedSourceIds": false,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Day6_4_Lucia.15",
+      "sceneId": "Day6_4_Lucia",
+      "stepIndex": 15,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "conversation",
+      "objective": "Advance the specific topic described by the authorized proposition.",
+      "propositionIds": [
+        "p.Day6_4_Lucia.15"
+      ],
+      "legacyEventId": "Day6_4_Lucia:15",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.3",
+      "sceneId": "Ending",
+      "stepIndex": 3,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.3"
+      ],
+      "legacyEventId": "Ending:3",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.5",
+      "sceneId": "Ending",
+      "stepIndex": 5,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.5"
+      ],
+      "legacyEventId": "Ending:5",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.8",
+      "sceneId": "Ending",
+      "stepIndex": 8,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.8"
+      ],
+      "legacyEventId": "Ending:8",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.10",
+      "sceneId": "Ending",
+      "stepIndex": 10,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.10"
+      ],
+      "legacyEventId": "Ending:10",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.12",
+      "sceneId": "Ending",
+      "stepIndex": 12,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.12"
+      ],
+      "legacyEventId": "Ending:12",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.14",
+      "sceneId": "Ending",
+      "stepIndex": 14,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.14"
+      ],
+      "legacyEventId": "Ending:14",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.17",
+      "sceneId": "Ending",
+      "stepIndex": 17,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.17"
+      ],
+      "legacyEventId": "Ending:17",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.19",
+      "sceneId": "Ending",
+      "stepIndex": 19,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.19"
+      ],
+      "legacyEventId": "Ending:19",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.23",
+      "sceneId": "Ending",
+      "stepIndex": 23,
+      "day": 6,
+      "npcId": "phuc",
+      "kind": "confrontation",
+      "objective": "Respond to the presented evidence without inventing a confession or accepting unsupported guilt.",
+      "propositionIds": [
+        "p.Ending.23"
+      ],
+      "legacyEventId": "Ending:23",
+      "legacyType": "say",
+      "inputLabels": [],
+      "actionIntents": [
+        "speak"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Ending.25",
+      "sceneId": "Ending",
+      "stepIndex": 25,
+      "day": 6,
+      "npcId": "hanh",
+      "kind": "ending",
+      "objective": "Preview reporting selected ledger and witness records to Phuc; case resolution depends on independently verified sources.",
+      "propositionIds": [],
+      "legacyEventId": "Ending:25",
+      "legacyType": "choice",
+      "inputLabels": [
+        "Officer, take the book. Binh paid.",
+        "His name stays in the book. Take it as evidence."
+      ],
+      "actionIntents": [
+        "report_selected_evidence"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "caseReview": true
+      },
+      "orderContract": null,
+      "inputActions": [
+        {
+          "index": 0,
+          "intent": "report_selected_evidence",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        },
+        {
+          "index": 1,
+          "intent": "report_selected_evidence",
+          "requiresPlayerConfirmation": true,
+          "requiresVerifiedSourceIds": true,
+          "authority": "P10/P13/P20 validated action proposal; fixed input text never proves a record exists"
+        }
+      ]
+    },
+    {
+      "beatId": "v2.Ledger.0",
+      "sceneId": "Ledger",
+      "stepIndex": 0,
+      "day": 6,
+      "npcId": "player",
+      "kind": "reveal",
+      "objective": "Inspect the visible entries without inferring violence from bookkeeping.",
+      "propositionIds": [
+        "p.ledger"
+      ],
+      "legacyEventId": "Ledger:0",
+      "legacyType": "observation",
+      "inputLabels": [],
+      "actionIntents": [
+        "inspect_ledger"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "objectExamined": "ledger"
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.DuyTrust.0",
+      "sceneId": "DuyTrust",
+      "stepIndex": 0,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "reveal",
+      "objective": "Add the protected eyewitness account only after the trust and confidentiality causes have been verified.",
+      "propositionIds": [
+        "p.duy.trusted"
+      ],
+      "legacyEventId": "DuyTrust:0",
+      "legacyType": "supplemental",
+      "inputLabels": [],
+      "actionIntents": [
+        "offer_confidentiality",
+        "permit_report_to_phuc"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "minimumTrust": 2,
+        "promiseId": "protect_duy_from_hanh",
+        "promiseUnbroken": true,
+        "witnessedEventIds": [
+          "Day5_4_Carlo:13"
+        ]
+      },
+      "orderContract": null
+    },
+    {
+      "beatId": "v2.Day1_1_Junjun.payment.10",
+      "sceneId": "Day1_1_Junjun",
+      "stepIndex": 10,
+      "day": 1,
+      "npcId": "binh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_1_Junjun:payment:10",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 1,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day1_2_Lucia.payment.12",
+      "sceneId": "Day1_2_Lucia",
+      "stepIndex": 12,
+      "day": 1,
+      "npcId": "hanh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_2_Lucia:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 1,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 1,
+          "noodles_soup": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day1_3_Axel.payment.8",
+      "sceneId": "Day1_3_Axel",
+      "stepIndex": 8,
+      "day": 1,
+      "npcId": "bao",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_3_Axel:payment:8",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 1,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day1_4_Layla.payment.12",
+      "sceneId": "Day1_4_Layla",
+      "stepIndex": 12,
+      "day": 1,
+      "npcId": "lan",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day1_4_Layla:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 1,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day2_1_Junjun.payment.8",
+      "sceneId": "Day2_1_Junjun",
+      "stepIndex": 8,
+      "day": 2,
+      "npcId": "binh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_1_Junjun:payment:8",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 2,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day2_2_Malu.payment.10",
+      "sceneId": "Day2_2_Malu",
+      "stepIndex": 10,
+      "day": 2,
+      "npcId": "thu",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_2_Malu:payment:10",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 2,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "ice": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day2_3_Axel.payment.4",
+      "sceneId": "Day2_3_Axel",
+      "stepIndex": 4,
+      "day": 2,
+      "npcId": "bao",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_3_Axel:payment:4",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 2,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "noodles_pancit_canton": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day2_4_Mario.payment.4",
+      "sceneId": "Day2_4_Mario",
+      "stepIndex": 4,
+      "day": 2,
+      "npcId": "sau",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day2_4_Mario:payment:4",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 2,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "glass_coke": 1,
+          "canned_sardines_1": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day3_1_Junjun.payment.6",
+      "sceneId": "Day3_1_Junjun",
+      "stepIndex": 6,
+      "day": 3,
+      "npcId": "binh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_1_Junjun:payment:6",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 3,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "coffee_strip": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day3_2_Layla.payment.4",
+      "sceneId": "Day3_2_Layla",
+      "stepIndex": 4,
+      "day": 3,
+      "npcId": "lan",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_2_Layla:payment:4",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 3,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "single_napkin": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day3_3_Lucia.payment.14",
+      "sceneId": "Day3_3_Lucia",
+      "stepIndex": 14,
+      "day": 3,
+      "npcId": "hanh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_3_Lucia:payment:14",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 3,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2,
+          "glass_royal": 3,
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day3_4_Axel.payment.8",
+      "sceneId": "Day3_4_Axel",
+      "stepIndex": 8,
+      "day": 3,
+      "npcId": "bao",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day3_4_Axel:payment:8",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 3,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "candy_mentos": 10
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day4_1_Layla.payment.4",
+      "sceneId": "Day4_1_Layla",
+      "stepIndex": 4,
+      "day": 4,
+      "npcId": "lan",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_1_Layla:payment:4",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 4,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "canned_cornedbeef": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day4_2_Rayder.payment.12",
+      "sceneId": "Day4_2_Rayder",
+      "stepIndex": 12,
+      "day": 4,
+      "npcId": "tuan",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_2_Rayder:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 4,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day4_3_Malu.payment.8",
+      "sceneId": "Day4_3_Malu",
+      "stepIndex": 8,
+      "day": 4,
+      "npcId": "thu",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_3_Malu:payment:8",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 4,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "beer": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day4_4_Mario.payment.6",
+      "sceneId": "Day4_4_Mario",
+      "stepIndex": 6,
+      "day": 4,
+      "npcId": "sau",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day4_4_Mario:payment:6",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 4,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "beer": 2
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day5_1_Rayder.payment.12",
+      "sceneId": "Day5_1_Rayder",
+      "stepIndex": 12,
+      "day": 5,
+      "npcId": "tuan",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_1_Rayder:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 5,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "glass_sprite": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day5_2_Jomar.payment.12",
+      "sceneId": "Day5_2_Jomar",
+      "stepIndex": 12,
+      "day": 5,
+      "npcId": "phuc",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_2_Jomar:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 5,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "bottled_water": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day5_3_Lucia.payment.12",
+      "sceneId": "Day5_3_Lucia",
+      "stepIndex": 12,
+      "day": 5,
+      "npcId": "hanh",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_3_Lucia:payment:12",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 5,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "noodles_soup": 3
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day5_4_Carlo.payment.9",
+      "sceneId": "Day5_4_Carlo",
+      "stepIndex": 9,
+      "day": 5,
+      "npcId": "duy",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day5_4_Carlo:payment:9",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 5,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    },
+    {
+      "beatId": "v2.Day6_1_Carlo.payment.13",
+      "sceneId": "Day6_1_Carlo",
+      "stepIndex": 13,
+      "day": 6,
+      "npcId": "duy",
+      "kind": "payment",
+      "objective": "Acknowledge payment only using the server-validated paid amount, order total and accepted change; do not invent denominations or mark an unverified transaction settled.",
+      "propositionIds": [],
+      "legacyEventId": "Day6_1_Carlo:payment:13",
+      "legacyType": "pay_hook",
+      "inputLabels": [],
+      "actionIntents": [
+        "acknowledge_validated_payment"
+      ],
+      "revealConditions": {
+        "minimumDay": 6,
+        "validatedPayment": true
+      },
+      "orderContract": {
+        "items": {
+          "chips_nova": 1
+        },
+        "currency": "VND",
+        "priceTableVersion": "vn-assets-v1",
+        "paymentAuthority": "transaction_ledger",
+        "paidAmountSource": "validated_payment_event",
+        "changeSource": "validated_change_event"
+      },
+      "activation": "P11 payment trigger after core pay step, not an inserted choreography position"
+    }
+  ],
+  "legacyMappings": [
+    {
+      "legacyEventId": "Day1_1_Junjun:0",
+      "beatId": "v2.Day1_1_Junjun.0",
+      "propositionIds": [
+        "p.Day1_1_Junjun.0"
+      ],
+      "legacySceneId": "Day1_1_Junjun",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_1_Junjun:4",
+      "beatId": "v2.Day1_1_Junjun.4",
+      "propositionIds": [
+        "p.Day1_1_Junjun.4"
+      ],
+      "legacySceneId": "Day1_1_Junjun",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_1_Junjun:8",
+      "beatId": "v2.Day1_1_Junjun.8",
+      "propositionIds": [
+        "p.Day1_1_Junjun.8"
+      ],
+      "legacySceneId": "Day1_1_Junjun",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_1_Junjun:14",
+      "beatId": "v2.Day1_1_Junjun.14",
+      "propositionIds": [
+        "p.Day1_1_Junjun.14"
+      ],
+      "legacySceneId": "Day1_1_Junjun",
+      "legacyStepIndex": 14,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_2_Lucia:0",
+      "beatId": "v2.Day1_2_Lucia.0",
+      "propositionIds": [
+        "p.Day1_2_Lucia.0"
+      ],
+      "legacySceneId": "Day1_2_Lucia",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_2_Lucia:4",
+      "beatId": "v2.Day1_2_Lucia.4",
+      "propositionIds": [
+        "p.Day1_2_Lucia.4"
+      ],
+      "legacySceneId": "Day1_2_Lucia",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_2_Lucia:6",
+      "beatId": "v2.Day1_2_Lucia.6",
+      "propositionIds": [
+        "p.Day1_2_Lucia.6"
+      ],
+      "legacySceneId": "Day1_2_Lucia",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_2_Lucia:10",
+      "beatId": "v2.Day1_2_Lucia.10",
+      "propositionIds": [
+        "p.Day1_2_Lucia.10"
+      ],
+      "legacySceneId": "Day1_2_Lucia",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_2_Lucia:16",
+      "beatId": "v2.Day1_2_Lucia.16",
+      "propositionIds": [
+        "p.Day1_2_Lucia.16"
+      ],
+      "legacySceneId": "Day1_2_Lucia",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_3_Axel:0",
+      "beatId": "v2.Day1_3_Axel.0",
+      "propositionIds": [
+        "p.Day1_3_Axel.0"
+      ],
+      "legacySceneId": "Day1_3_Axel",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_3_Axel:4",
+      "beatId": "v2.Day1_3_Axel.4",
+      "propositionIds": [
+        "p.Day1_3_Axel.4"
+      ],
+      "legacySceneId": "Day1_3_Axel",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_3_Axel:6",
+      "beatId": "v2.Day1_3_Axel.6",
+      "propositionIds": [
+        "p.Day1_3_Axel.6"
+      ],
+      "legacySceneId": "Day1_3_Axel",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_3_Axel:12",
+      "beatId": "v2.Day1_3_Axel.12",
+      "propositionIds": [
+        "p.Day1_3_Axel.12"
+      ],
+      "legacySceneId": "Day1_3_Axel",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_4_Layla:0",
+      "beatId": "v2.Day1_4_Layla.0",
+      "propositionIds": [
+        "p.Day1_4_Layla.0"
+      ],
+      "legacySceneId": "Day1_4_Layla",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_4_Layla:4",
+      "beatId": "v2.Day1_4_Layla.4",
+      "propositionIds": [
+        "p.Day1_4_Layla.4"
+      ],
+      "legacySceneId": "Day1_4_Layla",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_4_Layla:8",
+      "beatId": "v2.Day1_4_Layla.8",
+      "propositionIds": [
+        "p.Day1_4_Layla.8"
+      ],
+      "legacySceneId": "Day1_4_Layla",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day1_4_Layla:16",
+      "beatId": "v2.Day1_4_Layla.16",
+      "propositionIds": [
+        "p.Day1_4_Layla.16"
+      ],
+      "legacySceneId": "Day1_4_Layla",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_1_Junjun:0",
+      "beatId": "v2.Day2_1_Junjun.0",
+      "propositionIds": [
+        "p.Day2_1_Junjun.0"
+      ],
+      "legacySceneId": "Day2_1_Junjun",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_1_Junjun:4",
+      "beatId": "v2.Day2_1_Junjun.4",
+      "propositionIds": [
+        "p.Day2_1_Junjun.4"
+      ],
+      "legacySceneId": "Day2_1_Junjun",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_1_Junjun:12",
+      "beatId": "v2.Day2_1_Junjun.12",
+      "propositionIds": [
+        "p.Day2_1_Junjun.12"
+      ],
+      "legacySceneId": "Day2_1_Junjun",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_2_Malu:0",
+      "beatId": "v2.Day2_2_Malu.0",
+      "propositionIds": [
+        "p.Day2_2_Malu.0"
+      ],
+      "legacySceneId": "Day2_2_Malu",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_2_Malu:4",
+      "beatId": "v2.Day2_2_Malu.4",
+      "propositionIds": [
+        "p.Day2_2_Malu.4"
+      ],
+      "legacySceneId": "Day2_2_Malu",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_2_Malu:8",
+      "beatId": "v2.Day2_2_Malu.8",
+      "propositionIds": [
+        "p.Day2_2_Malu.8"
+      ],
+      "legacySceneId": "Day2_2_Malu",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_2_Malu:14",
+      "beatId": "v2.Day2_2_Malu.14",
+      "propositionIds": [
+        "p.Day2_2_Malu.14"
+      ],
+      "legacySceneId": "Day2_2_Malu",
+      "legacyStepIndex": 14,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_3_Axel:0",
+      "beatId": "v2.Day2_3_Axel.0",
+      "propositionIds": [
+        "p.Day2_3_Axel.0"
+      ],
+      "legacySceneId": "Day2_3_Axel",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_3_Axel:8",
+      "beatId": "v2.Day2_3_Axel.8",
+      "propositionIds": [
+        "p.Day2_3_Axel.8"
+      ],
+      "legacySceneId": "Day2_3_Axel",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_4_Mario:0",
+      "beatId": "v2.Day2_4_Mario.0",
+      "propositionIds": [
+        "p.Day2_4_Mario.0"
+      ],
+      "legacySceneId": "Day2_4_Mario",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day2_4_Mario:8",
+      "beatId": "v2.Day2_4_Mario.8",
+      "propositionIds": [
+        "p.Day2_4_Mario.8"
+      ],
+      "legacySceneId": "Day2_4_Mario",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_1_Junjun:0",
+      "beatId": "v2.Day3_1_Junjun.0",
+      "propositionIds": [
+        "p.Day3_1_Junjun.0"
+      ],
+      "legacySceneId": "Day3_1_Junjun",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_1_Junjun:4",
+      "beatId": "v2.Day3_1_Junjun.4",
+      "propositionIds": [
+        "p.Day3_1_Junjun.4"
+      ],
+      "legacySceneId": "Day3_1_Junjun",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_1_Junjun:10",
+      "beatId": "v2.Day3_1_Junjun.10",
+      "propositionIds": [
+        "p.Day3_1_Junjun.10"
+      ],
+      "legacySceneId": "Day3_1_Junjun",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_2_Layla:0",
+      "beatId": "v2.Day3_2_Layla.0",
+      "propositionIds": [
+        "p.Day3_2_Layla.0"
+      ],
+      "legacySceneId": "Day3_2_Layla",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_2_Layla:8",
+      "beatId": "v2.Day3_2_Layla.8",
+      "propositionIds": [
+        "p.Day3_2_Layla.8"
+      ],
+      "legacySceneId": "Day3_2_Layla",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:0",
+      "beatId": "v2.Day3_3_Lucia.0",
+      "propositionIds": [
+        "p.Day3_3_Lucia.0"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:4",
+      "beatId": "v2.Day3_3_Lucia.4",
+      "propositionIds": [
+        "p.Day3_3_Lucia.4"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:6",
+      "beatId": "v2.Day3_3_Lucia.6",
+      "propositionIds": [
+        "p.Day3_3_Lucia.6"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:8",
+      "beatId": "v2.Day3_3_Lucia.8",
+      "propositionIds": [
+        "p.Day3_3_Lucia.8"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:12",
+      "beatId": "v2.Day3_3_Lucia.12",
+      "propositionIds": [
+        "p.Day3_3_Lucia.12"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_3_Lucia:18",
+      "beatId": "v2.Day3_3_Lucia.18",
+      "propositionIds": [
+        "p.Day3_3_Lucia.18"
+      ],
+      "legacySceneId": "Day3_3_Lucia",
+      "legacyStepIndex": 18,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_4_Axel:0",
+      "beatId": "v2.Day3_4_Axel.0",
+      "propositionIds": [
+        "p.Day3_4_Axel.0"
+      ],
+      "legacySceneId": "Day3_4_Axel",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_4_Axel:4",
+      "beatId": "v2.Day3_4_Axel.4",
+      "propositionIds": [
+        "p.Day3_4_Axel.4"
+      ],
+      "legacySceneId": "Day3_4_Axel",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_4_Axel:6",
+      "beatId": "v2.Day3_4_Axel.6",
+      "propositionIds": [
+        "p.Day3_4_Axel.6"
+      ],
+      "legacySceneId": "Day3_4_Axel",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day3_4_Axel:12",
+      "beatId": "v2.Day3_4_Axel.12",
+      "propositionIds": [
+        "p.Day3_4_Axel.12"
+      ],
+      "legacySceneId": "Day3_4_Axel",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_1_Layla:0",
+      "beatId": "v2.Day4_1_Layla.0",
+      "propositionIds": [
+        "p.Day4_1_Layla.0"
+      ],
+      "legacySceneId": "Day4_1_Layla",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_1_Layla:8",
+      "beatId": "v2.Day4_1_Layla.8",
+      "propositionIds": [
+        "p.Day4_1_Layla.8"
+      ],
+      "legacySceneId": "Day4_1_Layla",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_2_Rayder:0",
+      "beatId": "v2.Day4_2_Rayder.0",
+      "propositionIds": [
+        "p.Day4_2_Rayder.0"
+      ],
+      "legacySceneId": "Day4_2_Rayder",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_2_Rayder:4",
+      "beatId": "v2.Day4_2_Rayder.4",
+      "propositionIds": [
+        "p.Day4_2_Rayder.4"
+      ],
+      "legacySceneId": "Day4_2_Rayder",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_2_Rayder:6",
+      "beatId": "v2.Day4_2_Rayder.6",
+      "propositionIds": [
+        "p.Day4_2_Rayder.6"
+      ],
+      "legacySceneId": "Day4_2_Rayder",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_2_Rayder:10",
+      "beatId": "v2.Day4_2_Rayder.10",
+      "propositionIds": [
+        "p.Day4_2_Rayder.10"
+      ],
+      "legacySceneId": "Day4_2_Rayder",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_2_Rayder:16",
+      "beatId": "v2.Day4_2_Rayder.16",
+      "propositionIds": [
+        "p.Day4_2_Rayder.16"
+      ],
+      "legacySceneId": "Day4_2_Rayder",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_3_Malu:0",
+      "beatId": "v2.Day4_3_Malu.0",
+      "propositionIds": [
+        "p.Day4_3_Malu.0"
+      ],
+      "legacySceneId": "Day4_3_Malu",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_3_Malu:4",
+      "beatId": "v2.Day4_3_Malu.4",
+      "propositionIds": [
+        "p.Day4_3_Malu.4"
+      ],
+      "legacySceneId": "Day4_3_Malu",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_3_Malu:6",
+      "beatId": "v2.Day4_3_Malu.6",
+      "propositionIds": [
+        "p.Day4_3_Malu.6"
+      ],
+      "legacySceneId": "Day4_3_Malu",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_3_Malu:12",
+      "beatId": "v2.Day4_3_Malu.12",
+      "propositionIds": [
+        "p.Day4_3_Malu.12"
+      ],
+      "legacySceneId": "Day4_3_Malu",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_4_Mario:0",
+      "beatId": "v2.Day4_4_Mario.0",
+      "propositionIds": [
+        "p.Day4_4_Mario.0"
+      ],
+      "legacySceneId": "Day4_4_Mario",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_4_Mario:4",
+      "beatId": "v2.Day4_4_Mario.4",
+      "propositionIds": [
+        "p.Day4_4_Mario.4"
+      ],
+      "legacySceneId": "Day4_4_Mario",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day4_4_Mario:10",
+      "beatId": "v2.Day4_4_Mario.10",
+      "propositionIds": [
+        "p.Day4_4_Mario.10"
+      ],
+      "legacySceneId": "Day4_4_Mario",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_1_Rayder:0",
+      "beatId": "v2.Day5_1_Rayder.0",
+      "propositionIds": [
+        "p.Day5_1_Rayder.0"
+      ],
+      "legacySceneId": "Day5_1_Rayder",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_1_Rayder:4",
+      "beatId": "v2.Day5_1_Rayder.4",
+      "propositionIds": [
+        "p.Day5_1_Rayder.4"
+      ],
+      "legacySceneId": "Day5_1_Rayder",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_1_Rayder:6",
+      "beatId": "v2.Day5_1_Rayder.6",
+      "propositionIds": [
+        "p.Day5_1_Rayder.6"
+      ],
+      "legacySceneId": "Day5_1_Rayder",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_1_Rayder:10",
+      "beatId": "v2.Day5_1_Rayder.10",
+      "propositionIds": [
+        "p.Day5_1_Rayder.10"
+      ],
+      "legacySceneId": "Day5_1_Rayder",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_1_Rayder:16",
+      "beatId": "v2.Day5_1_Rayder.16",
+      "propositionIds": [
+        "p.Day5_1_Rayder.16"
+      ],
+      "legacySceneId": "Day5_1_Rayder",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_2_Jomar:0",
+      "beatId": "v2.Day5_2_Jomar.0",
+      "propositionIds": [
+        "p.Day5_2_Jomar.0"
+      ],
+      "legacySceneId": "Day5_2_Jomar",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_2_Jomar:5",
+      "beatId": "v2.Day5_2_Jomar.5",
+      "propositionIds": [
+        "p.Day5_2_Jomar.5"
+      ],
+      "legacySceneId": "Day5_2_Jomar",
+      "legacyStepIndex": 5,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_2_Jomar:9",
+      "beatId": "v2.Day5_2_Jomar.9",
+      "propositionIds": [
+        "p.Day5_2_Jomar.9"
+      ],
+      "legacySceneId": "Day5_2_Jomar",
+      "legacyStepIndex": 9,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_2_Jomar:16",
+      "beatId": "v2.Day5_2_Jomar.16",
+      "propositionIds": [
+        "p.Day5_2_Jomar.16"
+      ],
+      "legacySceneId": "Day5_2_Jomar",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_3_Lucia:0",
+      "beatId": "v2.Day5_3_Lucia.0",
+      "propositionIds": [
+        "p.Day5_3_Lucia.0"
+      ],
+      "legacySceneId": "Day5_3_Lucia",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_3_Lucia:4",
+      "beatId": "v2.Day5_3_Lucia.4",
+      "propositionIds": [
+        "p.Day5_3_Lucia.4"
+      ],
+      "legacySceneId": "Day5_3_Lucia",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_3_Lucia:8",
+      "beatId": "v2.Day5_3_Lucia.8",
+      "propositionIds": [
+        "p.Day5_3_Lucia.8"
+      ],
+      "legacySceneId": "Day5_3_Lucia",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_3_Lucia:10",
+      "beatId": "v2.Day5_3_Lucia.10",
+      "propositionIds": [
+        "p.Day5_3_Lucia.10"
+      ],
+      "legacySceneId": "Day5_3_Lucia",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_3_Lucia:16",
+      "beatId": "v2.Day5_3_Lucia.16",
+      "propositionIds": [
+        "p.Day5_3_Lucia.16"
+      ],
+      "legacySceneId": "Day5_3_Lucia",
+      "legacyStepIndex": 16,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_4_Carlo:3",
+      "beatId": "v2.Day5_4_Carlo.3",
+      "propositionIds": [
+        "p.Day5_4_Carlo.3"
+      ],
+      "legacySceneId": "Day5_4_Carlo",
+      "legacyStepIndex": 3,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_4_Carlo:5",
+      "beatId": "v2.Day5_4_Carlo.5",
+      "propositionIds": [
+        "p.Day5_4_Carlo.5"
+      ],
+      "legacySceneId": "Day5_4_Carlo",
+      "legacyStepIndex": 5,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day5_4_Carlo:13",
+      "beatId": "v2.Day5_4_Carlo.13",
+      "propositionIds": [
+        "p.Day5_4_Carlo.13"
+      ],
+      "legacySceneId": "Day5_4_Carlo",
+      "legacyStepIndex": 13,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_1_Carlo:3",
+      "beatId": "v2.Day6_1_Carlo.3",
+      "propositionIds": [
+        "p.Day6_1_Carlo.3"
+      ],
+      "legacySceneId": "Day6_1_Carlo",
+      "legacyStepIndex": 3,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_1_Carlo:6",
+      "beatId": "v2.Day6_1_Carlo.6",
+      "propositionIds": [
+        "p.Day6_1_Carlo.6"
+      ],
+      "legacySceneId": "Day6_1_Carlo",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_1_Carlo:11",
+      "beatId": "v2.Day6_1_Carlo.11",
+      "propositionIds": [
+        "p.Day6_1_Carlo.11"
+      ],
+      "legacySceneId": "Day6_1_Carlo",
+      "legacyStepIndex": 11,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_1_Carlo:17",
+      "beatId": "v2.Day6_1_Carlo.17",
+      "propositionIds": [
+        "p.Day6_1_Carlo.17"
+      ],
+      "legacySceneId": "Day6_1_Carlo",
+      "legacyStepIndex": 17,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_2_Mario:0",
+      "beatId": "v2.Day6_2_Mario.0",
+      "propositionIds": [
+        "p.Day6_2_Mario.0"
+      ],
+      "legacySceneId": "Day6_2_Mario",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_2_Mario:4",
+      "beatId": "v2.Day6_2_Mario.4",
+      "propositionIds": [
+        "p.Day6_2_Mario.4"
+      ],
+      "legacySceneId": "Day6_2_Mario",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_2_Mario:6",
+      "beatId": "v2.Day6_2_Mario.6",
+      "propositionIds": [
+        "p.Day6_2_Mario.6"
+      ],
+      "legacySceneId": "Day6_2_Mario",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_3_Jomar:0",
+      "beatId": "v2.Day6_3_Jomar.0",
+      "propositionIds": [
+        "p.Day6_3_Jomar.0"
+      ],
+      "legacySceneId": "Day6_3_Jomar",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_3_Jomar:6",
+      "beatId": "v2.Day6_3_Jomar.6",
+      "propositionIds": [
+        "p.Day6_3_Jomar.6"
+      ],
+      "legacySceneId": "Day6_3_Jomar",
+      "legacyStepIndex": 6,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_3_Jomar:10",
+      "beatId": "v2.Day6_3_Jomar.10",
+      "propositionIds": [
+        "p.Day6_3_Jomar.10"
+      ],
+      "legacySceneId": "Day6_3_Jomar",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_3_Jomar:12",
+      "beatId": "v2.Day6_3_Jomar.12",
+      "propositionIds": [
+        "p.Day6_3_Jomar.12"
+      ],
+      "legacySceneId": "Day6_3_Jomar",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_3_Jomar:14",
+      "beatId": "v2.Day6_3_Jomar.14",
+      "propositionIds": [
+        "p.Day6_3_Jomar.14"
+      ],
+      "legacySceneId": "Day6_3_Jomar",
+      "legacyStepIndex": 14,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_4_Lucia:0",
+      "beatId": "v2.Day6_4_Lucia.0",
+      "propositionIds": [
+        "p.Day6_4_Lucia.0"
+      ],
+      "legacySceneId": "Day6_4_Lucia",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_4_Lucia:4",
+      "beatId": "v2.Day6_4_Lucia.4",
+      "propositionIds": [
+        "p.Day6_4_Lucia.4"
+      ],
+      "legacySceneId": "Day6_4_Lucia",
+      "legacyStepIndex": 4,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_4_Lucia:9",
+      "beatId": "v2.Day6_4_Lucia.9",
+      "propositionIds": [
+        "p.Day6_4_Lucia.9"
+      ],
+      "legacySceneId": "Day6_4_Lucia",
+      "legacyStepIndex": 9,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_4_Lucia:11",
+      "beatId": "v2.Day6_4_Lucia.11",
+      "propositionIds": [
+        "p.Day6_4_Lucia.11"
+      ],
+      "legacySceneId": "Day6_4_Lucia",
+      "legacyStepIndex": 11,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Day6_4_Lucia:15",
+      "beatId": "v2.Day6_4_Lucia.15",
+      "propositionIds": [
+        "p.Day6_4_Lucia.15"
+      ],
+      "legacySceneId": "Day6_4_Lucia",
+      "legacyStepIndex": 15,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:3",
+      "beatId": "v2.Ending.3",
+      "propositionIds": [
+        "p.Ending.3"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 3,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:5",
+      "beatId": "v2.Ending.5",
+      "propositionIds": [
+        "p.Ending.5"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 5,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:8",
+      "beatId": "v2.Ending.8",
+      "propositionIds": [
+        "p.Ending.8"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 8,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:10",
+      "beatId": "v2.Ending.10",
+      "propositionIds": [
+        "p.Ending.10"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 10,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:12",
+      "beatId": "v2.Ending.12",
+      "propositionIds": [
+        "p.Ending.12"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 12,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:14",
+      "beatId": "v2.Ending.14",
+      "propositionIds": [
+        "p.Ending.14"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 14,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:17",
+      "beatId": "v2.Ending.17",
+      "propositionIds": [
+        "p.Ending.17"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 17,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:19",
+      "beatId": "v2.Ending.19",
+      "propositionIds": [
+        "p.Ending.19"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 19,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ending:23",
+      "beatId": "v2.Ending.23",
+      "propositionIds": [
+        "p.Ending.23"
+      ],
+      "legacySceneId": "Ending",
+      "legacyStepIndex": 23,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical utterance, not generated dialogue"
+    },
+    {
+      "legacyEventId": "Ledger:0",
+      "beatId": "v2.Ledger.0",
+      "propositionIds": [
+        "p.ledger"
+      ],
+      "legacySceneId": "Ledger",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical observation"
+    },
+    {
+      "legacyEventId": "DuyTrust:0",
+      "beatId": "v2.DuyTrust.0",
+      "propositionIds": [
+        "p.duy.trusted"
+      ],
+      "legacySceneId": "DuyTrust",
+      "legacyStepIndex": 0,
+      "legacyStoryVersion": "v1-static",
+      "migrationMeaning": "historical trust-gated utterance"
+    }
+  ]
+}

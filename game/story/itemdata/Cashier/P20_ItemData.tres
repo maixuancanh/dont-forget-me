@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemDataMoney" format=3 uid="uid://bgt35jk74vr0h"]
+
+[ext_resource type="Texture2D" uid="uid://yfgrmhs4j8r2" path="res://assets/art/environment/peso_20.png" id="1"]
+[ext_resource type="AudioStream" uid="uid://coafka6bfynuv" path="res://assets/audio/gameplay/interaction/ui_sfx/money_bg.wav" id="2"]
+[ext_resource type="Script" uid="uid://cw16f2k4wtun0" path="res://scripts/Items/ItemDataMoney.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+money_worth = 20000
+item_id = "coin_20"
+item_name = "P20 Coin"
+item_icon = ExtResource("1")
+pickup_sfx = ExtResource("2")
+metadata/_custom_type_script = "uid://byyl23x4b78s2"
